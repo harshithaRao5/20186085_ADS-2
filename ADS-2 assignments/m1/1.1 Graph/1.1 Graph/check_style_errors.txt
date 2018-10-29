@@ -1,27 +1,11 @@
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:20:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:50: Expected @return tag. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:57: Expected @return tag. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:69:21: Parameter item should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:92: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Bag.java:62: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:34:17: Parameter scan should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:50:25: Parameter v1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:50:33: Parameter w1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:67:28: Parameter v1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:67:36: Parameter w1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:123:15: Parameter scan should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:129:13: 'e' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:159:25: Parameter v1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:159:33: Parameter w1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:175:34: Parameter v1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:186:28: Parameter v1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:186:36: Parameter w1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:215: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 3 errors.

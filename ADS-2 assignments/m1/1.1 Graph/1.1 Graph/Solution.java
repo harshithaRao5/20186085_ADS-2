@@ -31,7 +31,7 @@ class GraphMatrix {
      *
      * @param      scan  The scan
      */
-    GraphMatrix(Scanner scan) {
+    GraphMatrix(final Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         matrix = new int[v][v];
         int edge = Integer.parseInt(scan.nextLine());
@@ -47,7 +47,7 @@ class GraphMatrix {
      * @param      v1    the int.
      * @param      w1    the int.
      */
-    public void addEdge(int v1, int w1) {
+    public void addEdge(final int v1, final int w1) {
         if (v1 != w1) {
             if (!hasEdge(v1, w1)) {
                 matrix[v1][w1] = 1;
@@ -64,7 +64,7 @@ class GraphMatrix {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v1, int w1) {
+    public boolean hasEdge(final int v1, final int w1) {
         if (matrix[v1][w1] == 1) {
             return true;
         }
@@ -120,7 +120,7 @@ class GraphList {
      *
      * @param      scan  The scan
      */
-    GraphList(Scanner scan) {
+    GraphList(final Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         adj = (Bag<Integer>[]) new Bag[v];
         for (int i = 0; i < v; i++) {
@@ -156,7 +156,7 @@ class GraphList {
      * @param      v1    the int.
      * @param      w1    the int.
      */
-    public void addEdge(int v1, int w1) {
+    public void addEdge(final int v1, final int w1) {
         if (v1 != w1) {
             adj[v1].add(w1);
             adj[w1].add(v1);
@@ -172,7 +172,7 @@ class GraphList {
      *
      * @return adjacent vertex.
      */
-    public Iterable<Integer> adj(int v1) {
+    public Iterable<Integer> adj(final int v1) {
         return adj[v1];
     }
     /**
@@ -183,7 +183,7 @@ class GraphList {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v1, int w1) {
+    public boolean hasEdge(final int v1, final int w1) {
         return true;
     }
     /**
@@ -212,7 +212,7 @@ class GraphList {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
