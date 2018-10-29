@@ -26,9 +26,9 @@ class GraphList implements Graph {
 	}
 	public void addEdge(int v, int w) {
 		if (v != w) {
+			E++;
 			adj[v].add(w);
 			adj[w].add(v);
-			E++;
 		} else {
 			return;
 		}
