@@ -44,28 +44,28 @@ class GraphMatrix {
     /**
      * Adds an edge.
      *
-     * @param      v    the int.
-     * @param      w    the int.
+     * @param      v1    the int.
+     * @param      w1    the int.
      */
-    public void addEdge(int v, int w) {
-    if(v != w) {
-        if(!hasEdge(v, w)) {
-        matrix[v][w] = 1;
-        matrix[w][v] = 1;
-        e++;
+    public void addEdge(int v1, int w1) {
+        if (v1 != w1) {
+            if (!hasEdge(v1, w1)) {
+                matrix[v1][w1] = 1;
+                matrix[w1][v1] = 1;
+                e++;
+            }
         }
-    }
     }
     /**
      * Determines if it has edge.
      *
-     * @param      v    the int.
-     * @param      w    the int.
+     * @param      v1    the int.
+     * @param      w1    the int.
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        if(matrix[v][w] == 1) {
+    public boolean hasEdge(int v1, int w1) {
+        if (matrix[v1][w1] == 1) {
             return true;
         }
         return false;
@@ -85,7 +85,7 @@ class GraphMatrix {
             }
             System.out.println(str);
         } else {
-             str += "No edges";
+            str += "No edges";
             System.out.println(str);
         }
     }
@@ -131,7 +131,7 @@ class GraphList {
         for (int i = 0; i < e; i++) {
             String[] inputs = scan.nextLine().split(" ");
             addEdge(Integer.parseInt(inputs[0]),
-                Integer.parseInt(inputs[1]));
+                    Integer.parseInt(inputs[1]));
         }
     }
     /**
@@ -153,13 +153,13 @@ class GraphList {
     /**
      * Adds an edge.
      *
-     * @param      v    the int.
-     * @param      w    the int.
+     * @param      v1    the int.
+     * @param      w1    the int.
      */
-    public void addEdge(int v, int w) {
-        if (v != w) {
-            adj[v].add(w);
-            adj[w].add(v);
+    public void addEdge(int v1, int w1) {
+        if (v1 != w1) {
+            adj[v1].add(w1);
+            adj[w1].add(v1);
             e++;
         } else {
             return;
@@ -168,22 +168,22 @@ class GraphList {
     /**
      * method for adjacent vertex.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      *
      * @return adjacent vertex.
      */
-    public Iterable<Integer> adj(int v) {
-        return adj[v];
+    public Iterable<Integer> adj(int v1) {
+        return adj[v1];
     }
     /**
      * Determines if it has edge.
      *
-     * @param      v    the int.
-     * @param      w    the int.
+     * @param      v1    the int.
+     * @param      w1    the int.
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(int v1, int w1) {
         return true;
     }
     /**
@@ -192,8 +192,8 @@ class GraphList {
      * @return     String representation of the object.
      */
     public String toString() {
-            StringBuilder s = new StringBuilder();
-            s.append(v + " vertices, " + e + " edges" + "\n");
+        StringBuilder s = new StringBuilder();
+        s.append(v + " vertices, " + e + " edges" + "\n");
         if (e > 0) {
             for (int i = 0; i < v; i++) {
                 s.append(tokens[i] + ": ");
@@ -236,7 +236,7 @@ public class Solution {
             lisMat.print();
             break;
         default :
-        break;
+            break;
         }
     }
 }
