@@ -65,34 +65,56 @@ class GraphList implements Graph {
 		}
 	}
 }
-// class GraphMatrix implements Graph {
-// 	private int V;
-// 	private int E;
-// 	private boolean[][] matrix;
-// 	// GraphMatrix()
-// 	public int V() {
-// 		return V;
-// 	}
-// 	public int E() {
-// 		return E;
-// 	}
-// 	public void addEdge(int v, int w) {
-// 		if (v != w) {
-// 			if (!hasEdge(v, w)) {
-// 				matrix[v][w] = true;
-// 				matrix[w][v] = true;
-// 				E++;
-// 			}
-// 		}
-// 	}
-// 	public Iterable<Integer> adj(int v) {
+class GraphMatrix {
+	private int V;
+	private int E;
+	private int[][] matrix;
+	String[] keyNames;
+	GraphMatrix(int V, String[] keyNames1) {
+        this.V = V;
+        this.E = 0;
+        keyNames=keyNames1;
+        this.matrix = new int[V][V];
+    }
+	public int V() {
+		return V;
+	}
+	public int E() {
+		return E;
+	}
+	public void addEdge(int v, int w) {
+		if (v != w) {
+			if (!hasEdge(v, w)) {
+				matrix[v][w] = 1;
+				matrix[w][v] = 1;
+				E++;
+			}
+		}
+	}
+	public boolean hasEdge(int v, int w) {
+		if(matrix[v][w] == 1) {
+            return true;
+        }
+        return false;
+	}
+	public String toString() {
+        String str = "";
+        str += V + " vertices, " + E + " edges" + "\n";
+        if (E > 0) {
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    str += matrix[i][j] + " ";
+                }
+                str += "\n";
+            }
+            return str;
+        } else {
+             str += "No edges";
+            return str;
+        }
+    }
 
-// 	}
-// 	public boolean hasEdge(int v, int w) {
-
-// 	}
-
-// }
+}
 
 public final class Solution {
 	private Solution() {
@@ -112,7 +134,12 @@ public final class Solution {
 				globj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
 				System.out.println(globj);
 				break;
+			case "Matrix":
+				GraphMatrix gmobj = new GraphMatrix(v,keyNames);
+				gmobj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
+				System.out.println(gmobj);
 			}
+
 		}
 
 
