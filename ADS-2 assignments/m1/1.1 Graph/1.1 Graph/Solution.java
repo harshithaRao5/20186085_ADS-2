@@ -130,7 +130,8 @@ class GraphList {
         tokens = scan.nextLine().split(",");
         for (int i = 0; i < e; i++) {
             String[] inputs = scan.nextLine().split(" ");
-            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
+            addEdge(Integer.parseInt(inputs[0]),
+                Integer.parseInt(inputs[1]));
         }
     }
     /**
