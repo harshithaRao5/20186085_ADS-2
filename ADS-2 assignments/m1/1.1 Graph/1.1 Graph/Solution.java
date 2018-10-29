@@ -97,7 +97,7 @@ class GraphMatrix {
         }
         return false;
 	}
-	public String toString() {
+	public void print() {
         String str = "";
         str += V + " vertices, " + E + " edges" + "\n";
         if (E > 0) {
@@ -107,10 +107,10 @@ class GraphMatrix {
                 }
                 str += "\n";
             }
-            return str;
+            System.out.println(str);
         } else {
              str += "No edges";
-            return str;
+            System.out.println(str);
         }
     }
 
@@ -137,7 +137,7 @@ public final class Solution {
 			case "Matrix":
 				GraphMatrix gmobj = new GraphMatrix(v,keyNames);
 				gmobj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
-				System.out.println(gmobj);
+				gmobj.print();
 			}
 
 		}
