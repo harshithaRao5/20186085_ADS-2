@@ -3289,8 +3289,8 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 0 edges 
-No edges0:
+1 vertices, 1 edges 
+0:
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
