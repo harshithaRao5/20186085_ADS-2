@@ -11,9 +11,10 @@ class GraphList implements Graph {
 	private int E;
 	private Bag<Integer>[] adj;
 	String[] keyNames;
-	GraphList(int v,String[] keyNames1) {
+
+	GraphList(int v,String[] keyNames1, int e) {
 		this.V = v;
-		this.E = 0;
+		this.E = e;
 		keyNames=keyNames1;
 		adj = (Bag<Integer>[]) new Bag[V];
 		for (int i = 0; i < V; i++) {
@@ -48,20 +49,19 @@ class GraphList implements Graph {
 		return false;
 	}
 	public String toString() {
-		//StringBuilder s = new StringBuilder();
-		String s = "";
-		s +=V + " vertices, " + E + " edges" + "\n";
+		StringBuilder s = new StringBuilder();
+		s.append(V + " vertices, " + E + " edges" + "\n");
 		if (E > 0) {
 			for (int i = 0; i < V; i++) {
-				s +=keyNames[i]+ ": ";
+				s.append(keyNames[i]+ ": ");
 				for (int w : adj[i]) {
-					s+=keyNames[w] + " ";
+					s.append(keyNames[w] + " ");
 				}
-				s+="\n";
+				s.append("\n");
 			}
 			return s.toString();
 		} else {
-			s +="No edges";
+			s.append("No edges");
 			return s.toString();
 		}
 	}
@@ -131,7 +131,7 @@ public final class Solution {
 			String[] input = sc.nextLine().split(" ");
 			switch (type) {
 			case "List":
-				GraphList globj = new GraphList(v,keyNames);
+				GraphList globj = new GraphList(v,keyNames, e);
 				globj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
 				System.out.println(globj);
 				break;

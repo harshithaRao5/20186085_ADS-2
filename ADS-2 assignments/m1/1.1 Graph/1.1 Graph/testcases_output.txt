@@ -16,7 +16,7 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: Chandigarh 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -31,7 +31,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -46,7 +46,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: Andhra Pradesh 
 Andhra Pradesh: Andaman and Nicobar 
 Arunachal Pradesh: 
@@ -61,7 +61,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -76,7 +76,7 @@ Goa:
 Gujarat: 
 Haryana: Delhi 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -91,7 +91,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -106,7 +106,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: Arunachal Pradesh 
 Andhra Pradesh: 
 Arunachal Pradesh: Andaman and Nicobar 
@@ -121,7 +121,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -136,7 +136,7 @@ Goa:
 Gujarat: Haryana 
 Haryana: Gujarat 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -151,7 +151,7 @@ Goa: Delhi
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: Chhattisgarh 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -166,7 +166,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -181,7 +181,7 @@ Goa:
 Gujarat: 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -196,7 +196,7 @@ Goa:
 Gujarat: Delhi 
 Haryana: 
 
-13 vertices, 1 edges
+13 vertices, 14 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -467,7 +467,7 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Chandigarh 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -505,7 +505,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -543,7 +543,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Andhra Pradesh 
 Andhra Pradesh: Andaman and Nicobar 
 Arunachal Pradesh: 
@@ -581,7 +581,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -619,7 +619,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -657,7 +657,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -695,7 +695,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Arunachal Pradesh 
 Andhra Pradesh: 
 Arunachal Pradesh: Andaman and Nicobar 
@@ -733,7 +733,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -771,7 +771,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -809,7 +809,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Chhattisgarh 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -847,7 +847,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -885,7 +885,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -923,7 +923,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -961,7 +961,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -999,7 +999,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1037,7 +1037,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: Goa 
 Arunachal Pradesh: 
@@ -1075,7 +1075,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1113,7 +1113,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1151,7 +1151,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1189,7 +1189,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: Goa 
@@ -1227,7 +1227,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1265,7 +1265,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1303,7 +1303,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1341,7 +1341,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1379,7 +1379,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1417,7 +1417,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1455,7 +1455,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Jharkhand 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1493,7 +1493,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1531,7 +1531,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Gujarat 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1569,7 +1569,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1607,7 +1607,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1645,7 +1645,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1683,7 +1683,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Haryana 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1721,7 +1721,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1759,7 +1759,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1797,7 +1797,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Karnataka 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1835,7 +1835,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1873,7 +1873,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1911,7 +1911,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1949,7 +1949,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -1987,7 +1987,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2025,7 +2025,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: Maharashtra 
 Arunachal Pradesh: 
@@ -2063,7 +2063,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2101,7 +2101,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2139,7 +2139,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2177,7 +2177,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: Maharashtra 
@@ -2215,7 +2215,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2253,7 +2253,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2291,7 +2291,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2329,7 +2329,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2367,7 +2367,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2405,7 +2405,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2443,7 +2443,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Odisha 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2481,7 +2481,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2519,7 +2519,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Manipur 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2557,7 +2557,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2595,7 +2595,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2633,7 +2633,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2671,7 +2671,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Meghalaya 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2709,7 +2709,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2747,7 +2747,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2785,7 +2785,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: Puducherry 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2823,7 +2823,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2861,7 +2861,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2899,7 +2899,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2937,7 +2937,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -2975,7 +2975,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3013,7 +3013,7 @@ Uttar Pradesh:
 Uttarakhand: Assam 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: Tamil Nadu 
 Arunachal Pradesh: 
@@ -3051,7 +3051,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3089,7 +3089,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3127,7 +3127,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3165,7 +3165,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: Bihar 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: Tamil Nadu 
@@ -3203,7 +3203,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3241,7 +3241,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3279,7 +3279,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3317,7 +3317,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3355,7 +3355,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -3393,7 +3393,7 @@ Uttar Pradesh:
 Uttarakhand: 
 West Bengal: 
 
-36 vertices, 1 edges
+36 vertices, 79 edges
 Andaman and Nicobar: 
 Andhra Pradesh: 
 Arunachal Pradesh: 
@@ -6444,7 +6444,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges
+1 vertices, 2 edges
 Hyderabad:
 ----------------------------------------
 
