@@ -1,107 +1,43 @@
 import java.util.Scanner;
-interface Graph {
-	public int V();
-	public int E();
-	public void addEdge(int v, int w);
-	public Iterable<Integer> adj(int v);
-	public boolean hasEdge(int v, int w);
-}
-class GraphList implements Graph {
-	private int V;
-	private int E;
-	private Bag<Integer>[] adj;
-	String[] keyNames;
-
-	GraphList(int v,String[] keyNames1, int e) {
-		this.V = v;
-		this.E = e;
-		keyNames=keyNames1;
-		adj = (Bag<Integer>[]) new Bag[V];
-		for (int i = 0; i < V; i++) {
-			adj[i] = new Bag<Integer>();
-		}
-	}
-	public int V() {
-		return V;
-	}
-	public int E() {
-		return E;
-	}
-	public void addEdge(int v, int w) {
-		if (!hasEdge(v, w)) {
-			E++;
-		}
-		if (v == w) {
-			return;
-		}
-		adj[v].add(w);
-		adj[w].add(v);
-	}
-	public Iterable<Integer> adj(int v) {
-		return adj[v];
-	}
-	public boolean hasEdge(int v, int w) {
-		for (int i = 0; i < adj[v].size(); i++) {
-			if (i == w) {
-				return true;
-			}
-		}
-		return false;
-	}
-	public String toString() {
-		StringBuilder s = new StringBuilder();
-		s.append(V + " vertices, " + E + " edges" + "\n");
-		if (E > 0) {
-			for (int i = 0; i < V; i++) {
-				s.append(keyNames[i]+ ": ");
-				for (int w : adj[i]) {
-					s.append(keyNames[w] + " ");
-				}
-				s.append("\n");
-			}
-			return s.toString();
-		} else {
-			s.append("No edges");
-			return s.toString();
-		}
-	}
-}
+import java.util.Arrays;
 class GraphMatrix {
-	private int V;
-	private int E;
-	private int[][] matrix;
-	String[] keyNames;
-	GraphMatrix(int V, String[] keyNames1) {
-        this.V = V;
-        this.E = 0;
-        keyNames=keyNames1;
-        this.matrix = new int[V][V];
+    private String[] tokens;
+    private int[][] matrix;
+    private int v;
+    private int e;
+    GraphMatrix() {
+        e = 0;
     }
-	public int V() {
-		return V;
-	}
-	public int E() {
-		return E;
-	}
-	public void addEdge(int v, int w) {
-		if (v != w) {
-			if (!hasEdge(v, w)) {
-				matrix[v][w] = 1;
-				matrix[w][v] = 1;
-				E++;
-			}
-		}
-	}
-	public boolean hasEdge(int v, int w) {
-		if(matrix[v][w] == 1) {
+    GraphMatrix(Scanner scan) {
+        this.v = Integer.parseInt(scan.nextLine());
+        matrix = new int[v][v];
+        int edge = Integer.parseInt(scan.nextLine());
+        tokens = scan.nextLine().split(",");
+        for (int i = 0; i < edge; i++) {
+            String[] inputs = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
+        }
+    }
+
+    public void addEdge(int v, int w) {
+    if(v != w) {
+        if(!hasEdge(v, w)) {
+        matrix[v][w] = 1;
+        matrix[w][v] = 1;
+        e++;
+        }
+    }
+    }
+    public boolean hasEdge(int v, int w) {
+        if(matrix[v][w] == 1) {
             return true;
         }
         return false;
-	}
-	public void print() {
+    }
+    public void print() {
         String str = "";
-        str += V + " vertices, " + E + " edges" + "\n";
-        if (E > 0) {
+        str += v + " vertices, " + e + " edges" + "\n";
+        if (e > 0) {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[0].length; j++) {
                     str += matrix[i][j] + " ";
@@ -114,35 +50,83 @@ class GraphMatrix {
             System.out.println(str);
         }
     }
-
 }
-
-public final class Solution {
-	private Solution() {
-
-	}
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String type = sc.nextLine();
-		int v = Integer.parseInt(sc.nextLine());
-		int e = Integer.parseInt(sc.nextLine());
-		String[] keyNames = sc.nextLine().split(",");
-		while (sc.hasNext()) {
-			String[] input = sc.nextLine().split(" ");
-			switch (type) {
-			case "List":
-				GraphList globj = new GraphList(v,keyNames, e);
-				globj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
-				System.out.println(globj);
-				break;
-			case "Matrix":
-				GraphMatrix gmobj = new GraphMatrix(v,keyNames);
-				gmobj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
-				gmobj.print();
-			}
-
-		}
-
-
-	}
+class GraphList {
+    private int v;
+    private int e;
+    private Bag<Integer>[] adj;
+    private String[] tokens;
+    GraphList() {
+    }
+    GraphList(Scanner scan) {
+        this.v = Integer.parseInt(scan.nextLine());
+        adj = (Bag<Integer>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Integer>();
+        }
+        int e = Integer.parseInt(scan.nextLine());
+        tokens = scan.nextLine().split(",");
+        for (int i = 0; i < e; i++) {
+            String[] inputs = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
+        }
+    }
+    public int v() {
+        return v;
+    }
+    public int e() {
+        return e;
+    }
+    public void addEdge(int v, int w) {
+        if (v != w) {
+            adj[v].add(w);
+            adj[w].add(v);
+            e++;
+        } else {
+            return;
+        }
+    }
+    public Iterable<Integer> adj(int v) {
+        return adj[v];
+    }
+    public boolean hasEdge(int v, int w) {
+        return true;
+    }
+    public String toString() {
+            StringBuilder s = new StringBuilder();
+            s.append(v + " vertices, " + e + " edges" + "\n");
+        if (e > 0) {
+            for (int i = 0; i < v; i++) {
+                s.append(tokens[i] + ": ");
+                for (int j : adj[i]) {
+                    s.append(tokens[j] + " ");
+                }
+                s.append("\n");
+            }
+            return s.toString();
+        } else {
+            s.append("No edges");
+            return s.toString();
+        }
+    }
+}
+public class Solution {
+    Solution() {
+    }
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String type = scan.nextLine();
+        switch (type) {
+        case "List":
+            GraphList lisObj = new GraphList(scan);
+            System.out.println(lisObj);
+            break;
+        case "Matrix":
+            GraphMatrix lisMat = new GraphMatrix(scan);
+            lisMat.print();
+            break;
+        default :
+        break;
+        }
+    }
 }
