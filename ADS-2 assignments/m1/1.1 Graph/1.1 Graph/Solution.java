@@ -25,8 +25,13 @@ class GraphList implements Graph {
 		return E;
 	}
 	public void addEdge(int v, int w) {
-		adj[v].add(w);
-		adj[w].add(v);
+		if (v != w) {
+			adj[v].add(w);
+			adj[w].add(v);
+			E++;
+		} else {
+			return;
+		}
 	}
 	public Iterable<Integer> adj(int v) {
 		return adj[v];
@@ -42,7 +47,7 @@ class GraphList implements Graph {
 	public String toString() {
 		StringBuilder s = new StringBuilder();
 		s.append(V + " vertices, " + E + " edges " + "\n");
-		if(E == 0) {
+		if (E == 0) {
 			s.append("No edges");
 		}
 		for (int v = 0; v < V; v++) {
@@ -58,9 +63,9 @@ class GraphList implements Graph {
 }
 // class GraphMatrix implements Graph {
 // 	private int V;
-//     private int E;
-//     private boolean[][] matrix;
-//     GraphMatrix()
+// 	private int E;
+// 	private boolean[][] matrix;
+// 	GraphMatrix()
 // 	public int V() {
 // 		return V;
 // 	}
@@ -91,15 +96,17 @@ public final class Solution {
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
 		String[] keyNames = sc.nextLine().split(",");
-		while (e > 0) {
-			String[] input = sc.nextLine().split(",");
+		while (sc.hasNext()) {
+			String[] input = sc.nextLine().split(" ");
 			switch (type) {
 			case "List":
 				GraphList globj = new GraphList(v);
+				globj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
 				System.out.println(globj);
-
 				break;
 			}
 		}
+
+
 	}
 }
