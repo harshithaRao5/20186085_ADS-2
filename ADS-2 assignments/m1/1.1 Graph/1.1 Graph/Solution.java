@@ -125,9 +125,9 @@ class GraphList {
         for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Integer>();
         }
-        int e = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
-        for (int i = 0; i < e; i++) {
+        for (int i = 0; i < edges; i++) {
             String[] inputs = scan.nextLine().split(" ");
             addEdge(Integer.parseInt(inputs[0]),
                     Integer.parseInt(inputs[1]));
