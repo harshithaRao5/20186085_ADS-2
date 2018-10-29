@@ -16,7 +16,8 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -31,7 +32,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -46,7 +48,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -61,7 +64,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -76,7 +80,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -91,7 +96,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -106,7 +112,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -121,7 +128,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -136,7 +144,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -151,7 +160,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -166,7 +176,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -181,7 +192,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -196,7 +208,8 @@ Your Output:
 11: 
 12: 
 
-13 vertices, 13 edges 
+No edges
+13 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -280,7 +293,8 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -318,7 +332,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -356,7 +371,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -394,7 +410,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -432,7 +449,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -470,7 +488,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -508,7 +527,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -546,7 +566,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -584,7 +605,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -622,7 +644,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -660,7 +683,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -698,7 +722,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -736,7 +761,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -774,7 +800,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -812,7 +839,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -850,7 +878,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -888,7 +917,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -926,7 +956,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -964,7 +995,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1002,7 +1034,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1040,7 +1073,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1078,7 +1112,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1116,7 +1151,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1154,7 +1190,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1192,7 +1229,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1230,7 +1268,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1268,7 +1307,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1306,7 +1346,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1344,7 +1385,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1382,7 +1424,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1420,7 +1463,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1458,7 +1502,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1496,7 +1541,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1534,7 +1580,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1572,7 +1619,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1610,7 +1658,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1648,7 +1697,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1686,7 +1736,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1724,7 +1775,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1762,7 +1814,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1800,7 +1853,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1838,7 +1892,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1876,7 +1931,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1914,7 +1970,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1952,7 +2009,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -1990,7 +2048,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2028,7 +2087,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2066,7 +2126,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2104,7 +2165,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2142,7 +2204,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2180,7 +2243,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2218,7 +2282,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2256,7 +2321,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2294,7 +2360,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2332,7 +2399,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2370,7 +2438,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2408,7 +2477,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2446,7 +2516,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2484,7 +2555,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2522,7 +2594,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2560,7 +2633,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2598,7 +2672,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2636,7 +2711,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2674,7 +2750,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2712,7 +2789,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2750,7 +2828,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2788,7 +2867,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2826,7 +2906,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2864,7 +2945,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2902,7 +2984,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2940,7 +3023,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -2978,7 +3062,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3016,7 +3101,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3054,7 +3140,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3092,7 +3179,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3130,7 +3218,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3168,7 +3257,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3206,7 +3296,8 @@ Your Output:
 34: 
 35: 
 
-36 vertices, 78 edges 
+No edges
+36 vertices, 0 edges 
 0: 
 1: 
 2: 
@@ -3301,7 +3392,8 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges 
+No edges
+1 vertices, 0 edges 
 0: 
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
@@ -3326,7 +3418,7 @@ Expected Output:
 No edges
 
 Your Output: 
-No edges
+
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -3335,6 +3427,6 @@ Expected Output:
 No edges
 
 Your Output: 
-No edges
+
 ----------------------------------------
 

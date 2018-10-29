@@ -10,9 +10,9 @@ class GraphList implements Graph {
 	private int V;
 	private int E;
 	private Bag<Integer>[] adj;
-	GraphList(int v, int e) {
+	GraphList(int v) {
 		this.V = v;
-		this.E = e;
+		this.E = 0;
 		adj = (Bag<Integer>[]) new Bag[V];
 		for (int i = 0; i < V; i++) {
 			adj[i] = new Bag<Integer>();
@@ -42,6 +42,9 @@ class GraphList implements Graph {
 	public String toString() {
 		StringBuilder s = new StringBuilder();
 		s.append(V + " vertices, " + E + " edges " + "\n");
+		if(E == 0) {
+			System.out.println("No edges");
+		}
 		for (int v = 0; v < V; v++) {
 			s.append(v + ": ");
 			for (int w : adj[v]) {
@@ -86,15 +89,12 @@ public final class Solution {
 		String type = sc.nextLine();
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
-		if (e == 0) {
-			System.out.println("No edges");
-		}
 		String[] keyNames = sc.nextLine().split(",");
 		while (e > 0) {
 			String[] input = sc.nextLine().split(",");
 			switch (type) {
 			case "List":
-				GraphList globj = new GraphList(v, e);
+				GraphList globj = new GraphList(v);
 				System.out.println(globj);
 				break;
 			}

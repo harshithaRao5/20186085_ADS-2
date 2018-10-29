@@ -53,7 +53,6 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:12:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:13:19: Parameter v should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:13:26: Parameter e should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:21:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:21:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:24:9: Missing a Javadoc comment. [JavadocMethod]
@@ -67,9 +66,10 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:34:32: Parameter v should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:34:39: Parameter w should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:42:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:80: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:81:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:45:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:83: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:84:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:87:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:95: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
 Checkstyle ends with 41 errors.
