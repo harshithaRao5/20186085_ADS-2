@@ -102,7 +102,7 @@ public class Bag<Item> implements Iterable<Item> {
     private class ListIterator implements Iterator<Item> {
         /**
          * { var_description }.
-         */
+       */
         private Node current = first;
         /**
          * Determines if it has next.
@@ -134,3 +134,5 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
 }
+
+
