@@ -1,13 +1,36 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for graph matrix.
+ */
 class GraphMatrix {
+    /**
+     * array declaration.
+     */
     private String[] tokens;
+    /**
+     * 2d array declaration.
+     */
     private int[][] matrix;
+    /**
+     * variable declaration.
+     */
     private int v;
+    /**
+     * variable declaration.
+     */
     private int e;
+    /**
+     * Constructs the object.
+     */
     GraphMatrix() {
         e = 0;
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      scan  The scan
+     */
     GraphMatrix(Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         matrix = new int[v][v];
@@ -18,7 +41,12 @@ class GraphMatrix {
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
-
+    /**
+     * Adds an edge.
+     *
+     * @param      v    the int.
+     * @param      w    the int.
+     */
     public void addEdge(int v, int w) {
     if(v != w) {
         if(!hasEdge(v, w)) {
@@ -28,12 +56,23 @@ class GraphMatrix {
         }
     }
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v    the int.
+     * @param      w    the int.
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w) {
         if(matrix[v][w] == 1) {
             return true;
         }
         return false;
     }
+    /**
+     * display method.
+     */
     public void print() {
         String str = "";
         str += v + " vertices, " + e + " edges" + "\n";
@@ -51,13 +90,36 @@ class GraphMatrix {
         }
     }
 }
+/**
+ * List of graphs.
+ */
 class GraphList {
+    /**
+     * variable declaration.
+     */
     private int v;
+    /**
+     * variable declaration.
+     */
     private int e;
+    /**
+     * array declaration.
+     */
     private Bag<Integer>[] adj;
+    /**
+     * array declaration.
+     */
     private String[] tokens;
+    /**
+     * Constructs the object.
+     */
     GraphList() {
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      scan  The scan
+     */
     GraphList(Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         adj = (Bag<Integer>[]) new Bag[v];
@@ -71,12 +133,28 @@ class GraphList {
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
+    /**
+     * method for vertices.
+     *
+     * @return  vertices.
+     */
     public int v() {
         return v;
     }
+    /**
+     * method for edges.
+     *
+     * @return edges.
+     */
     public int e() {
         return e;
     }
+    /**
+     * Adds an edge.
+     *
+     * @param      v    the int.
+     * @param      w    the int.
+     */
     public void addEdge(int v, int w) {
         if (v != w) {
             adj[v].add(w);
@@ -86,12 +164,32 @@ class GraphList {
             return;
         }
     }
+    /**
+     * method for adjacent vertex.
+     *
+     * @param      v    the int.
+     *
+     * @return adjacent vertex.
+     */
     public Iterable<Integer> adj(int v) {
         return adj[v];
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v    the int.
+     * @param      w    the int.
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w) {
         return true;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
             StringBuilder s = new StringBuilder();
             s.append(v + " vertices, " + e + " edges" + "\n");
@@ -110,9 +208,20 @@ class GraphList {
         }
     }
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
-    Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
     }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String type = scan.nextLine();
