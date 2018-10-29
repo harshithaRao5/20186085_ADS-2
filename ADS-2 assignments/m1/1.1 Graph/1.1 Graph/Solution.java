@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for graph matrix.
  */
@@ -126,7 +125,7 @@ class GraphList {
         for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Integer>();
         }
-        int e = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
         for (int i = 0; i < e; i++) {
             String[] inputs = scan.nextLine().split(" ");
