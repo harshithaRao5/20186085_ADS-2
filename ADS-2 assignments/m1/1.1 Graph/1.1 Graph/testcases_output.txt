@@ -213,7 +213,7 @@ Your Output:
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:91)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -236,7 +236,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:91)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -3246,7 +3246,7 @@ Your Output:
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:91)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -3292,7 +3292,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:91)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -3306,7 +3306,7 @@ Your Output:
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:91)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -3317,7 +3317,7 @@ No edges
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:91)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -3326,7 +3326,7 @@ Expected Output:
 No edges
 
 Your Output: 
-
+No edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -3335,6 +3335,6 @@ Expected Output:
 No edges
 
 Your Output: 
-
+No edges
 ----------------------------------------
 

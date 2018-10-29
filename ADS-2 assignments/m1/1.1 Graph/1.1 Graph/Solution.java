@@ -86,6 +86,9 @@ public final class Solution {
 		String type = sc.nextLine();
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
+		if (e == 0) {
+			System.out.println("No edges");
+		}
 		String[] keyNames = sc.nextLine().split(",");
 		while (e > 0) {
 			String[] input = sc.nextLine().split(",");
