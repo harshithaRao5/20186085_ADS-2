@@ -43,7 +43,7 @@ class GraphList implements Graph {
 		StringBuilder s = new StringBuilder();
 		s.append(V + " vertices, " + E + " edges " + "\n");
 		if(E == 0) {
-			System.out.println("No edges");
+			s.append("No edges");
 		}
 		for (int v = 0; v < V; v++) {
 			s.append(v + ": ");
@@ -86,6 +86,7 @@ public final class Solution {
 	}
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
+		//SequentialSearchST< stobj = new SequentialSearchST()
 		String type = sc.nextLine();
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
@@ -96,6 +97,7 @@ public final class Solution {
 			case "List":
 				GraphList globj = new GraphList(v);
 				System.out.println(globj);
+
 				break;
 			}
 		}
