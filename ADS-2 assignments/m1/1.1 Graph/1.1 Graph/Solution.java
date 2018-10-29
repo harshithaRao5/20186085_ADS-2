@@ -48,19 +48,20 @@ class GraphList implements Graph {
 		return false;
 	}
 	public String toString() {
-		StringBuilder s = new StringBuilder();
-		s.append(V + " vertices, " + E + " edges" + "\n");
+		//StringBuilder s = new StringBuilder();
+		String s = "";
+		s +=V + " vertices, " + E + " edges" + "\n";
 		if (E > 0) {
 			for (int i = 0; i < V; i++) {
-				s.append(keyNames[i]+ ": ");
+				s +=keyNames[i]+ ": ";
 				for (int w : adj[i]) {
-					s.append(keyNames[w] + " ");
+					s+=keyNames[w] + " ";
 				}
-				s.append("\n");
+				s+="\n";
 			}
 			return s.toString();
 		} else {
-			s.append("No edges");
+			s +="No edges";
 			return s.toString();
 		}
 	}
