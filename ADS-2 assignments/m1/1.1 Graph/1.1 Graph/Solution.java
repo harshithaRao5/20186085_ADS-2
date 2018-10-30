@@ -159,13 +159,11 @@ class GraphList {
         if(v1 == w1) {
             return;
         }
-        if (v1 != w1) {
-            adj[v1].add(w1);
-            adj[w1].add(v1);
+        if (!hasEdge(v1, w1)) {
             e++;
-        } else {
-            return;
         }
+        adj[v1].add(w1);
+        adj[w1].add(v1);
 
     }
     /**
