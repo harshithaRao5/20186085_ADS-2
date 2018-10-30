@@ -34,8 +34,8 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:28: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:32: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:33: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:55:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:63:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:54:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:62:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
 Checkstyle ends with 8 errors.
 Starting audit...

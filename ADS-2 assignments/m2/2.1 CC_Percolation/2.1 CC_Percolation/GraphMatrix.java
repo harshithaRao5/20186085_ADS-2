@@ -42,7 +42,6 @@ class GraphMatrix {
         if (v1 != w1) {
             if (!hasEdge(v1, w1)) {
                 matrix[v1][w1] = 1;
-                matrix[w1][v1] = 1;
                 e++;
             }
         }
