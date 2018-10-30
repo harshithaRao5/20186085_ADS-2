@@ -28,7 +28,7 @@ class GraphMatrix {
      */
     GraphMatrix(final Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
-        matrix = new int[v][v];
+        matrix = new int[v+2][v+2];
         String[] inputs = scan.nextLine().split(" ");
         addEdge(Integer.parseInt(inputs[0]) - 1, Integer.parseInt(inputs[1]) - 1);
     }
