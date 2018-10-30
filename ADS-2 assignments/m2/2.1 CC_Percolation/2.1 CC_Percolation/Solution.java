@@ -1,4 +1,24 @@
+// public class Percolation {
+//    public Percolation(int n)
+// create n-by-n grid, with all sites blocked
+//    public    void open(int row, int col)
+// open site (row, col) if it is not open already
+//    public boolean isOpen(int row, int col)
+// is site (row, col) open?
+//    public boolean isFull(int row, int col)
+// is site (row, col) full?
+//    public     int numberOfOpenSites()
+// number of open sites
+//    public boolean percolates()
+// does the system percolate?
+// }
+
+
+// You can implement the above API to solve the problem
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
     /**
      *the array.
@@ -7,8 +27,7 @@ class Percolation {
     /**
      *object declaration for class.
      */
-    private GraphMatrix gm;
-    private ConnectedComponents cc;
+    private Graph graph;
     /**
      *array size.
      */
@@ -46,12 +65,11 @@ class Percolation {
         this.top = size;
         this.bottom = size + 1;
         this.count = 0;
-        gm = new GraphMatrix(size+2);
-        cc = new ConnectedComponents(gm);
+        graph = new Graph(size + 2);
         array = new boolean[size];
         for (int i = 0; i < arraySize; i++) {
-            gm.addEdge(top, i);
-            gm.addEdge(bottom, size - i - 1);
+            graph.addEdge(top, i);
+            graph.addEdge(bottom, size - i - 1);
         }
     }
     /**
@@ -72,8 +90,8 @@ class Percolation {
      * @param      col   The col
      */
     private void connectOpenSites(final int row, final int col) {
-        if (array[col] && !cc.connected(row, col)) {
-            gm.addEdge(row, col);
+        if (array[col] && !graph.hasEdge(row, col)) {
+            graph.addEdge(row, col);
         }
     }
     /**
@@ -89,8 +107,8 @@ class Percolation {
         int toprow = index - arraySize;
         int bottomrow = index + arraySize;
         if (arraySize == 1) {
-            gm.addEdge(top, index);
-            gm.addEdge(bottom, index);
+            graph.addEdge(top, index);
+            graph.addEdge(bottom, index);
         }
         if (bottomrow < size) {         //bottom
             connectOpenSites(index, bottomrow);
@@ -123,24 +141,6 @@ class Percolation {
         return array[toOneD(row, col)];
     }
     /**
-     * Determines if full.
-     *
-     * @param      row   The row
-     * @param      col   The col
-     *
-     * @return     True if full, False otherwise.
-     */
-    public boolean isFull(final int row, final int col) {
-        if (isOpen(row, col)) {
-            for (int i = 0; i < arraySize; i++) {
-                if (cc.connected(toOneD(row, col), i)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    /**
      * return number of open sites.
      *
      * @return count
@@ -154,7 +154,8 @@ class Percolation {
      * @return boolean
      */
     public boolean percolates() {
-        return cc.connected(top, bottom);
+        CC connectedComponents = new CC(graph);
+        return connectedComponents.connected(top, bottom);
     }
 }
 /**
@@ -179,9 +180,9 @@ public final class Solution {
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             pobj.open(Integer.parseInt(tokens[0]),
-            Integer.parseInt(tokens[1]));
+                      Integer.parseInt(tokens[1]));
         }
         System.out.println(pobj.percolates()
-            && pobj.numberOfOpenSites() != 0);
+                           && pobj.numberOfOpenSites() != 0);
     }
 }
