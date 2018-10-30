@@ -30,7 +30,7 @@ class GraphMatrix {
         this.v = Integer.parseInt(scan.nextLine());
         matrix = new int[v][v];
         String[] inputs = scan.nextLine().split(" ");
-        addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
+        addEdge(Integer.parseInt(inputs[0]) - 1, Integer.parseInt(inputs[1]) - 1);
     }
     /**
      * Adds an edge.

@@ -54,11 +54,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at GraphMatrix.hasEdge(GraphMatrix.java:75)
-	at GraphMatrix.addEdge(GraphMatrix.java:43)
-	at GraphMatrix.<init>(GraphMatrix.java:33)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -66,11 +62,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at GraphMatrix.hasEdge(GraphMatrix.java:75)
-	at GraphMatrix.addEdge(GraphMatrix.java:43)
-	at GraphMatrix.<init>(GraphMatrix.java:33)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -86,11 +78,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at GraphMatrix.hasEdge(GraphMatrix.java:75)
-	at GraphMatrix.addEdge(GraphMatrix.java:43)
-	at GraphMatrix.<init>(GraphMatrix.java:33)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -130,11 +118,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at GraphMatrix.hasEdge(GraphMatrix.java:75)
-	at GraphMatrix.addEdge(GraphMatrix.java:43)
-	at GraphMatrix.<init>(GraphMatrix.java:33)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 15: Passed ##########
