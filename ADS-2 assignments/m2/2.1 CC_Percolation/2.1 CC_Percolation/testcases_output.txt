@@ -3,7 +3,12 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:112)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,15 +16,24 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 69
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:96)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.percolates(Solution.java:157)
+	at Solution.main(Solution.java:184)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -27,18 +41,24 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.percolates(Solution.java:157)
+	at Solution.main(Solution.java:184)
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:96)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -46,63 +66,102 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.percolates(Solution.java:157)
+	at Solution.main(Solution.java:184)
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:99)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:96)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:112)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 9: Passed ##########
+########## Testcase 9: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:99)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 42
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:99)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 17
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:111)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 17
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:111)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -110,15 +169,25 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 69
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:96)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 90
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:103)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -126,70 +195,115 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 21
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:112)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 16: Passed ##########
+########## Testcase 16: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 223
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:111)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 224
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:96)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 18: Passed ##########
+########## Testcase 18: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2185
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:99)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 19: Passed ##########
+########## Testcase 19: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1772
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:112)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 20: Passed ##########
+########## Testcase 20: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2414
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:111)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 21: Passed ##########
+########## Testcase 21: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 71
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:99)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 22: Passed ##########
+########## Testcase 22: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5736
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:99)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 
-########## Testcase 23: Passed ##########
+########## Testcase 23: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8155
+	at ConnectedComponents.id(ConnectedComponents.java:44)
+	at ConnectedComponents.connected(ConnectedComponents.java:58)
+	at Percolation.connectOpenSites(Solution.java:75)
+	at Percolation.open(Solution.java:96)
+	at Solution.main(Solution.java:181)
 ----------------------------------------
 

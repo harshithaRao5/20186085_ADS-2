@@ -26,11 +26,9 @@ class GraphMatrix {
      *
      * @param      scan  The scan
      */
-    GraphMatrix(final Scanner scan) {
-        int v = Integer.parseInt(scan.nextLine());
-        matrix = new int[v+2][v+2];
-        String[] inputs = scan.nextLine().split(" ");
-        addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
+    GraphMatrix(final int v) {
+
+        this.matrix = new int[v+2][v+2];
     }
     /**
      * Adds an edge.

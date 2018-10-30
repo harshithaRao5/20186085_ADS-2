@@ -22,26 +22,26 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:30: Parameter v should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:37: Parameter w should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:60:5: Class 'ConnectedComponents' looks like designed for extension (can be subclassed), but the method 'connect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponents' final or making the method 'connect' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:60:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:61:9: Conditional logic can be removed. [SimplifyBooleanReturn]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:30:13: 'v' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:27: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:28: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:27:8: Unused @param tag for 'scan'. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:29:27: 'v' hides a field. [HiddenField]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:29:27: Expected @param tag for 'v'. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:32: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:33: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:54:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:62:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:37: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:31:38: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:52:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:60:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:11:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:49:34: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:49:35: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 4 errors.

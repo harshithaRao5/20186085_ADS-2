@@ -57,12 +57,5 @@ public class ConnectedComponents {
 
         return id(v) == id(w);
     }
-    public boolean connect() {
-        if (count > 1) {
-            return false;
-        } else {
-            return true;
-        }
-    }
 
 }
