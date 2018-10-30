@@ -156,6 +156,9 @@ class GraphList {
      * @param      w1    the int.
      */
     public void addEdge(final int v1, final int w1) {
+        if(v1 == w1) {
+            return;
+        }
         if (v1 != w1) {
             adj[v1].add(w1);
             adj[w1].add(v1);
@@ -163,6 +166,7 @@ class GraphList {
         } else {
             return;
         }
+
     }
     /**
      * method for adjacent vertex.
