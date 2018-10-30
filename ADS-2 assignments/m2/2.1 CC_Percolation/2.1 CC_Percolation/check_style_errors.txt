@@ -1,0 +1,42 @@
+Starting audit...
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:12:32: Parameter G should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:12:44: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:32:22: Parameter G should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:32:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:32:37: Parameter v should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:32:41: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:42:5: Class 'ConnectedComponents' looks like designed for extension (can be subclassed), but the method 'id' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponents' final or making the method 'id' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:42:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:42:19: Parameter v should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:47:5: Class 'ConnectedComponents' looks like designed for extension (can be subclassed), but the method 'size' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponents' final or making the method 'size' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:47:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:47:21: Parameter v should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:52:5: Class 'ConnectedComponents' looks like designed for extension (can be subclassed), but the method 'count' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponents' final or making the method 'count' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:52:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:5: Class 'ConnectedComponents' looks like designed for extension (can be subclassed), but the method 'connected' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponents' final or making the method 'connected' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:30: Parameter v should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:56:37: Parameter w should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:60:5: Class 'ConnectedComponents' looks like designed for extension (can be subclassed), but the method 'connect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponents' final or making the method 'connect' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:60:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponents.java:61:9: Conditional logic can be removed. [SimplifyBooleanReturn]
+Audit done.
+Checkstyle ends with 26 errors.
+Starting audit...
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:59:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphMatrix.java:67:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+Audit done.
+Checkstyle ends with 3 errors.
+Starting audit...
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 4 errors.
