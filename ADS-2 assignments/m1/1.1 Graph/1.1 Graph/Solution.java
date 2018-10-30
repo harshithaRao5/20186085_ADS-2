@@ -187,7 +187,12 @@ class GraphList {
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v1, final int w1) {
-        return true;
+        for(int each: adj(v1)) {
+            if(each == w1) {
+                return true;
+            }
+        }
+        return false;
     }
     /**
      * Returns a string representation of the object.

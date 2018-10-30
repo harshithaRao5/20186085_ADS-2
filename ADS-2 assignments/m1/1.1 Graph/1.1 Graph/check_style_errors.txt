@@ -3,5 +3,7 @@ Audit done.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:159:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:190:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m1\1.1 Graph\1.1 Graph\Solution.java:191:15: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 4 errors.
