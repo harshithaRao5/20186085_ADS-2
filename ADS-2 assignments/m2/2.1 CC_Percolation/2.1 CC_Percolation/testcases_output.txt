@@ -1,40 +1,25 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "2 5"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 6"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+true
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -53,25 +38,15 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -79,11 +54,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 3"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+	at GraphMatrix.hasEdge(GraphMatrix.java:75)
+	at GraphMatrix.addEdge(GraphMatrix.java:43)
+	at GraphMatrix.<init>(GraphMatrix.java:33)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -92,11 +66,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "4 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at GraphMatrix.hasEdge(GraphMatrix.java:75)
+	at GraphMatrix.addEdge(GraphMatrix.java:43)
+	at GraphMatrix.<init>(GraphMatrix.java:33)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -105,12 +78,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -118,11 +86,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 6"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at GraphMatrix.hasEdge(GraphMatrix.java:75)
+	at GraphMatrix.addEdge(GraphMatrix.java:43)
+	at GraphMatrix.<init>(GraphMatrix.java:33)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -131,12 +98,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "6 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -144,12 +106,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 3"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -157,25 +114,15 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 3"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 6"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -183,25 +130,19 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "10 2"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at GraphMatrix.hasEdge(GraphMatrix.java:75)
+	at GraphMatrix.addEdge(GraphMatrix.java:43)
+	at GraphMatrix.<init>(GraphMatrix.java:33)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
-########## Testcase 15: Failed ##########
+########## Testcase 15: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 7"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -209,12 +150,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "7 11"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -222,12 +158,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "14 25"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -235,12 +166,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "53 21"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -248,12 +174,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1 43"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -261,12 +182,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "44 1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -274,12 +190,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "5 5"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -287,12 +198,7 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "61 71"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -300,11 +206,6 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "79 62"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at GraphMatrix.<init>(GraphMatrix.java:32)
-	at Solution.main(Solution.java:8)
+false
 ----------------------------------------
 
