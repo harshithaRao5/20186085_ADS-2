@@ -97,7 +97,5 @@ public class DirectedCycle {
     public boolean isBipartite() {
         return isbipartite;
     }
-
-
 }
 

@@ -1,120 +1,70 @@
 /**
- *  The <tt>Graph</tt> class represents an undirected graph of vertices
- *  named 0 through V-1.
- *  It supports the following operations: add an edge to the graph,
- *  iterate over all of the neighbors adjacent to a vertex.
- *  Parallel edges and self-loops are permitted.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/51undirected">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class for graph.
  */
 public class Graph {
-    private final int V;
-    private int E;
+    /**
+     * {Vertex}.
+     */
+    private int vertices;
+    /**
+     * {Edges}.
+     */
+    private int edges;
+    /**
+     * {Declaring a bag array of type integer}.
+     */
     private Bag<Integer>[] adj;
 
-   /**
+    /**
      * Create an empty graph with V vertices.
+     * @param     v     {Vertex}
      */
-    public Graph(int V) {
-        if (V < 0) throw new RuntimeException("Number of vertices must be nonnegative");
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+    public Graph(final int v) {
+        if (v < 0) {
+            throw new RuntimeException(
+                "Number of vertices must be nonnegative");
+        }
+        this.vertices = v;
+        this.edges = 0;
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Integer>();
         }
     }
 
-   /**
-     * Create a random graph with V vertices and E edges.
-     * Expected running time is proportional to V + E.
-     */
-    public Graph(int V, int E) {
-        this(V);
-        if (E < 0) throw new RuntimeException("Number of edges must be nonnegative");
-        for (int i = 0; i < E; i++) {
-            int v = (int) (Math.random() * V);
-            int w = (int) (Math.random() * V);
-            addEdge(v, w);
-        }
-    }
-
-   /**
-     * Create a digraph from input stream.
-     */
-/*    public Graph(In in) {
-        this(in.readInt());
-        int E = in.readInt();
-        for (int i = 0; i < E; i++) {
-            int v = in.readInt();
-            int w = in.readInt();
-            addEdge(v, w);
-        }
-    }*/
-
-   /**
-     * Copy constructor.
-     */
-/*    public Graph(Graph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < G.V(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
-                reverse.push(w);
-            }
-            for (int w : reverse) {
-                adj[v].add(w);
-            }
-        }
-    }*/
-
-   /**
+    /**
      * Return the number of vertices in the graph.
+     * @return      {Integer}
      */
-    public int V() { return V; }
+    public int vertices() {
+        return vertices;
+    }
 
-   /**
+    /**
      * Return the number of edges in the graph.
+     * @return      {Integer}
      */
-    public int E() { return E; }
+    public int edges() {
+        return edges;
+    }
 
-
-   /**
+    /**
      * Add the edge v-w to graph.
+     * @param      v       {Vertex v}
+     * @param       w      {Vertex w}
      */
-    public void addEdge(int v, int w) {
-        E++;
+    public void addEdge(final int v, final int w) {
+        edges++;
         adj[v].add(w);
         adj[w].add(v);
     }
 
-
-   /**
+    /**
      * Return the list of neighbors of vertex v as in Iterable.
+     * @param      v    {Vertex}
+     * @return     {Iterable}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
-
-
-   /**
-     * Return a string representation of the graph.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
-                s.append(w + " ");
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
-    }
-
 }
