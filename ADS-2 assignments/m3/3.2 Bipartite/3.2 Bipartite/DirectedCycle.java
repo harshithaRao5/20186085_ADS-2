@@ -114,14 +114,9 @@ public class DirectedCycle {
     public void display() {
         if (hasCycle()) {
             System.out.println("Graph is bipartite");
-            if (vertices % 2 == 0) {
-                System.out.println( "Graph is bipartite");
-            } else {
-                System.out.println("Graph is not a bipartite");
-            }
         } else {
             System.out.println("Graph is not a bipartite");
         }
     }
-
 }
+
