@@ -43,7 +43,7 @@ public class DirectedCycle {
      * @param      v     { parameter_description }
      */
     private void dfs(final Graph G, final int v) {
-        isbipartite = true;
+        isbipartite = !isbipartite;
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
