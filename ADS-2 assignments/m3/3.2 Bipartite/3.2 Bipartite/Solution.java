@@ -1,7 +1,4 @@
 import java.util.Scanner;
-class Bipartite {
-
-}
 /**
  * client class.
  */
@@ -20,7 +17,10 @@ public final class Solution {
 			 Integer.parseInt(input[1]));
 		}
 		DirectedCycle directedcycle = new DirectedCycle(graph);
-		directedcycle.display();
-
+		if(directedcycle.isBipartite()) {
+			System.out.println("Graph is bipartite");
+		} else {
+			System.out.println("Graph is not a bipartite");
+		}
 	}
 }
