@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:13:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:68: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
@@ -20,23 +16,13 @@ Starting audit...
 Audit done.
 Checkstyle ends with 12 errors.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:27:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:31: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:40:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:46: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:52:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:86:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:97:17: '(' should be on the previous line. [MethodParamPad]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:43:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:51:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\DirectedCycle.java:57:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:13:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:96: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.

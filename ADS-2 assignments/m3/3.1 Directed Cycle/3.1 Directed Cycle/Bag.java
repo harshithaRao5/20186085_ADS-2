@@ -10,7 +10,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * { var_description }.
      */
-    private int N;
+    private int size;
     /**
      * { var_description }.
      */
@@ -35,7 +35,7 @@ public class Bag<Item> implements Iterable<Item> {
       */
     public Bag() {
         first = null;
-        N = 0;
+        size = 0;
     }
     /**
      * Determines if empty.
@@ -51,7 +51,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return size;
     }
     /**
      * { function_description }.
@@ -63,10 +63,10 @@ public class Bag<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        size++;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -112,3 +112,4 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
 }
+

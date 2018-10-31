@@ -1,150 +1,93 @@
-
-import java.util.Iterator;
-import java.util.NoSuchElementException;
 /**
- * List of .
+ * List of Stack.
  *
  * @param      <Item>  The item
  */
-public class Stack<Item> implements Iterable<Item> {
+public class Stack<Item> {
     /**
-     * { var_description }.
+     * {top of stack}.
      */
-    private int N;
+    private Node<Item> first;
     /**
-     * { var_description }.
+     * {size of the stack}.
      */
-    private Node first;
+    private int n;
+
     /**
      * Class for node.
+     *
+     * @param      <Item>  The item
      */
-    private class Node {
+    private static class Node<Item> {
         /**
-         * { var_description }.
+         * {Item}.
          */
         private Item item;
         /**
-         * { var_description }.
+         * {Next of type node}.
          */
-        private Node next;
+        private Node<Item> next;
     }
 
     /**
-      * Create an empty stack.
-      */
-    public Stack() {
+     * Initializes an empty stack.
+     */
+    Stack() {
         first = null;
-        N = 0;
+        n = 0;
     }
+
     /**
-     * Determines if empty.
+     * Returns true if this stack is empty.
      *
-     * @return     True if empty, False otherwise.
+     * @return true if this stack is empty; false otherwise
      */
     public boolean isEmpty() {
         return first == null;
     }
+
     /**
-     * { function_description }.
+     * Returns the number of items in this stack.
      *
-     * @return     { description_of_the_return_value }
+     * @return the number of items in this stack
      */
     public int size() {
-        return N;
+        return n;
     }
+
     /**
-     * { function_description }.
+     * Adds the item to this stack.
      *
-     * @param      item  The item
+     * @param  item the item to add
      */
     public void push(final Item item) {
-        Node oldfirst = first;
-        first = new Node();
+        Node<Item> oldfirst = first;
+        first = new Node<Item>();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
+
     /**
-     * { function_description }.
+     * Removes and returns the item most recently added to this stack.
      *
-     * @return     { description_of_the_return_value }
+     * @return the item most recently added
+     *
      */
     public Item pop() {
-        if (isEmpty()) {
-            throw new RuntimeException("Stack underflow");
-        }
         Item item = first.item;
         first = first.next;
-        N--;
+        n--;
         return item;
     }
+
     /**
-     * { function_description }.
+     * Returns (but does not remove) the item most recently added to this stack.
      *
-     * @return     { description_of_the_return_value }
+     * @return the item most recently added to this stack
+     *
      */
     public Item peek() {
-        if (isEmpty()) {
-            throw new RuntimeException("Stack underflow");
-        }
         return first.item;
     }
-
-    /**
-      * Return string representation.
-      */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        for (Item item : this) {
-            s.append(item + " ");
-        }
-        return s.toString();
-    }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
-     */
-
-    public Iterator<Item> iterator()  {
-        return new ListIterator();
-    }
-    /**
-     * Class for list iterator.
-     */
-    private class ListIterator implements Iterator<Item> {
-        /**
-         * { var_description }.
-         */
-        private Node current = first;
-        /**
-         * Determines if it has next.
-         *
-         * @return     True if has next, False otherwise.
-         */
-        public boolean hasNext()  {
-            return current != null;
-        }
-        /**
-         * { function_description }.
-         */
-        public void remove()      {
-            throw new UnsupportedOperationException();
-        }
-        /**
-         * { function_description }.
-         *
-         * @return     { description_of_the_return_value }
-         */
-        public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
-            Item item = current.item;
-            current = current.next;
-            return item;
-        }
-    }
-
 }
-

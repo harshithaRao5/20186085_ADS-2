@@ -28,8 +28,11 @@ public class DirectedCycle {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
         edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(G, v);
+            }
+        }
     }
     /**
      * { function_description }.
@@ -43,7 +46,9 @@ public class DirectedCycle {
         for (int w : G.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -59,7 +64,7 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+
             }
         }
         onStack[v] = false;
@@ -72,34 +77,7 @@ public class DirectedCycle {
     public boolean hasCycle() {
         return cycle != null;
     }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
 
-
-    // certify that digraph has a directed cycle if it reports one
-    private boolean check() {
-
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf
-                ("cycle begins with %d and ends with %d\n", first, last);
-                return false;
-            }
-        }
-        return true;
-    }
     /**
      * Returns a string representation of the object.
      *
@@ -113,6 +91,6 @@ public class DirectedCycle {
         }
 
     }
-
-
 }
+
+
