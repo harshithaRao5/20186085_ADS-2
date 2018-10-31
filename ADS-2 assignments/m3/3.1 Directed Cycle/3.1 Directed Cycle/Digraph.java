@@ -1,27 +1,26 @@
-
 import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
 public class Digraph {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * { var_description }
+     * { var_description }.
      */
     private final int V;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int E;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Bag<Integer>[] adj;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int[] indegree;
 
@@ -31,7 +30,7 @@ public class Digraph {
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int V) {
+    public Digraph(final int V) {
         if (V < 0) {
             throw new IllegalArgumentException
             ("Number of vertices in a Digraph must be nonnegative");
@@ -51,7 +50,7 @@ public class Digraph {
      *
      * @param  G the digraph to copy
      */
-    public Digraph(Digraph G) {
+    public Digraph(final Digraph G) {
         this(G.V());
         this.E = G.E();
         for (int v = 0; v < V; v++)
@@ -87,11 +86,11 @@ public class Digraph {
 
 
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @param      v     { parameter_description }
+     * @param      v  the integer.
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= V)
             throw new IllegalArgumentException(
                 "vertex " + v + " is not between 0 and " + (V - 1));
@@ -104,7 +103,7 @@ public class Digraph {
      * @param  w the head vertex
      * @throws IllegalArgumentException
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         adj[v].add(w);
@@ -112,13 +111,13 @@ public class Digraph {
         E++;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @param      v     { parameter_description }
+     * @param      v integer
      *
-     * @return     { description_of_the_return_value }
+     * @return adjacent.
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -131,7 +130,7 @@ public class Digraph {
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int outdegree(int v) {
+    public int outdegree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
@@ -144,7 +143,7 @@ public class Digraph {
      * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int indegree(int v) {
+    public int indegree(final int v) {
         validateVertex(v);
         return indegree[v];
     }

@@ -3,19 +3,19 @@
  */
 public class DirectedCycle {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean[] marked;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int[] edgeTo;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean[] onStack;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Stack<Integer> cycle;
 
@@ -24,7 +24,7 @@ public class DirectedCycle {
      * finds such a cycle.
      * @param G the digraph
      */
-    public DirectedCycle(Digraph G) {
+    public DirectedCycle(final Digraph G) {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
         edgeTo  = new int[G.V()];
@@ -32,12 +32,12 @@ public class DirectedCycle {
             if (!marked[v] && cycle == null) dfs(G, v);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(Digraph G, int v) {
+    private void dfs(final Digraph G, final int v) {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -73,7 +73,7 @@ public class DirectedCycle {
         return cycle != null;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */

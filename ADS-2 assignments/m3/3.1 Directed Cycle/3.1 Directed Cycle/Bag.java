@@ -8,11 +8,11 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int N;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node first;
 
@@ -21,11 +21,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Item item;
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node next;
     }
@@ -37,17 +37,19 @@ public class Bag<Item> implements Iterable<Item> {
         first = null;
         N = 0;
     }
-
     /**
-      * Is the BAG empty?
-      */
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
-
     /**
-      * Return the number of items in the bag.
-      */
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return N;
     }
@@ -55,7 +57,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
       * Add the item to the bag.
       */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -86,13 +88,13 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove()      {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */

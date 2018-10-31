@@ -9,18 +9,19 @@ import java.util.NoSuchElementException;
 public class Stack<Item> implements Iterable<Item> {
     private int N;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node first;
-
-    // helper linked list class
+    /**
+     * Class for node.
+     */
     private class Node {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Item item;
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node next;
     }
@@ -41,7 +42,7 @@ public class Stack<Item> implements Iterable<Item> {
         return first == null;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -49,11 +50,11 @@ public class Stack<Item> implements Iterable<Item> {
         return N;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      item  The item
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -61,7 +62,7 @@ public class Stack<Item> implements Iterable<Item> {
         N++;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -75,7 +76,7 @@ public class Stack<Item> implements Iterable<Item> {
         return item;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -96,7 +97,7 @@ public class Stack<Item> implements Iterable<Item> {
         return s.toString();
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -104,11 +105,12 @@ public class Stack<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
-
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node current = first;
         /**
@@ -120,13 +122,13 @@ public class Stack<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove()      {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */
