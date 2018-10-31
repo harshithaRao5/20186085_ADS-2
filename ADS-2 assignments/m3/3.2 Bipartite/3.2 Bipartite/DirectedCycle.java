@@ -29,28 +29,28 @@ public class DirectedCycle {
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so
      * finds such a cycle.
-     * @param G the digraph
+     * @param graph the digraph
      */
-    public DirectedCycle(final Graph G) {
+    public DirectedCycle(final Graph graph) {
         this.vertices = 0;
-        marked  = new boolean[G.vertices()];
-        onStack = new boolean[G.vertices()];
-        edgeTo  = new int[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++) {
-            if (!marked[v] && cycle == null) dfs(G, v);
+        marked  = new boolean[graph.vertices()];
+        onStack = new boolean[graph.vertices()];
+        edgeTo  = new int[graph.vertices()];
+        for (int v = 0; v < graph.vertices(); v++) {
+            if (!marked[v] && cycle == null) dfs(graph, v);
         }
     }
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      graph     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph graph, final int v) {
         isbipartite = !isbipartite;
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : graph.adj(v)) {
 
             // short circuit if directed cycle found
             if (cycle != null) {
@@ -60,7 +60,7 @@ public class DirectedCycle {
             // found new vertex, so recur
             else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(graph, w);
             }
 
             // trace back directed cycle
