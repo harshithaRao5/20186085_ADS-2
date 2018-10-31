@@ -1,12 +1,9 @@
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:13:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:60:32: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:72: Expected @return tag. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:77: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:78: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:68: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
@@ -41,10 +38,7 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:10:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:93: Expected @return tag. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:95: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:136: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:13:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:96: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.

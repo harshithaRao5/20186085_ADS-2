@@ -7,6 +7,9 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Stack<Item> implements Iterable<Item> {
+    /**
+     * { var_description }.
+     */
     private int N;
     /**
      * { var_description }.
@@ -92,8 +95,9 @@ public class Stack<Item> implements Iterable<Item> {
       */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
         return s.toString();
     }
     /**
@@ -133,7 +137,9 @@ public class Stack<Item> implements Iterable<Item> {
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
