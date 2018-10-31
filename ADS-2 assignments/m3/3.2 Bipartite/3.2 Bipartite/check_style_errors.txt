@@ -68,20 +68,15 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:21: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:25:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:31:38: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:36: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:37: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:45:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:52: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:58:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:89:5: Class 'DirectedCycle' looks like designed for extension (can be subclassed), but the method 'isBipartite' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DirectedCycle' final or making the method 'isBipartite' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:89:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:94:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:100: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:105:17: '(' should be on the previous line. [MethodParamPad]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:25: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:34:38: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:39: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:40: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:48:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:55: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:61:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Graph.java:8: Line is longer than 80 characters (found 109). [LineLength]
@@ -171,11 +166,9 @@ Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:20:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:28:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

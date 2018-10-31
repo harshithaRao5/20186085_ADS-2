@@ -22,6 +22,9 @@ public class DirectedCycle {
      * { var_description }
      */
     private int vertices;
+    /**
+     * { var_description }
+     */
     private boolean isbipartite = false;
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so
@@ -65,7 +68,7 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+
             }
         }
         onStack[v] = false;
@@ -86,27 +89,15 @@ public class DirectedCycle {
     public Iterable<Integer> cycle() {
         return cycle;
     }
+    /**
+     * Determines if bipartite.
+     *
+     * @return     True if bipartite, False otherwise.
+     */
     public boolean isBipartite() {
         return isbipartite;
     }
 
-    // certify that Graph has a directed cycle if it reports one
-    private boolean check() {
 
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf
-                ("cycle begins with %d and ends with %d\n", first, last);
-                return false;
-            }
-        }
-        return true;
-    }
 }
 
