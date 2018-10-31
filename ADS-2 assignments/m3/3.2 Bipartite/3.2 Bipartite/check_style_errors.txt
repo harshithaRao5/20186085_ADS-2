@@ -41,8 +41,10 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:92:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:98: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:103:17: '(' should be on the previous line. [MethodParamPad]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:112: Unused Javadoc tag. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\DirectedCycle.java:117:36: '(' is followed by whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m3\3.2 Bipartite\3.2 Bipartite\Graph.java:8: Line is longer than 80 characters (found 109). [LineLength]

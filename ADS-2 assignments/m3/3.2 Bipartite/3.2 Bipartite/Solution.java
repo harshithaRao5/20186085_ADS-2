@@ -20,7 +20,7 @@ public final class Solution {
 			 Integer.parseInt(input[1]));
 		}
 		DirectedCycle directedcycle = new DirectedCycle(graph);
-		System.out.println(directedcycle);
+		directedcycle.display();
 
 	}
 }

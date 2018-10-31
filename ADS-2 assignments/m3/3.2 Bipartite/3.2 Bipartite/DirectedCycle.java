@@ -111,16 +111,14 @@ public class DirectedCycle {
      *
      * @return     String representation of the object.
      */
-    public String toString() {
-        String s = "";
+    public void display() {
         if (hasCycle()) {
             if (vertices % 2 == 0) {
-                s += "Graph is bipartite";
+                System.out.println( "Graph is bipartite");
             }
         } else {
-            s += "Graph is not a bipartite";
+            System.out.println("Graph is not a bipartite");
         }
-        return s;
     }
 
 }
