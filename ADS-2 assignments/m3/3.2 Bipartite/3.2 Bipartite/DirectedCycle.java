@@ -36,8 +36,9 @@ public class DirectedCycle {
         marked  = new boolean[G.vertices()];
         onStack = new boolean[G.vertices()];
         edgeTo  = new int[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++)
+        for (int v = 0; v < G.vertices(); v++) {
             if (!marked[v] && cycle == null) dfs(G, v);
+        }
     }
     /**
      * { function_description }.
@@ -52,7 +53,9 @@ public class DirectedCycle {
         for (int w : G.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+             return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -81,14 +84,7 @@ public class DirectedCycle {
     public boolean hasCycle() {
         return cycle != null;
     }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
+
     /**
      * Determines if bipartite.
      *
@@ -98,4 +94,5 @@ public class DirectedCycle {
         return isbipartite;
     }
 }
+
 
