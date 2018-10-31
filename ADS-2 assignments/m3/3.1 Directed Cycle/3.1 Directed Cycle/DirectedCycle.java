@@ -22,42 +22,36 @@ public class DirectedCycle {
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so
      * finds such a cycle.
-     * @param G the digraph
+     * @param graph the digraph
      */
-    public DirectedCycle(final Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+    public DirectedCycle(final Digraph graph) {
+        marked  = new boolean[graph.vertices()];
+        onStack = new boolean[graph.vertices()];
+        edgeTo  = new int[graph.vertices()];
+        for (int v = 0; v < graph.vertices(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(G, v);
+                dfs(graph, v);
             }
         }
     }
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      graph     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Digraph G, final int v) {
+    private void dfs(final Digraph graph, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : graph.adj(v)) {
 
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            }
-
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+                dfs(graph, w);
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
