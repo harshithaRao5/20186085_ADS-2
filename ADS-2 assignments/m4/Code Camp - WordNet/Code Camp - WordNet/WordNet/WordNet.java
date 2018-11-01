@@ -41,7 +41,7 @@ public class WordNet {
             //graph.addEdge(hyponyms,hypernyms);
 
         }
-        System.out.println(graph);
+        //System.out.println(graph);
         return graph;
     }
 
