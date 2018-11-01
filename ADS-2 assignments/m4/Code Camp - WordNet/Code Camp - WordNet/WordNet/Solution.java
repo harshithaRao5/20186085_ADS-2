@@ -32,7 +32,7 @@ public final class Solution {
 					if (queryNoun[0].equals("null")) {
 						System.out.println("IllegalArgumentException");
 					} else {
-						WordNet wordnet1 = new WordNet(synset, hypernym);
+						WordNet wordnet1 = new WordNet();
 						System.out.println(wordnet1.distance(queryNoun[0], queryNoun[1]));
 					}
 				}
