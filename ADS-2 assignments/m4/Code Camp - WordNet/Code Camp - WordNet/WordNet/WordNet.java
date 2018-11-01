@@ -28,6 +28,9 @@ public class WordNet {
             }
             Digraph digraph = new Digraph(vertices);
             readHypernym(hypernyms, digraph);
+            if(digraph.outdegree(vertices) == 0) {
+                System.out.println("Multiple roots");
+            }
         } catch (Exception e) {
             System.out.println("File not found");
         }
@@ -43,9 +46,6 @@ public class WordNet {
                 for(int i = 1; i < tokens.length;i++) {
                     graph.addEdge(Integer.parseInt(tokens[0]),Integer.parseInt(tokens[i]));
                 }
-            }
-            if(graph.outdegree(count) == 0) {
-                System.out.println("Multiple roots");
             }
             DirectedCycle directedCycle = new DirectedCycle(graph);
             if (directedCycle.hasCycle()) {
