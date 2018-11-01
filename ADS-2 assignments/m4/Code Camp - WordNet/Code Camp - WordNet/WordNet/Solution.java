@@ -24,7 +24,7 @@ public final class Solution {
 		WordNet wordnet = new WordNet(synset, hypernym);
 		try {
 			if (type.equals("Graph")) {
-				System.out.println(wordnet.readHypernym(hypernym));
+				System.out.println(wordnet);
 
 			} else {
 				while (!StdIn.isEmpty()) {
