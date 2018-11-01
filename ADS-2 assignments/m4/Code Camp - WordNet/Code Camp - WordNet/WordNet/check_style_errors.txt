@@ -512,7 +512,6 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:30:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:30:33: Parameter hypernym should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:30:50: Parameter synsetv should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:41:36: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:64: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 16 errors.
