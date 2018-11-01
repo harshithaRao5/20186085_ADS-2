@@ -18,7 +18,7 @@ public final class Solution {
 	public static void main(final String[] args) {
 		//Scanner sc = new Scanner(System.in);
 		String synset = StdIn.readString();
-		System.out.println(synset);
+		// System.out.println(synset);
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
 

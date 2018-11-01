@@ -506,7 +506,7 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:37:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:37:30: Parameter hypernyms should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:37:48: Parameter graph should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:42:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:42:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:42:50: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:43: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:43:63: ',' is not followed by whitespace. [WhitespaceAfter]
