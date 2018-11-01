@@ -64,7 +64,7 @@ public class WordNet {
      * @param      hypernyms1  The hypernyms1
      * @param      graph      The graph
      */
-    public Digraph readHypernym(String hypernyms1) {
+    public void readHypernym(String hypernyms1) {
 
         int count = 0;
         In in = new In("./Files/" + hypernyms1);
@@ -88,7 +88,7 @@ public class WordNet {
             if (degree > 1) {
                 throw new IllegalArgumentException("Multiple roots");
             }
-            return graph;
+            System.out.println(graph);
         }
 
     }

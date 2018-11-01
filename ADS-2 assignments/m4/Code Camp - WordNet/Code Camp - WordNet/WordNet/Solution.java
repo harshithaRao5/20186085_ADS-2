@@ -21,10 +21,10 @@ public final class Solution {
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
-		WordNet wordnet = new WordNet(synset, hypernym);
+		String queryNoun1 = StdIn.readLine();
 		try {
 			if (type.equals("Graph")) {
-				System.out.println(wordnet);
+				WordNet wordnet = new WordNet(synset, hypernym);
 
 			} else {
 				while (!StdIn.isEmpty()) {
@@ -32,7 +32,7 @@ public final class Solution {
 					if (queryNoun[0].equals("null")) {
 						System.out.println("IllegalArgumentException");
 					} else {
-						WordNet wordnet1 = new WordNet();
+						WordNet wordnet1 = new WordNet(synset, hypernym);
 						System.out.println(wordnet1.distance(queryNoun[0], queryNoun[1]));
 					}
 				}
