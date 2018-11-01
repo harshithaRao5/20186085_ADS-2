@@ -12,11 +12,15 @@ public class WordNet {
      * @param      hypernyms  The hypernyms
      */
     public WordNet(String synsets, String hypernyms) {
-        //seperateChaining
         linearprobing = new LinearProbingHashST<String, List<Integer>>();
         readSynset(synsets, hypernyms);
     }
-
+    /**
+     * Reads a synset.
+     *
+     * @param      synset     The synset
+     * @param      hypernyms  The hypernyms
+     */
     public void readSynset(String synset, String hypernyms) {
         int id = 0;
         int vertices = 0;
@@ -26,15 +30,13 @@ public class WordNet {
             ArrayList<Integer> idlist = new ArrayList<Integer>();
             String[] synsetArray = in.readString().split(",");
             idlist.add(Integer.parseInt(synsetArray[0]));
-            if (synsetArray[1].length() > 1) {
-                for (int i = 0; i < synsetArray[1].length(); i++) {
-                    String[] nounsArray = synsetArray[1].split(" ");
-                    if (linearprobing.contains(nounsArray[i])) {
-                        idlist.addAll(linearprobing.get(synsetArray[i]));
-                        linearprobing.put(synsetArray[1], idlist);
-                    } else {
-                        linearprobing.put(nounsArray[i], idlist);
-                    }
+            for (int i = 0; i < synsetArray[1].length(); i++) {
+                String[] nounsArray = synsetArray[1].split(" ");
+                if (linearprobing.contains(nounsArray[i])) {
+                    idlist.addAll(linearprobing.get(synsetArray[i]));
+                    linearprobing.put(synsetArray[1], idlist);
+                } else {
+                    linearprobing.put(nounsArray[i], idlist);
                 }
             }
         }
