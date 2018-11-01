@@ -8,6 +8,7 @@ public class WordNet {
      * symbol table initializing.
      */
     private LinearProbingHashST<String, List<Integer>> linearprobing;
+    private LinearProbingHashST<Integer, String> reverseSt;
     private SAP sap;
     private Digraph graph;
     private int vertices;
@@ -19,6 +20,7 @@ public class WordNet {
      */
     public WordNet(String synsets, String hypernyms) {
         linearprobing = new LinearProbingHashST<String, List<Integer>>();
+        reverseSt = new LinearProbingHashST<Integer, String>();
         vertices = readSynset(synsets);
         graph = new Digraph(vertices);
         readHypernym(hypernyms);
@@ -120,10 +122,15 @@ public class WordNet {
 
     }
 
-// a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-// in a shortest ancestral path (defined below)
-// public String sap(String nounA, String nounB)
+//a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
+//in a shortest ancestral path (defined below)
+    public String sap(String nounA, String nounB) {
+        Iterable<Integer> noun1 = linearprobing.get(nounA);
+        Iterable<Integer> noun2 = linearprobing.get(nounB);
+        int id = sap.ancestor(noun1, noun2);
+        return reverseSt.get(id);
+    }
 
-// // do unit testing of this class
+// do unit testing of this class
 // public static void main(String[] args)
 }

@@ -21,25 +21,26 @@ public final class Solution {
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
+		String queryNoun1 = StdIn.readLine();
 		try {
 			if (type.equals("Graph")) {
 				WordNet wordnet = new WordNet(synset, hypernym);
 
+			} else {
+				while (!StdIn.isEmpty()) {
+					String[] queryNoun = StdIn.readLine().split(" ");
+					if (queryNoun[0].equals("null")) {
+						System.out.println("IllegalArgumentException");
+					} else {
+						WordNet wordnet1 = new WordNet(synset, hypernym);
+						System.out.println(wordnet1.distance(queryNoun[0], queryNoun[1]));
+					}
+				}
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		if (type.equals("Queries")) {
-			while (!StdIn.isEmpty()) {
-				String[] queryNoun = StdIn.readLine().split(" ");
-				if (queryNoun[0].equals("null")) {
-					System.out.println("IllegalArgumentException");
-				} else {
-					WordNet wordnet1 = new WordNet();
-					System.out.println(wordnet1.distance(queryNoun[0], queryNoun[1]));
-				}
-			}
-		}
+
 
 	}
 }
