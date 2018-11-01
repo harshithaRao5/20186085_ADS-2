@@ -4,7 +4,13 @@ import java.util.ArrayList;
  * Class for word net.
  */
 public class WordNet {
+    /**
+     * symbol table initializing.
+     */
     private LinearProbingHashST<String, List<Integer>> linearprobing;
+    //private SAP sap;
+    private Digraph graph;
+    private int vertices;
     /**
      * Constructs the object.
      *
@@ -13,15 +19,19 @@ public class WordNet {
      */
     public WordNet(String synsets, String hypernyms) {
         linearprobing = new LinearProbingHashST<String, List<Integer>>();
-        readSynset(synsets, hypernyms);
+        vertices = readSynset(synsets);
+        graph = new Digraph(vertices);
+        readHypernym(hypernyms);
+        //sap = new SAP(graph);
+
     }
     /**
      * Reads a synset.
      *
      * @param      synset     The synset
-     * @param      hypernyms  The hypernyms
+     * @param      hypernym  The hypernym
      */
-    public void readSynset(String synset, String hypernyms) {
+    public int readSynset(String synset) {
         int id = 0;
         int vertices = 0;
         In in = new In("./Files/" + synset);
@@ -40,14 +50,19 @@ public class WordNet {
                 }
             }
         }
-        Digraph digraph = new Digraph(vertices);
-        readHypernym(hypernyms, digraph);
+        return vertices;
+        // readHypernym(hypernym, digraph);
     }
-
-    public void readHypernym(String hypernyms, Digraph graph) {
+    /**
+     * Reads a hypernym.
+     *
+     * @param      hypernyms1  The hypernyms1
+     * @param      graph      The graph
+     */
+    public void readHypernym(String hypernyms1) {
 
         int count = 0;
-        In in = new In("./Files/" + hypernyms);
+        In in = new In("./Files/" + hypernyms1);
         while (!in.isEmpty()) {
             count++;
             String[] tokens = in.readString().split(",");
@@ -73,23 +88,39 @@ public class WordNet {
 
     }
 
-    // returns all WordNet nouns
+    /**
+     * gets the nouns.
+     *
+     * @return  nouns.
+     */
     public Iterable<String> nouns() {
         return linearprobing.keys();
     }
 
-    //is the word a WordNet noun?
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(String word) {
         return linearprobing.contains(word);
     }
-}
 
-// // distance between nounA and nounB (defined below)
-// public int distance(String nounA, String nounB)
 
-// // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-// // in a shortest ancestral path (defined below)
+// distance between nounA and nounB (defined below)
+    public int distance(String nounA, String nounB) {
+        Iterable<Integer> noun1 = linearprobing.get(nounA);
+        Iterable<Integer> noun2 = linearprobing.get(nounB);
+        return 1;
+
+    }
+
+// a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
+// in a shortest ancestral path (defined below)
 // public String sap(String nounA, String nounB)
 
 // // do unit testing of this class
 // public static void main(String[] args)
+}
