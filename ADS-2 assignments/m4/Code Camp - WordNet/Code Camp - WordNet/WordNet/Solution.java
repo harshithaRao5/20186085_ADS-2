@@ -29,10 +29,15 @@ public final class Solution {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		if(type.equals("Queries")) {
-			String[] queryNoun = StdIn.readString().split(" ");
-			if(queryNoun[0].equals("null")) {
-				System.out.println("IllegalArgumentException");
+		if (type.equals("Queries")) {
+			while (!StdIn.isEmpty()) {
+				String[] queryNoun = StdIn.readLine().split(" ");
+				if (queryNoun[0].equals("null")) {
+					System.out.println("IllegalArgumentException");
+				} else {
+					WordNet wordnet1 = new WordNet();
+					System.out.println(wordnet1.distance(queryNoun[0], queryNoun[1]));
+				}
 			}
 		}
 

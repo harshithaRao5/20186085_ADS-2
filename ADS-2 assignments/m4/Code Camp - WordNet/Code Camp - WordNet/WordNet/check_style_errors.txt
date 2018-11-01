@@ -368,20 +368,37 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:9: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:12: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:15: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:4:16: Parameter graph should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:4:24: 'graph' hides a field. [HiddenField]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:13: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:18: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:19:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:19:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:19:23: Parameter v should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:19:44: Parameter w should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:20: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:21: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:23:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:24:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:25:46: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:25:47: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:26:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:34: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 20 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:2:8: Unused import - java.io.File. [UnusedImports]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:32:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:34:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:34: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:36: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:39: Line is longer than 80 characters (found 106). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -549,22 +566,24 @@ Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:11:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:12:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:13:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:20:20: Parameter synsets should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:20:36: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:32:8: Unused @param tag for 'hypernym'. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:34: Expected @return tag. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:34:27: Parameter synset should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:36:13: 'vertices' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:60:8: Unused @param tag for 'graph'. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:62:30: Parameter hypernyms1 should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:70: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:107:27: Parameter word should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:113:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:113:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:113:25: Parameter nounA should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:113:39: Parameter nounB should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:120: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:28:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:35:8: Unused @param tag for 'hypernym'. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:37: Expected @return tag. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:37:27: Parameter synset should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:39:13: 'vertices' hides a field. [HiddenField]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:63:8: Unused @param tag for 'graph'. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:65:30: Parameter hypernyms1 should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:73: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:110:27: Parameter word should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:116:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:116:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:116:25: Parameter nounA should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:116:39: Parameter nounB should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:123: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 20 errors.

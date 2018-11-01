@@ -8,7 +8,7 @@ public class WordNet {
      * symbol table initializing.
      */
     private LinearProbingHashST<String, List<Integer>> linearprobing;
-    //private SAP sap;
+    private SAP sap;
     private Digraph graph;
     private int vertices;
     /**
@@ -22,7 +22,10 @@ public class WordNet {
         vertices = readSynset(synsets);
         graph = new Digraph(vertices);
         readHypernym(hypernyms);
-        //sap = new SAP(graph);
+        sap = new SAP(graph);
+
+    }
+    WordNet() {
 
     }
     /**
@@ -39,12 +42,12 @@ public class WordNet {
             vertices++;
             ArrayList<Integer> idlist = new ArrayList<Integer>();
             String[] synsetArray = in.readString().split(",");
-            idlist.add(Integer.parseInt(synsetArray[0]));
             for (int i = 0; i < synsetArray[1].length(); i++) {
                 String[] nounsArray = synsetArray[1].split(" ");
                 if (linearprobing.contains(nounsArray[i])) {
                     idlist.addAll(linearprobing.get(synsetArray[i]));
-                    linearprobing.put(synsetArray[1], idlist);
+                    idlist.add(Integer.parseInt(synsetArray[0]));
+                    linearprobing.put(synsetArray[i], idlist);
                 } else {
                     linearprobing.put(nounsArray[i], idlist);
                 }
@@ -113,7 +116,7 @@ public class WordNet {
     public int distance(String nounA, String nounB) {
         Iterable<Integer> noun1 = linearprobing.get(nounA);
         Iterable<Integer> noun2 = linearprobing.get(nounB);
-        return 1;
+        return sap.length(noun1, noun2);
 
     }
 
