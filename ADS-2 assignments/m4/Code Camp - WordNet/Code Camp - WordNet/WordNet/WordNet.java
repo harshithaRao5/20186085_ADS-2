@@ -33,11 +33,12 @@ public class WordNet {
         }
     }
 
-
     public void readHypernym(String hypernyms, Digraph graph) {
         try {
+            int count = 0;
             In in = new In("./Files/" + hypernyms);
             while (!in.isEmpty()) {
+                count++;
                 String[] tokens = in.readString().split(",");
                 for(int i = 1; i < tokens.length;i++) {
                     graph.addEdge(Integer.parseInt(tokens[0]),Integer.parseInt(tokens[i]));
@@ -48,6 +49,9 @@ public class WordNet {
                 System.out.println("Cycle detected");
             } else {
                 System.out.println(graph);
+            }
+            if(graph.outdegree(count) == 0) {
+                System.out.println("Multiple roots");
             }
         } catch (Exception e) {
             System.out.println("File not found");

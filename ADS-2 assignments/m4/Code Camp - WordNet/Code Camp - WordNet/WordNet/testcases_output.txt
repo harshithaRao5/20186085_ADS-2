@@ -128,7 +128,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -149,7 +149,9 @@ Your Output:
 4: 7 
 5: 7 
 6: 7 
-7:
+7: 
+
+Multiple roots
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -220,11 +222,12 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
 Cycle detected
+Multiple roots
 ----------------------------------------
 
