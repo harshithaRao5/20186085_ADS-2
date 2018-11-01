@@ -21,10 +21,10 @@ public final class Solution {
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
-		String queryNoun1 = StdIn.readLine();
+		WordNet wordnet = new WordNet(synset, hypernym);
 		try {
 			if (type.equals("Graph")) {
-				WordNet wordnet = new WordNet(synset, hypernym);
+				System.out.println(wordnet.readHypernym(hypernym));
 
 			} else {
 				while (!StdIn.isEmpty()) {
