@@ -35,7 +35,7 @@ public class WordNet {
     }
 
     public void readHypernym(String hypernyms, Digraph graph) {
-        try {
+
             int count = 0;
             In in = new In("./Files/" + hypernyms);
             while (!in.isEmpty()) {
@@ -60,9 +60,6 @@ public class WordNet {
                 }
                 System.out.println(graph);
             }
-        } catch (Exception e) {
-            System.out.println("File not found");
-        }
 
     }
 
