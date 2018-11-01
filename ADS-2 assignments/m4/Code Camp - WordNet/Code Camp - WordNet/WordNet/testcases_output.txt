@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -33,9 +33,7 @@ Your Output:
 11: 10 
 12: 10 
 13: 6 
-14: 13 
-
-File not found
+14: 13
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -130,7 +128,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -151,9 +149,7 @@ Your Output:
 4: 7 
 5: 7 
 6: 7 
-7: 
-
-File not found
+7:
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -161,14 +157,6 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-6 vertices, 5 edges 
-0: 
-1: 2 0 
-2: 3 
-3: 4 
-4: 5 
-5: 
-
 File not found
 ----------------------------------------
 
@@ -177,14 +165,6 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-6 vertices, 4 edges 
-0: 1 
-1: 2 
-2: 3 
-3: 
-4: 5 
-5: 
-
 File not found
 ----------------------------------------
 
@@ -233,7 +213,6 @@ Expected Output:
 Cycle detected
 
 Your Output: 
-Cycle detected
 File not found
 ----------------------------------------
 

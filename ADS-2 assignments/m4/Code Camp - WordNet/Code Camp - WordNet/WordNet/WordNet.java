@@ -1,9 +1,9 @@
-import java.util.Arrays;
+import java.util.List;
 /**
  * Class for word net.
  */
 public class WordNet {
-    //SeparateChainingHashST<String, Integer> seperateChaining;
+    private LinearProbingHashST<String, List<Integer>> linearprobing;
     /**
      * Constructs the object.
      *
@@ -12,6 +12,7 @@ public class WordNet {
      */
     public WordNet(String synsets, String hypernyms) {
         //seperateChaining
+        linearprobing = new LinearProbingHashST<String, List<Integer>>();
         readSynset(synsets, hypernyms);
     }
 
@@ -28,9 +29,6 @@ public class WordNet {
             }
             Digraph digraph = new Digraph(vertices);
             readHypernym(hypernyms, digraph);
-            if(digraph.outdegree(vertices) == 0) {
-                System.out.println("Multiple roots");
-            }
         } catch (Exception e) {
             System.out.println("File not found");
         }
@@ -49,8 +47,17 @@ public class WordNet {
             }
             DirectedCycle directedCycle = new DirectedCycle(graph);
             if (directedCycle.hasCycle()) {
-                System.out.println("Cycle detected");
+                throw new IllegalArgumentException("Cycle detected");
             } else {
+                int degree = 0;
+                for (int i = 0; i < graph.V();i++) {
+                    if(graph.outdegree(i)==0) {
+                        degree++;
+                    }
+                }
+                if(degree > 1) {
+                    throw new IllegalArgumentException("Multiple roots");
+                }
                 System.out.println(graph);
             }
         } catch (Exception e) {

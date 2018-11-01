@@ -21,12 +21,15 @@ public final class Solution {
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
-
+		try {
 		if (type.equals("Graph")) {
 			WordNet wordnet = new WordNet(synset, hypernym);
 
 			//System.out.println(wordnet.);
 		}
+	} catch(Exception e) {
+		System.out.println(e.getMessage());
+	}
 		// else {
 
 		// }
