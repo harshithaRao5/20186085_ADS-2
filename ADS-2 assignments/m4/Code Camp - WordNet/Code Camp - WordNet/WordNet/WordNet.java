@@ -118,6 +118,9 @@ public class WordNet {
     public int distance(String nounA, String nounB) {
         Iterable<Integer> noun1 = linearprobing.get(nounA);
         Iterable<Integer> noun2 = linearprobing.get(nounB);
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+            throw new IllegalArgumentException();
+        }
         return sap.length(noun1, noun2);
 
     }
@@ -127,6 +130,9 @@ public class WordNet {
     public String sap(String nounA, String nounB) {
         Iterable<Integer> noun1 = linearprobing.get(nounA);
         Iterable<Integer> noun2 = linearprobing.get(nounB);
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+            throw new IllegalArgumentException();
+        }
         int id = sap.ancestor(noun1, noun2);
         return reverseSt.get(id);
     }
