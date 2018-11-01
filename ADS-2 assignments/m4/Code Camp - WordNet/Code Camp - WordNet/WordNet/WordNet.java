@@ -29,20 +29,20 @@ public class WordNet {
     }
     public Digraph readHypernym(String hypernym, int synsetv) {
         In in = new In("./Files/" + hypernym);
-        Digraph graph = new Digraph(synsetv);
+        //Digraph graph = new Digraph(synsetv);
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
             int hyponyms = Integer.parseInt(tokens[0]);
             //int hypernyms = Integer.parseInt(tokens[0]);
             for (int i = 0; i < tokens.length; i++) {
                 int hypernyms = Integer.parseInt(tokens[1]);
-                graph.addEdge(hyponyms, hypernyms);
+                digraph.addEdge(hyponyms, hypernyms);
             }
             //graph.addEdge(hyponyms,hypernyms);
 
         }
-        //System.out.println(graph);
-        return graph;
+        System.out.println(digraph);
+        return digraph;
     }
 
 

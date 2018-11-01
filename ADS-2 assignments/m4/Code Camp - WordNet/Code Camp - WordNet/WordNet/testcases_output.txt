@@ -19,6 +19,10 @@ Expected Output:
 
 Your Output: 
 synsets15.txt
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.readHypernym(WordNet.java:39)
+	at WordNet.<init>(WordNet.java:10)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -127,6 +131,10 @@ Expected Output:
 
 Your Output: 
 synsets8.txt
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.readHypernym(WordNet.java:39)
+	at WordNet.<init>(WordNet.java:10)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -135,6 +143,10 @@ Multiple roots
 
 Your Output: 
 synsets6.txt
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.readHypernym(WordNet.java:39)
+	at WordNet.<init>(WordNet.java:10)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -143,6 +155,10 @@ Multiple roots
 
 Your Output: 
 synsets6.txt
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.readHypernym(WordNet.java:39)
+	at WordNet.<init>(WordNet.java:10)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -191,5 +207,9 @@ Cycle detected
 
 Your Output: 
 synsets3.txt
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.readHypernym(WordNet.java:39)
+	at WordNet.<init>(WordNet.java:10)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
