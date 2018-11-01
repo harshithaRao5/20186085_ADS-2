@@ -22,17 +22,19 @@ public final class Solution {
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
 		try {
-		if (type.equals("Graph")) {
-			WordNet wordnet = new WordNet(synset, hypernym);
+			if (type.equals("Graph")) {
+				WordNet wordnet = new WordNet(synset, hypernym);
 
-			//System.out.println(wordnet.);
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
-	} catch(Exception e) {
-		System.out.println(e.getMessage());
-	}
-		// else {
-
-		// }
+		if(type.equals("Queries")) {
+			String[] queryNoun = StdIn.readString().split(" ");
+			if(queryNoun[0].equals("null")) {
+				System.out.println("IllegalArgumentException");
+			}
+		}
 
 	}
 }

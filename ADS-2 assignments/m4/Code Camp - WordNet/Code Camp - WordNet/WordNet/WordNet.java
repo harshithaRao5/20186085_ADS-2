@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 /**
  * Class for word net.
  */
@@ -19,12 +20,23 @@ public class WordNet {
     public void readSynset(String synset, String hypernyms) {
         int id = 0;
         int vertices = 0;
-        In inObj = new In("./Files/" + synset);
-        while (!inObj.isEmpty()) {
+        In in = new In("./Files/" + synset);
+        while (!in.isEmpty()) {
             vertices++;
-            String[] synsetArray = inObj.readString().split(",");
-            id = Integer.parseInt(synsetArray[0]);
-            String[] nounsArray = synsetArray[1].split(" ");
+            ArrayList<Integer> idlist = new ArrayList<Integer>();
+            String[] synsetArray = in.readString().split(",");
+            idlist.add(Integer.parseInt(synsetArray[0]));
+            if (synsetArray[1].length() > 1) {
+                for (int i = 0; i < synsetArray[1].length(); i++) {
+                    String[] nounsArray = synsetArray[1].split(" ");
+                    if (linearprobing.contains(nounsArray[i])) {
+                        idlist.addAll(linearprobing.get(synsetArray[i]));
+                        linearprobing.put(synsetArray[1], idlist);
+                    } else {
+                        linearprobing.put(nounsArray[i], idlist);
+                    }
+                }
+            }
         }
         Digraph digraph = new Digraph(vertices);
         readHypernym(hypernyms, digraph);
@@ -32,39 +44,41 @@ public class WordNet {
 
     public void readHypernym(String hypernyms, Digraph graph) {
 
-            int count = 0;
-            In in = new In("./Files/" + hypernyms);
-            while (!in.isEmpty()) {
-                count++;
-                String[] tokens = in.readString().split(",");
-                for(int i = 1; i < tokens.length;i++) {
-                    graph.addEdge(Integer.parseInt(tokens[0]),Integer.parseInt(tokens[i]));
+        int count = 0;
+        In in = new In("./Files/" + hypernyms);
+        while (!in.isEmpty()) {
+            count++;
+            String[] tokens = in.readString().split(",");
+            for (int i = 1; i < tokens.length; i++) {
+                graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+            }
+        }
+        DirectedCycle directedCycle = new DirectedCycle(graph);
+        if (directedCycle.hasCycle()) {
+            throw new IllegalArgumentException("Cycle detected");
+        } else {
+            int degree = 0;
+            for (int i = 0; i < graph.V(); i++) {
+                if (graph.outdegree(i) == 0) {
+                    degree++;
                 }
             }
-            DirectedCycle directedCycle = new DirectedCycle(graph);
-            if (directedCycle.hasCycle()) {
-                throw new IllegalArgumentException("Cycle detected");
-            } else {
-                int degree = 0;
-                for (int i = 0; i < graph.V();i++) {
-                    if(graph.outdegree(i)==0) {
-                        degree++;
-                    }
-                }
-                if(degree > 1) {
-                    throw new IllegalArgumentException("Multiple roots");
-                }
-                System.out.println(graph);
+            if (degree > 1) {
+                throw new IllegalArgumentException("Multiple roots");
             }
+            System.out.println(graph);
+        }
 
     }
 
-    // // returns all WordNet nouns
-    // public Iterable<String> nouns()
+    // returns all WordNet nouns
+    public Iterable<String> nouns() {
+        return linearprobing.keys();
+    }
 
     //is the word a WordNet noun?
     public boolean isNoun(String word) {
-        return false;
+        return linearprobing.contains(word);
     }
 }
 
