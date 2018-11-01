@@ -33,10 +33,13 @@ public class WordNet {
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
             int hyponyms = Integer.parseInt(tokens[0]);
-            for (int i = 0; i < tokens.length; i++) {
-                int hypernyms = Integer.parseInt(tokens[1]);
-                graph.addEdge(hyponyms, hypernyms);
-            }
+            int hypernyms = Integer.parseInt(tokens[0]);
+            // for (int i = 0; i < tokens.length; i++) {
+            //     int hypernyms = Integer.parseInt(tokens[1]);
+            //     graph.addEdge(hyponyms, hypernyms);
+            // }
+            graph.addEdge(hyponyms,hypernyms);
+
         }
         System.out.println(graph);
         return graph;
