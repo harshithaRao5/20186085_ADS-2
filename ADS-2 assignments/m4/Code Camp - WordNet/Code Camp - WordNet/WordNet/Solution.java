@@ -26,9 +26,10 @@ public final class Solution {
 			WordNet wordnet = new WordNet(synset, hypernym);
 
 			//System.out.println(wordnet.);
-		} else {
-
 		}
+		// else {
+
+		// }
 
 	}
 }

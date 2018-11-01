@@ -1,78 +1,75 @@
 import java.util.Arrays;
+/**
+ * Class for word net.
+ */
 public class WordNet {
-    private LinearProbingHashST<String, Integer> linearprobing;
-    private Digraph digraph;
-
-    // constructor takes the name of the two input files
+    //SeparateChainingHashST<String, Integer> seperateChaining;
+    /**
+     * Constructs the object.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
     public WordNet(String synsets, String hypernyms) {
-        linearprobing = new LinearProbingHashST<String, Integer>();
-        int synsetV = readSynset(synsets);
-        digraph = readHypernym(hypernyms, synsetV);
+        //seperateChaining
+        readSynset(synsets, hypernyms);
     }
-    public int readSynset(String synset) {
-        In in = new In("./Files/" + synset);
+
+    public void readSynset(String synset, String hypernyms) {
+        int id = 0;
         int vertices = 0;
-        while (!in.isEmpty()) {
-            vertices++;
-            String[] tokens = in.readString().split(",");
-            int id = Integer.parseInt(tokens[0]);
-            String[] nouns = tokens[1].split(" ");
-            for (String each : nouns) {
-                linearprobing.put(each, id);
+        try {
+            In inObj = new In("./Files/" + synset);
+            while (!inObj.isEmpty()) {
+                vertices++;
+                String[] synsetArray = inObj.readString().split(",");
+                id = Integer.parseInt(synsetArray[0]);
+                String[] nounsArray = synsetArray[1].split(" ");
             }
-
-
+            Digraph digraph = new Digraph(vertices);
+            readHypernym(hypernyms, digraph);
+        } catch (Exception e) {
+            System.out.println("File not found");
         }
-        return vertices;
-
-
-    }
-    public Digraph readHypernym(String hypernym, int synsetv) {
-        In in = new In("./Files/" + hypernym);
-        //Digraph graph = new Digraph(synsetv);
-        while (!in.isEmpty()) {
-            String[] tokens = in.readString().split(",");
-            int hyponyms = Integer.parseInt(tokens[0]);
-            //int hypernyms = Integer.parseInt(tokens[0]);
-            for (int i = 0; i < tokens.length; i++) {
-                int hypernyms = Integer.parseInt(tokens[1]);
-                digraph.addEdge(hyponyms, hypernyms);
-            }
-            //graph.addEdge(hyponyms,hypernyms);
-
-        }
-        System.out.println(digraph);
-        return digraph;
     }
 
 
-    // returns all WordNet nouns
-    // public Iterable<String> nouns() {
+    public void readHypernym(String hypernyms, Digraph graph) {
+        try {
+            In in = new In("./Files/" + hypernyms);
+            while (!in.isEmpty()) {
+                String[] tokens = in.readString().split(",");
+                for(int i = 1; i < tokens.length;i++) {
+                    graph.addEdge(Integer.parseInt(tokens[0]),Integer.parseInt(tokens[i]));
+                }
+            }
+            DirectedCycle directedCycle = new DirectedCycle(graph);
+            if (directedCycle.hasCycle()) {
+                System.out.println("Cycle detected");
+            } else {
+                System.out.println(graph);
+            }
+        } catch (Exception e) {
+            System.out.println("File not found");
+        }
 
-    // }
+    }
 
-    // // is the word a WordNet noun?
-    // public boolean isNoun(String word) {
+    // // returns all WordNet nouns
+    // public Iterable<String> nouns()
 
-    // }
-
-    // // distance between nounA and nounB (defined below)
-    // public int distance(String nounA, String nounB) {
-
-    // }
-
-    // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // // in a shortest ancestral path (defined below)
-    // public String sap(String nounA, String nounB) {
-
-    // }
-
-    // // do unit testing of this class
-    // public static void main(String[] args) {
-
-    //}
-
-
-
-
+    //is the word a WordNet noun?
+    public boolean isNoun(String word) {
+        return false;
+    }
 }
+
+// // distance between nounA and nounB (defined below)
+// public int distance(String nounA, String nounB)
+
+// // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
+// // in a shortest ancestral path (defined below)
+// public String sap(String nounA, String nounB)
+
+// // do unit testing of this class
+// public static void main(String[] args)
