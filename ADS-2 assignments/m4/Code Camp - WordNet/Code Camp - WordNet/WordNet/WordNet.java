@@ -19,19 +19,15 @@ public class WordNet {
     public void readSynset(String synset, String hypernyms) {
         int id = 0;
         int vertices = 0;
-        try {
-            In inObj = new In("./Files/" + synset);
-            while (!inObj.isEmpty()) {
-                vertices++;
-                String[] synsetArray = inObj.readString().split(",");
-                id = Integer.parseInt(synsetArray[0]);
-                String[] nounsArray = synsetArray[1].split(" ");
-            }
-            Digraph digraph = new Digraph(vertices);
-            readHypernym(hypernyms, digraph);
-        } catch (Exception e) {
-            System.out.println("File not found");
+        In inObj = new In("./Files/" + synset);
+        while (!inObj.isEmpty()) {
+            vertices++;
+            String[] synsetArray = inObj.readString().split(",");
+            id = Integer.parseInt(synsetArray[0]);
+            String[] nounsArray = synsetArray[1].split(" ");
         }
+        Digraph digraph = new Digraph(vertices);
+        readHypernym(hypernyms, digraph);
     }
 
     public void readHypernym(String hypernyms, Digraph graph) {
