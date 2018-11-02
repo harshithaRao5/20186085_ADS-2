@@ -188,21 +188,19 @@ Your Output:
 7:
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-dfghjkh
 Multiple roots
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-dfghjkh
 Multiple roots
 ----------------------------------------
 
@@ -262,12 +260,11 @@ distance = 8, ancestor = abstraction abstract_entity
 distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-dfghjkh
 Cycle detected
 ----------------------------------------
 
