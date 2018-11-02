@@ -7,7 +7,7 @@ public class WordNet {
     /**
      * symbol table initializing.
      */
-    private LinearProbingHashST<String, List<Integer>> linearprobing;
+    private LinearProbingHashST<String, ArrayList<Integer>> linearprobing;
     private LinearProbingHashST<Integer, String> reverseSt;
     private SAP sap;
     private Digraph graph;
@@ -19,7 +19,7 @@ public class WordNet {
      * @param      hypernyms  The hypernyms
      */
     public WordNet(String synsets, String hypernyms) {
-        linearprobing = new LinearProbingHashST<String, List<Integer>>();
+        linearprobing = new LinearProbingHashST<String, ArrayList<Integer>>();
         reverseSt = new LinearProbingHashST<Integer, String>();
         vertices = readSynset(synsets);
         graph = new Digraph(vertices);
@@ -103,8 +103,8 @@ public class WordNet {
 
 // distance between nounA and nounB (defined below)
     public int distance(String nounA, String nounB) {
-        Iterable<Integer> noun1 = linearprobing.get(nounA);
-        Iterable<Integer> noun2 = linearprobing.get(nounB);
+        ArrayList<Integer> noun1 = linearprobing.get(nounA);
+        ArrayList<Integer> noun2 = linearprobing.get(nounB);
         if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException();
         }
@@ -115,8 +115,8 @@ public class WordNet {
 //a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
 //in a shortest ancestral path (defined below)
     public String sap(String nounA, String nounB) {
-        Iterable<Integer> noun1 = linearprobing.get(nounA);
-        Iterable<Integer> noun2 = linearprobing.get(nounB);
+        ArrayList<Integer> noun1 = linearprobing.get(nounA);
+        ArrayList<Integer> noun2 = linearprobing.get(nounB);
         if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException();
         }

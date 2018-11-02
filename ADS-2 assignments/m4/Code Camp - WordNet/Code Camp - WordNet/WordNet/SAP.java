@@ -20,16 +20,16 @@ public class SAP {
         BreadthFirstDirectedPaths bfsV = new BreadthFirstDirectedPaths(graph, v);
         BreadthFirstDirectedPaths bfsW = new BreadthFirstDirectedPaths(graph, w);
         int shortPath = Integer.MAX_VALUE;
-        for(int i = 0; i < graph.V(); i++) {
-            if(bfsV.hasPathTo(i) && bfsW.hasPathTo(i)) {
-                int distance = bfsV.distTo(i)+bfsW.distTo(i);
-                if(distance < shortPath) {
+        for (int i = 0; i < graph.V(); i++) {
+            if (bfsV.hasPathTo(i) && bfsW.hasPathTo(i)) {
+                int distance = bfsV.distTo(i) + bfsW.distTo(i);
+                if (distance < shortPath) {
                     shortPath = distance;
                     //return shortPath;
                 }
             }
         }
-        if(shortPath != Integer.MAX_VALUE) {
+        if (shortPath != Integer.MAX_VALUE) {
             return shortPath;
         } else {
             return -1;
@@ -42,10 +42,10 @@ public class SAP {
         BreadthFirstDirectedPaths bfsW = new BreadthFirstDirectedPaths(graph, w);
         int shortPath = Integer.MAX_VALUE;
         int ancestor = 0;
-        for(int i = 0; i < graph.V(); i++) {
-            if(bfsV.hasPathTo(i) && bfsW.hasPathTo(i)) {
-                int distance = bfsV.distTo(i)+bfsW.distTo(i);
-                if(distance < shortPath) {
+        for (int i = 0; i < graph.V(); i++) {
+            if (bfsV.hasPathTo(i) && bfsW.hasPathTo(i)) {
+                int distance = bfsV.distTo(i) + bfsW.distTo(i);
+                if (distance < shortPath) {
                     shortPath = distance;
                     ancestor = i;
                     return ancestor;
