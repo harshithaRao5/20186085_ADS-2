@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.io.File;
+import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -16,7 +17,7 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		//Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		String synset = StdIn.readString();
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
@@ -27,20 +28,19 @@ public final class Solution {
 				WordNet wordnet = new WordNet(synset, hypernym);
 
 			} else {
-				while (!StdIn.isEmpty()) {
+				while (sc.hasNextLine()) {
 					String[] queryNoun = StdIn.readLine().split(" ");
+					//System.out.println(queryNoun[0]+", "+ queryNoun[1]);
+					WordNet wordnet1 = new WordNet(synset, hypernym);
+					wordnet1.distance(queryNoun[0], queryNoun[1]);
+					wordnet1.sap(queryNoun[0], queryNoun[1]);
 					if (queryNoun[0].equals("null")) {
 						System.out.println("IllegalArgumentException");
-					} else {
-						WordNet wordnet1 = new WordNet(synset, hypernym);
-						System.out.println(wordnet1.distance(queryNoun[0], queryNoun[1]));
 					}
 				}
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-
-
 	}
 }
