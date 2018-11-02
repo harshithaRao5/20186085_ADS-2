@@ -17,7 +17,7 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
+		// Scanner sc = new Scanner(System.in);
 		String synset = StdIn.readString();
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
@@ -28,10 +28,10 @@ public final class Solution {
 				WordNet wordnet = new WordNet(synset, hypernym);
 
 			}
-			if(type.equals("Queries")) {
-				while (sc.hasNextLine()) {
-					System.out.println("hello");
+			if(type.equals("Queries"))
+				while (StdIn.hasNextLine()) {
 					String[] queryNoun = StdIn.readLine().split(" ");
+					System.out.println(queryNoun[0]+", "+ queryNoun[1]);
 					WordNet wordnet1 = new WordNet(synset, hypernym);
 					wordnet1.distance(queryNoun[0], queryNoun[1]);
 					wordnet1.sap(queryNoun[0], queryNoun[1]);
@@ -39,7 +39,6 @@ public final class Solution {
 						System.out.println("IllegalArgumentException");
 					}
 				}
-			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
