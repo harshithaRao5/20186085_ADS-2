@@ -22,7 +22,6 @@ public final class Solution {
 		// System.out.println(synset);
 		String hypernym = StdIn.readString();
 		String type = StdIn.readString();
-		String queryNoun1 = StdIn.readLine();
 		try {
 			if (type.equals("Graph")) {
 				WordNet wordnet = new WordNet(synset, hypernym);
@@ -30,7 +29,8 @@ public final class Solution {
 			}
 			if(type.equals("Queries"))
 				while (StdIn.hasNextLine()) {
-					String[] queryNoun = StdIn.readLine().split(" ");
+					String queryNoun1 = StdIn.readLine();
+					String[] queryNoun = queryNoun1.split(" ");
 					// System.out.println(queryNoun[0]+", "+ queryNoun[1]);
 					WordNet wordnet1 = new WordNet(synset, hypernym);
 					wordnet1.distance(queryNoun[0], queryNoun[1]);
