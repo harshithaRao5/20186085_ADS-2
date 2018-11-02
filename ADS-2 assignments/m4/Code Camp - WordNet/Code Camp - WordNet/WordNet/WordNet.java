@@ -47,9 +47,9 @@ public class WordNet {
             idlist.add(Integer.parseInt(synsetArray[0]));
             for (int i = 0; i < synsetArray[1].length(); i++) {
                 String[] nounsArray = synsetArray[1].split(" ");
-                reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
                 if (linearprobing.contains(nounsArray[i])) {
                     //idlist.addAll(linearprobing.get(synsetArray[i]));
+                    reverseSt.put(Integer.parseInt(synsetArray[0]), nounsArray[1]);
                     linearprobing.put(synsetArray[i], idlist);
                 } else {
                     linearprobing.put(nounsArray[i], idlist);
