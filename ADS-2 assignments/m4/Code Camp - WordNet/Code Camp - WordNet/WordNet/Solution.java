@@ -1,47 +1,52 @@
-import java.util.Scanner;
-import java.io.File;
-import java.util.Arrays;
 /**
- * Class for solution.
+ * class for Solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//unused constructor.
-	}
-	/**
-	 * main method.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		// Scanner sc = new Scanner(System.in);
-		String synset = StdIn.readLine();
-		// System.out.println(synset);
-		String hypernym = StdIn.readLine();
-		String type = StdIn.readLine();
-		try {
-			if (type.equals("Graph")) {
-				WordNet wordnet = new WordNet(synset, hypernym);
-				wordnet.display();
-			}
-			//System.out.println("hello");
-			if (type.equals("Queries")) {
-				while (StdIn.hasNextLine()) {
-					WordNet wordnet1 = new WordNet(synset, hypernym);
-					String queryNoun1 = StdIn.readLine();
-					String[] queryNoun = queryNoun1.split(" ");
-					if (queryNoun[0].equals("null")) {
-						throw new IllegalArgumentException("IllegalArgumentException");
-					}
-					System.out.println("distance = " + wordnet1.distance(queryNoun[0], queryNoun[1]));
-					wordnet1.sap(queryNoun[0], queryNoun[1]);
-				}
-			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //empty constructor.
+    }
+    /**
+     * Client program.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        String synsets = StdIn.readLine();
+        String hypernyms = StdIn.readLine();
+        String type = StdIn.readLine();
+        switch (type) {
+        case "Graph":
+            try {
+                WordNet wordnet = new WordNet(synsets, hypernyms);
+                wordnet.display();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            break;
+        case "Queries":
+            try {
+                WordNet wordnet1 = new WordNet(synsets,
+                                          hypernyms);
+                while (StdIn.hasNextLine()) {
+                    String queryNoun = StdIn.readLine();
+                    String[] queryArray = queryNoun.split(" ");
+                    if (queryArray[0].equals("null")) {
+                        throw new IllegalArgumentException(
+                            "IllegalArgumentException");
+                    }
+                    System.out.println("distance = " + wordnet1.distance(queryArray[0],
+                                       queryArray[1]) + ", ancestor = " + wordnet1.sap(queryArray[0],
+                                               queryArray[1]));
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            break;
+        default:
+            break;
+        }
+    }
 }
