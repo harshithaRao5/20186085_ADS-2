@@ -24,10 +24,10 @@ class DirectedCycle {
      * @param      g     { parameter_description }.
      */
     DirectedCycle(final Digraph g) {
-        marked  = new boolean[g.V()];
-        onStack = new boolean[g.V()];
-        edgeTo  = new int[g.V()];
-        for (int v = 0; v < g.V(); v++) {
+        marked  = new boolean[g.vertices()];
+        onStack = new boolean[g.vertices()];
+        edgeTo  = new int[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++) {
             if (!marked[v] && cycle == null) {
                 dfs(g, v);
             }
@@ -57,7 +57,7 @@ class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+                //assert check();
             }
         }
         onStack[v] = false;
@@ -74,35 +74,35 @@ class DirectedCycle {
         }
         return false;
     }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
+    // /**
+    //  * { function_description }.
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public Iterable<Integer> cycle() {
+    //     return cycle;
+    // }
     /**
      * { function_description }.
      *
      * @return     { description_of_the_return_value }.
      */
-    private boolean check() {
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) {
-                    first = v;
-                }
-                last = v;
-            }
-            if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n"
-                                   + first + last);
-                return false;
-            }
-        }
-        return true;
-    }
+    // private boolean check() {
+    //     if (hasCycle()) {
+    //         // verify cycle
+    //         int first = -1, last = -1;
+    //         for (int v : cycle()) {
+    //             if (first == -1) {
+    //                 first = v;
+    //             }
+    //             last = v;
+    //         }
+    //         if (first != last) {
+    //             System.out.println("cycle begins with %d and ends with %d\n"
+    //                                + first + last);
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
 }

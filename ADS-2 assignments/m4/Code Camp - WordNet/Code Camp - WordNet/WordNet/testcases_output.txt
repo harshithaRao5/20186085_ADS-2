@@ -18,10 +18,7 @@ Expected Output:
 14: 13
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:138)
-	at Solution.main(Solution.java:24)
+Digraph@2f7a2457
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -164,32 +161,23 @@ Expected Output:
 7:
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:138)
-	at Solution.main(Solution.java:24)
+Digraph@2f7a2457
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:138)
-	at Solution.main(Solution.java:24)
+Multiple roots
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:138)
-	at Solution.main(Solution.java:24)
+Multiple roots
 ----------------------------------------
 
 ########## Testcase 11: Passed ##########
@@ -237,14 +225,11 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at Solution.main(Solution.java:40)
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:138)
-	at Solution.main(Solution.java:24)
+Cycle detected
 ----------------------------------------
 
