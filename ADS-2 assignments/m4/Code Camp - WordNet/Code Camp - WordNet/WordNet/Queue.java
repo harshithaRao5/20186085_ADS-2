@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 /**
  * List of Queue.
  *
@@ -5,105 +7,111 @@
  */
 public class Queue<Item> {
     /**
-     * {number of elements on queue}.
-     */
-    private int n;
-    /**
      * {beginning of queue}.
      */
-    private Node first;
+    private Node<Item> first;
     /**
      * {end of queue}.
      */
-    private Node last;
+    private Node<Item> last;
+    /**
+     * {number of elements on queue}.
+     */
+    private int n;
 
     /**
      * Class for node.
+     *
+     * @param      <Item>  The item
      */
-    private class Node {
+    private static class Node<Item> {
         /**
          * {Item}.
          */
         private Item item;
         /**
-         * {Node of type next}.
+         * {Next of type node}.
          */
-        private Node next;
+        private Node<Item> next;
     }
 
     /**
-     * Create an empty queue.
+     * Initializes an empty queue.
      */
     Queue() {
         first = null;
         last  = null;
+        n = 0;
     }
 
     /**
-     * Is the queue empty?
-     * @return     {Boolean}
+     * Returns true if this queue is empty.
+     *
+     * @return {@code true} if this queue is empty
+     * {@code false} otherwise
      */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-     * Return the number of items in the queue.
-     * @return     {Integer}
+     * Returns the number of items in this queue.
+     *
+     * @return the number of items in this queue
      */
     public int size() {
         return n;
     }
 
     /**
-     * Return the item least recently added to the queue.
-     * Throw an exception if the queue is empty.
-     * @return     {Item}
+     * Returns the item least recently added to this queue.
+     *
+     * @return the item least recently added to this queue
+     * @throws NoSuchElementException if this queue is empty
      */
     public Item peek() {
         if (isEmpty()) {
-            throw new RuntimeException("Queue underflow");
+            throw new NoSuchElementException(
+                "Queue underflow");
         }
         return first.item;
     }
 
-
     /**
-     * {Add the item to the queue}.
+     * Adds the item to this queue.
      *
-     * @param      item  The item
+     * @param  item the item to add
      */
     public void enqueue(final Item item) {
-        Node x = new Node();
-        x.item = item;
+        Node<Item> oldlast = last;
+        last = new Node<Item>();
+        last.item = item;
+        last.next = null;
         if (isEmpty()) {
-            first = x;
-            last = x;
+            first = last;
         } else {
-            last.next = x;
-            last = x;
+            oldlast.next = last;
         }
         n++;
     }
 
     /**
-     * Remove and return the item on the queue least recently added.
-     * Throw an exception if the queue is empty.
-     * @return     {Item}
+     * Removes and returns the item on this queue that was least recently added.
+     *
+     * @return the item on this queue that was least recently added
+     * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
         if (isEmpty()) {
-            throw new RuntimeException(
+            throw new NoSuchElementException(
                 "Queue underflow");
         }
         Item item = first.item;
         first = first.next;
         n--;
-        // to avoid loitering
         if (isEmpty()) {
-            last = null;
+        last = null;
         }
         return item;
     }
 }
-

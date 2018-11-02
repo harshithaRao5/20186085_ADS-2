@@ -141,7 +141,7 @@ public class WordNet {
         } else {
             int degree = 0;
 
-            for (int i = 0; i < graph.vertices(); i++) {
+            for (int i = 0; i < graph.V(); i++) {
                 if (graph.outdegree(i) == 0) {
                     degree++;
                 }
@@ -149,7 +149,7 @@ public class WordNet {
             if (degree > 1) {
                 throw new IllegalArgumentException("Multiple roots");
             }
-            System.out.println(graph);
+            System.out.println(graph.toString());
         }
     }
 
