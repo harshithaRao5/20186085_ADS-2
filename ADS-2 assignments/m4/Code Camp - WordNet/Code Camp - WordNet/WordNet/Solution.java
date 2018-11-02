@@ -31,7 +31,7 @@ public final class Solution {
 			if(type.equals("Queries"))
 				while (StdIn.hasNextLine()) {
 					String[] queryNoun = StdIn.readLine().split(" ");
-					System.out.println(queryNoun[0]+", "+ queryNoun[1]);
+					// System.out.println(queryNoun[0]+", "+ queryNoun[1]);
 					WordNet wordnet1 = new WordNet(synset, hypernym);
 					wordnet1.distance(queryNoun[0], queryNoun[1]);
 					wordnet1.sap(queryNoun[0], queryNoun[1]);

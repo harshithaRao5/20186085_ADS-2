@@ -42,7 +42,6 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-enzyme, entity
 1
 ----------------------------------------
 
@@ -56,7 +55,6 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-DNA_polymerase, animal_fat
 1
 ----------------------------------------
 
@@ -67,7 +65,6 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Ghedda_wax, Japan_wax
 1
 ----------------------------------------
 
@@ -80,7 +77,6 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-b, b
 6 vertices, 6 edges 
 0: 
 1: 2 0 
@@ -89,7 +85,6 @@ b, b
 4: 5 
 5: 0 
 
-c, c
 6 vertices, 6 edges 
 0: 
 1: 2 0 
@@ -98,7 +93,6 @@ c, c
 4: 5 
 5: 0 
 
-d, d
 6 vertices, 6 edges 
 0: 
 1: 2 0 
@@ -107,7 +101,6 @@ d, d
 4: 5 
 5: 0 
 
-e, e
 6 vertices, 6 edges 
 0: 
 1: 2 0 
@@ -116,7 +109,6 @@ e, e
 4: 5 
 5: 0 
 
-f, f
 6 vertices, 6 edges 
 0: 
 1: 2 0 
@@ -140,7 +132,6 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-a, b
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -154,7 +145,6 @@ a, b
 9: 8 
 10: 9 
 
-a, c
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -168,7 +158,6 @@ a, c
 9: 8 
 10: 9 
 
-a, d
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -182,7 +171,6 @@ a, d
 9: 8 
 10: 9 
 
-a, e
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -196,7 +184,6 @@ a, e
 9: 8 
 10: 9 
 
-a, f
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -210,7 +197,6 @@ a, f
 9: 8 
 10: 9 
 
-a, g
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -224,7 +210,6 @@ a, g
 9: 8 
 10: 9 
 
-a, h
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -238,7 +223,6 @@ a, h
 9: 8 
 10: 9 
 
-a, i
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -252,7 +236,6 @@ a, i
 9: 8 
 10: 9 
 
-a, j
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -266,7 +249,6 @@ a, j
 9: 8 
 10: 9 
 
-a, k
 11 vertices, 12 edges 
 0: 10 1 
 1: 2 
@@ -292,7 +274,6 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-a, b
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -303,7 +284,6 @@ a, b
 6: 3 
 7: 
 
-a, c
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -314,7 +294,6 @@ a, c
 6: 3 
 7: 
 
-a, d
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -325,7 +304,6 @@ a, d
 6: 3 
 7: 
 
-a, e
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -336,7 +314,6 @@ a, e
 6: 3 
 7: 
 
-a, f
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -347,7 +324,6 @@ a, f
 6: 3 
 7: 
 
-a, g
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -358,7 +334,6 @@ a, g
 6: 3 
 7: 
 
-a, h
 8 vertices, 8 edges 
 0: 7 1 
 1: 2 
@@ -384,7 +359,6 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-a, b
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -398,7 +372,6 @@ a, b
 9: 5 
 10: 9 8 7 6 
 
-a, c
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -412,7 +385,6 @@ a, c
 9: 5 
 10: 9 8 7 6 
 
-a, d
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -426,7 +398,6 @@ a, d
 9: 5 
 10: 9 8 7 6 
 
-a, e
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -440,7 +411,6 @@ a, e
 9: 5 
 10: 9 8 7 6 
 
-a, f
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -454,7 +424,6 @@ a, f
 9: 5 
 10: 9 8 7 6 
 
-a, g
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -468,7 +437,6 @@ a, g
 9: 5 
 10: 9 8 7 6 
 
-a, h
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -482,7 +450,6 @@ a, h
 9: 5 
 10: 9 8 7 6 
 
-a, i
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -496,7 +463,6 @@ a, i
 9: 5 
 10: 9 8 7 6 
 
-a, j
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -510,7 +476,6 @@ a, j
 9: 5 
 10: 9 8 7 6 
 
-a, k
 11 vertices, 16 edges 
 0: 4 3 2 1 
 1: 5 
@@ -570,7 +535,6 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-null, null
 15 vertices, 14 edges 
 0: 
 1: 0 
@@ -596,7 +560,6 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-null, x
 15 vertices, 14 edges 
 0: 
 1: 0 
@@ -638,7 +601,6 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-zoospore, zooplankton
 1
 ----------------------------------------
 
