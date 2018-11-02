@@ -36,9 +36,8 @@ public final class Solution {
 					if (queryNoun[0].equals("null")) {
 						throw new IllegalArgumentException("IllegalArgumentException");
 					}
-					System.out.println("distance = " + wordnet1.distance(queryNoun[0], queryNoun[1]) +
-						", ancestor = " + wordnet1.sap(queryNoun[0], queryNoun[1]));
-
+					System.out.println("distance = " + wordnet1.distance(queryNoun[0], queryNoun[1]));
+					wordnet1.sap(queryNoun[0], queryNoun[1]);
 				}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
