@@ -44,17 +44,18 @@ public class WordNet {
             vertices++;
             ArrayList<Integer> idlist = new ArrayList<Integer>();
             String[] synsetArray = in.readString().split(",");
+            idlist.add(Integer.parseInt(synsetArray[0]));
             for (int i = 0; i < synsetArray[1].length(); i++) {
                 String[] nounsArray = synsetArray[1].split(" ");
                 reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
                 if (linearprobing.contains(nounsArray[i])) {
                     idlist.addAll(linearprobing.get(synsetArray[i]));
-                    idlist.add(Integer.parseInt(synsetArray[0]));
                     linearprobing.put(synsetArray[i], idlist);
                 } else {
                     linearprobing.put(nounsArray[i], idlist);
                 }
             }
+        //System.out.println("idlist");
         }
         return vertices;
         // readHypernym(hypernym, digraph);
