@@ -26,10 +26,10 @@ public final class Solution {
 		if (type.equals("Graph")) {
 			WordNet wordnet = new WordNet(synset, hypernym);
 		}
-		WordNet wordnet1 = new WordNet(synset, hypernym);
-				System.out.println("hello");
+		//System.out.println("hello");
 		if(type.equals("Queries"))
 			while (StdIn.hasNextLine()) {
+			WordNet wordnet1 = new WordNet(synset, hypernym);
 				String queryNoun1 = StdIn.readLine();
 				String[] queryNoun = queryNoun1.split(" ");
 				if (queryNoun[0].equals("null")) {
