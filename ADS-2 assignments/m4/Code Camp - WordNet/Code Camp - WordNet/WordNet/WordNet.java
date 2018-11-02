@@ -65,7 +65,7 @@ public class WordNet {
                 }
                 linearprobing.put(nounsArray[i], idlist);
             }
-        //System.out.println("idlist");
+            //System.out.println("idlist");
         }
         return vertices;
         // readHypernym(hypernym, digraph);
@@ -76,11 +76,8 @@ public class WordNet {
      * @param      hypernyms1  The hypernyms1
      */
     public void readHypernym(final String hypernyms1) {
-
-        int count = 0;
         In in = new In("./Files/" + hypernyms1);
         while (!in.isEmpty()) {
-            count++;
             String[] tokens = in.readString().split(",");
             for (int i = 1; i < tokens.length; i++) {
                 graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
@@ -107,7 +104,7 @@ public class WordNet {
      * @return     True if noun, False otherwise.
      */
     public boolean isNoun(final String word) {
-        if (word.equals("null")){
+        if (word.equals("null")) {
             throw new IllegalArgumentException();
         }
         return linearprobing.contains(word);

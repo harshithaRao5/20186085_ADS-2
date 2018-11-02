@@ -1,20 +1,43 @@
 public class SAP {
-    private Digraph graph;
-    // constructor takes a digraph (not necessarily a DAG)
+    /**
+     *variable description;
+     */
+    private final Digraph graph;
+    /**
+     *variable description;
+     */
     int distanceGlobal;
-
-    public SAP(Digraph graph) {
+    /**
+     * Constructs the object.
+     *
+     * @param      graph  The graph
+     */
+    public SAP(final Digraph graph) {
         this.graph = graph;
         this.distanceGlobal = 0;
     }
-    // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
-    public int length(Iterable<Integer> v, Iterable<Integer> w) {
+    /**
+     * shortest path finding method.
+     *
+     * @param      v  Iterable integer.
+     * @param      w  Iterable integer.
+     *
+     * @return  distance
+     */
+    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
         ancestor(v, w);
         return distanceGlobal;
     }
+    /**
+     * ancestor finding method.
+     *
+     * @param      v  Iterable integer.
+     * @param      w  Iterable integer.
+     *
+     * @return ancestor
+     */
 
-    // a common ancestor that participates in shortest ancestral path; -1 if no such path
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
+    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
         BreadthFirstDirectedPaths bfsV = new BreadthFirstDirectedPaths(graph, v);
         BreadthFirstDirectedPaths bfsW = new BreadthFirstDirectedPaths(graph, w);
         distanceGlobal = Integer.MAX_VALUE;
@@ -32,7 +55,4 @@ public class SAP {
         }
         return ancestors;
     }
-
-    // // do unit testing of this class
-    // public static void main(String[] args)
 }
