@@ -76,21 +76,7 @@ public class WordNet {
                 graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
             }
         }
-        DirectedCycle directedCycle = new DirectedCycle(graph);
-        if (directedCycle.hasCycle()) {
-            throw new IllegalArgumentException("Cycle detected");
-        } else {
-            int degree = 0;
-            for (int i = 0; i < graph.V(); i++) {
-                if (graph.outdegree(i) == 0) {
-                    degree++;
-                }
-            }
-            if (degree > 1) {
-                throw new IllegalArgumentException("Multiple roots");
-            }
-            System.out.println(graph);
-        }
+
 
     }
 
@@ -137,7 +123,23 @@ public class WordNet {
         int id = sap.ancestor(noun1, noun2);
         return reverseSt.get(id);
     }
-
+    public void display() {
+        DirectedCycle directedCycle = new DirectedCycle(graph);
+        if (directedCycle.hasCycle()) {
+            throw new IllegalArgumentException("Cycle detected");
+        } else {
+            int degree = 0;
+            for (int i = 0; i < graph.V(); i++) {
+                if (graph.outdegree(i) == 0) {
+                    degree++;
+                }
+            }
+            if (degree > 1) {
+                throw new IllegalArgumentException("Multiple roots");
+            }
+            System.out.println(graph);
+        }
+    }
 
 // do unit testing of this class
 // public static void main(String[] args)
