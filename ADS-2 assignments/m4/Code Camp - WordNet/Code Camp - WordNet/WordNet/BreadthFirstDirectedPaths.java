@@ -59,10 +59,10 @@ public class BreadthFirstDirectedPaths {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(Digraph G, int s) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
+        marked = new boolean[G.vertices()];
+        distTo = new int[G.vertices()];
+        edgeTo = new int[G.vertices()];
+        for (int v = 0; v < G.vertices(); v++)
             distTo[v] = INFINITY;
         validateVertex(s);
         bfs(G, s);
@@ -77,10 +77,10 @@ public class BreadthFirstDirectedPaths {
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(Digraph G, Iterable<Integer> sources) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
+        marked = new boolean[G.vertices()];
+        distTo = new int[G.vertices()];
+        edgeTo = new int[G.vertices()];
+        for (int v = 0; v < G.vertices(); v++)
             distTo[v] = INFINITY;
         validateVertices(sources);
         bfs(G, sources);
@@ -149,24 +149,24 @@ public class BreadthFirstDirectedPaths {
         return distTo[v];
     }
 
-    /**
-     * Returns a shortest path from {@code s} (or sources) to {@code v}, or
-     * {@code null} if no such path.
-     * @param v the vertex
-     * @return the sequence of vertices on a shortest path, as an Iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
-    public Iterable<Integer> pathTo(int v) {
-        validateVertex(v);
+    // /**
+    //  * Returns a shortest path from {@code s} (or sources) to {@code v}, or
+    //  * {@code null} if no such path.
+    //  * @param v the vertex
+    //  * @return the sequence of vertices on a shortest path, as an Iterable
+    //  * @throws IllegalArgumentException unless {@code 0 <= v < V}
+    //  */
+    // public Iterable<Integer> pathTo(int v) {
+    //     validateVertex(v);
 
-        if (!hasPathTo(v)) return null;
-        Stack<Integer> path = new Stack<Integer>();
-        int x;
-        for (x = v; distTo[x] != 0; x = edgeTo[x])
-            path.push(x);
-        path.push(x);
-        return path;
-    }
+    //     if (!hasPathTo(v)) return null;
+    //     Stack<Integer> path = new Stack<Integer>();
+    //     int x;
+    //     for (x = v; distTo[x] != 0; x = edgeTo[x])
+    //         path.push(x);
+    //     path.push(x);
+    //     return path;
+    // }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
