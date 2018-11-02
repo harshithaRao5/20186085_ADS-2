@@ -141,7 +141,7 @@ public class WordNet {
         } else {
             int degree = 0;
 
-            for (int i = 0; i < graph.V(); i++) {
+            for (int i = 0; i < graph.vertices(); i++) {
                 if (graph.outdegree(i) == 0) {
                     degree++;
                 }
