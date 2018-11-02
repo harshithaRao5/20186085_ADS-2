@@ -36,13 +36,14 @@ Your Output:
 14: 13
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-1
+distance = 7, ancestor = entity
+distance = 10, ancestor = entity
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -55,7 +56,12 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-1
+distance = 17, ancestor = entity
+distance = 17, ancestor = entity
+distance = 19, ancestor = entity
+distance = 18, ancestor = entity
+distance = 19, ancestor = entity
+distance = 1, ancestor = animal_oil
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -65,7 +71,9 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-1
+distance = 17, ancestor = entity
+distance = 17, ancestor = entity
+distance = 16, ancestor = entity
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -180,35 +188,39 @@ Your Output:
 7:
 ----------------------------------------
 
-########## Testcase 9: Passed ##########
+########## Testcase 9: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
+dfghjkh
 Multiple roots
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
+dfghjkh
 Multiple roots
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
+------------
 IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
+------------
 IllegalArgumentException
 ----------------------------------------
 
@@ -233,14 +245,31 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-1
+distance = 17, ancestor = entity
+distance = 15, ancestor = entity
+distance = 14, ancestor = entity
+distance = 17, ancestor = entity
+distance = 10, ancestor = abstraction abstract_entity
+distance = 14, ancestor = abstraction abstract_entity
+distance = 14, ancestor = entity
+distance = 14, ancestor = abstraction abstract_entity
+distance = 14, ancestor = abstraction abstract_entity
+distance = 14, ancestor = causal_agent cause causal_agency
+distance = 15, ancestor = abstraction abstract_entity
+distance = 0, ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
+distance = 12, ancestor = abstraction abstract_entity
+distance = 13, ancestor = abstraction abstract_entity
+distance = 12, ancestor = abstraction abstract_entity
+distance = 8, ancestor = abstraction abstract_entity
+distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
+dfghjkh
 Cycle detected
 ----------------------------------------
 

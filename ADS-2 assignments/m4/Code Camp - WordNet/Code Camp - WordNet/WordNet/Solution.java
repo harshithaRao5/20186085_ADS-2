@@ -23,6 +23,7 @@ public final class Solution {
                 WordNet wordnet = new WordNet(synsets, hypernyms);
                 wordnet.display();
             } catch (Exception e) {
+            	System.out.println("dfghjkh");
                 System.out.println(e.getMessage());
             }
             break;
@@ -42,6 +43,8 @@ public final class Solution {
                                                queryArray[1]));
                 }
             } catch (Exception e) {
+            	System.out.println("------------");
+            	//e.printStackTrace();
                 System.out.println(e.getMessage());
             }
             break;

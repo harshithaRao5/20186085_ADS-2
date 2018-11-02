@@ -8,7 +8,7 @@ public class WordNet {
      * symbol table initializing.
      */
     private LinearProbingHashST<String, ArrayList<Integer>> linearprobing;
-    private LinearProbingHashST<Integer, String> reverseSt;
+    private ArrayList<String> synsetsId;
     private SAP sap;
     private Digraph graph;
     private int vertices;
@@ -19,8 +19,8 @@ public class WordNet {
      * @param      hypernyms  The hypernyms
      */
     public WordNet(String synsets, String hypernyms) {
+        synsetsId = new ArrayList<String>();
         linearprobing = new LinearProbingHashST<String, ArrayList<Integer>>();
-        reverseSt = new LinearProbingHashST<Integer, String>();
         vertices = readSynset(synsets);
         graph = new Digraph(vertices);
         readHypernym(hypernyms);
@@ -37,23 +37,25 @@ public class WordNet {
      * @param      hypernym  The hypernym
      */
     public int readSynset(String synset) {
-        int id = 0;
         int vertices = 0;
         In in = new In("./Files/" + synset);
         while (!in.isEmpty()) {
             vertices++;
-            ArrayList<Integer> idlist = new ArrayList<Integer>();
-            String[] synsetArray = in.readString().split(",");
-            idlist.add(Integer.parseInt(synsetArray[0]));
-            for (int i = 0; i < synsetArray[1].length(); i++) {
-                String[] nounsArray = synsetArray[1].split(" ");
-                reverseSt.put(Integer.parseInt(synsetArray[0]), nounsArray[i]);
+            String[] synsetArray = in.readLine().split(",");
+            int id = Integer.parseInt(synsetArray[0]);
+            synsetsId.add(id, synsetArray[1]);
+            // synsets may contains many nouns separated by spaces.
+            String[] nounsArray = synsetArray[1].split(" ");
+            for (int i = 0; i < nounsArray.length; i++) {
+                ArrayList<Integer> idlist;
                 if (linearprobing.contains(nounsArray[i])) {
-                    idlist.addAll(linearprobing.get(synsetArray[i]));
-                    linearprobing.put(synsetArray[i], idlist);
+                    idlist = linearprobing.get(nounsArray[i]);
+                    idlist.add(id);
                 } else {
-                    linearprobing.put(nounsArray[i], idlist);
+                    idlist = new ArrayList<Integer>();
+                    idlist.add(id);
                 }
+                linearprobing.put(nounsArray[i], idlist);
             }
         //System.out.println("idlist");
         }
@@ -125,7 +127,7 @@ public class WordNet {
             throw new IllegalArgumentException();
         }
         int id = sap.ancestor(noun1, noun2);
-        return reverseSt.get(id);
+        return synsetsId.get(id);
     }
     public void display() {
 
