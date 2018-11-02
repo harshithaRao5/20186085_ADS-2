@@ -28,7 +28,7 @@ public final class Solution {
 				wordnet.display();
 			}
 			//System.out.println("hello");
-			if (type.equals("Queries"))
+			if (type.equals("Queries")) {
 				while (StdIn.hasNextLine()) {
 					WordNet wordnet1 = new WordNet(synset, hypernym);
 					String queryNoun1 = StdIn.readLine();
@@ -39,6 +39,7 @@ public final class Solution {
 					System.out.println("distance = " + wordnet1.distance(queryNoun[0], queryNoun[1]));
 					wordnet1.sap(queryNoun[0], queryNoun[1]);
 				}
+			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
