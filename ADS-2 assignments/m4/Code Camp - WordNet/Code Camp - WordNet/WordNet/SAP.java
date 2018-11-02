@@ -25,11 +25,15 @@ public class SAP {
                 int distance = bfsV.distTo(i)+bfsW.distTo(i);
                 if(distance < shortPath) {
                     shortPath = distance;
-                    return shortPath;
+                    //return shortPath;
                 }
             }
         }
-        return -1;
+        if(shortPath != Integer.MAX_VALUE) {
+            return shortPath;
+        } else {
+            return -1;
+        }
     }
 
     // a common ancestor that participates in shortest ancestral path; -1 if no such path
