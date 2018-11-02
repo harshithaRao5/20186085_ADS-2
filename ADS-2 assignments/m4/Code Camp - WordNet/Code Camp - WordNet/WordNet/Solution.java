@@ -18,27 +18,26 @@ public final class Solution {
 	 */
 	public static void main(final String[] args) {
 		// Scanner sc = new Scanner(System.in);
-		String synset = StdIn.readString();
+		String synset = StdIn.readLine();
 		// System.out.println(synset);
-		String hypernym = StdIn.readString();
-		String type = StdIn.readString();
+		String hypernym = StdIn.readLine();
+		String type = StdIn.readLine();
 		try {
-			if (type.equals("Graph")) {
-				WordNet wordnet = new WordNet(synset, hypernym);
-
-			}
-			if(type.equals("Queries"))
-				while (StdIn.hasNextLine()) {
-					String queryNoun1 = StdIn.readLine();
-					String[] queryNoun = queryNoun1.split(" ");
-					// System.out.println(queryNoun[0]+", "+ queryNoun[1]);
-					WordNet wordnet1 = new WordNet(synset, hypernym);
-					wordnet1.distance(queryNoun[0], queryNoun[1]);
-					wordnet1.sap(queryNoun[0], queryNoun[1]);
-					if (queryNoun[0].equals("null")) {
-						System.out.println("IllegalArgumentException");
-					}
+		if (type.equals("Graph")) {
+			WordNet wordnet = new WordNet(synset, hypernym);
+		}
+		WordNet wordnet1 = new WordNet(synset, hypernym);
+				System.out.println("hello");
+		if(type.equals("Queries"))
+			while (StdIn.hasNextLine()) {
+				String queryNoun1 = StdIn.readLine();
+				String[] queryNoun = queryNoun1.split(" ");
+				if (queryNoun[0].equals("null")) {
+					throw new IllegalArgumentException("IllegalArgumentException");
 				}
+				System.out.println("distance:"+wordnet1.distance(queryNoun[0], queryNoun[1]));
+				wordnet1.sap(queryNoun[0], queryNoun[1]);
+			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
