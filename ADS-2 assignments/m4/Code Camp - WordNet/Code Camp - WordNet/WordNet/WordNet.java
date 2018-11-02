@@ -49,7 +49,7 @@ public class WordNet {
                 String[] nounsArray = synsetArray[1].split(" ");
                 reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
                 if (linearprobing.contains(nounsArray[i])) {
-                    idlist.addAll(linearprobing.get(synsetArray[i]));
+                    //idlist.addAll(linearprobing.get(synsetArray[i]));
                     linearprobing.put(synsetArray[i], idlist);
                 } else {
                     linearprobing.put(nounsArray[i], idlist);
@@ -98,6 +98,9 @@ public class WordNet {
      * @return     True if noun, False otherwise.
      */
     public boolean isNoun(String word) {
+        if (word.equals("null")){
+            throw new IllegalArgumentException();
+        }
         return linearprobing.contains(word);
     }
 
@@ -125,11 +128,13 @@ public class WordNet {
         return reverseSt.get(id);
     }
     public void display() {
+
         DirectedCycle directedCycle = new DirectedCycle(graph);
         if (directedCycle.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
         } else {
             int degree = 0;
+
             for (int i = 0; i < graph.V(); i++) {
                 if (graph.outdegree(i) == 0) {
                     degree++;

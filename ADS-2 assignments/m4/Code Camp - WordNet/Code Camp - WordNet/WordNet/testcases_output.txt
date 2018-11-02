@@ -77,11 +77,11 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-distance = 0, ancestor = a
-distance = 0, ancestor = a
-distance = 0, ancestor = a
-distance = 0, ancestor = a
-distance = 0, ancestor = a
+distance = 2, ancestor = a
+distance = 8, ancestor = a
+distance = 6, ancestor = a
+distance = 4, ancestor = a
+distance = 2, ancestor = a
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -105,9 +105,9 @@ distance = 3, ancestor = c
 distance = 4, ancestor = c
 distance = 4, ancestor = c
 distance = 3, ancestor = c
-distance = 3, ancestor = c
-distance = 2, ancestor = c
-distance = 1, ancestor = c
+distance = 4, ancestor = c
+distance = 5, ancestor = c
+distance = 6, ancestor = c
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -123,10 +123,10 @@ distance = 1, ancestor = h
 Your Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
-distance = 2, ancestor = d
+distance = 3, ancestor = d
+distance = 6, ancestor = d
 distance = 5, ancestor = d
 distance = 4, ancestor = d
-distance = 3, ancestor = d
 distance = 1, ancestor = h
 ----------------------------------------
 
