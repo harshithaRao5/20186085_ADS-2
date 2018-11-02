@@ -42,7 +42,7 @@ public class SAP {
         BreadthFirstDirectedPaths bfsW = new BreadthFirstDirectedPaths(graph, w);
         distanceGlobal = Integer.MAX_VALUE;
         int ancestors = -1;
-        for (int i = 0; i < graph.V(); i++) {
+        for (int i = 0; i < graph.vertices(); i++) {
             if (bfsV.hasPathTo(i) && bfsW.hasPathTo(i)) {
                 int distance = bfsV.distTo(i) + bfsW.distTo(i);
                 if (distance < distanceGlobal) {

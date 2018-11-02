@@ -42,7 +42,7 @@ public final class Solution {
                                                queryArray[1]));
                 }
             } catch (Exception e) {
-            	//e.printStackTrace();
+                //e.printStackTrace();
                 System.out.println(e.getMessage());
             }
             break;
