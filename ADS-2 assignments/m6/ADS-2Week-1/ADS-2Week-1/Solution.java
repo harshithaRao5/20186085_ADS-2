@@ -1,35 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
 class PageRank {
-
-	private Digraph digraph;
-
-	PageRank(Digraph digraph1) {
-		this.digraph = digraph1;
-
-	}
-	public double getPR(int v) {
-
-		int pageR = 1 / digraph.V();
-		for (int i = 0; i < 1000; i++) {
-			if (digraph.indegree(v) > 0) {
-				for (int j : digraph.adj(i)) {
-					pageR += getPR(j) / digraph.outdegree(v);
-				}
-			}
-		}
-		if (digraph.indegree(v) == 0) {
-			digraph.addEdge(v, digraph.V());
-		}
-		return pageR;
-	}
-	public String toString() {
-		String s = "";
-		for (int i = 0; i < digraph.V(); i++) {
-			s += digraph.V() + " - " + getPR(digraph.V());
-		}
-		return s;
-	}
 
 }
 
@@ -37,22 +7,9 @@ class WebSearch {
 
 }
 
-/**
- * Class for solution.
- */
-public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
 
-	}
-	/**
-	 * main method.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
+public class Solution {
+	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		Scanner sc = new Scanner(System.in);
 		// iterate count of vertices times
@@ -62,16 +19,19 @@ public final class Solution {
 			String[] tokens = sc.nextLine().split(" ");
 			for (int i = 1; i < tokens.length; i++) {
 				dobj.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+				if (tokens.length == 1) {
+					for (int j = 0; j < tokens.length; j++) {
+						dobj.addEdge(j, i);
+					}
+				}
 			}
 
+			// PageRank pagerank = new PageRank(dobj);
+			// System.out.println(pagerank);
 		}
 		System.out.println(dobj);
-		System.out.println();
-		PageRank pagerank = new PageRank(dobj);
-		System.out.println(pagerank);
 
-		// to read the adjacency list from std input
-		// and build the graph
+
 
 
 		// Create page rank object and pass the graph object to the constructor
