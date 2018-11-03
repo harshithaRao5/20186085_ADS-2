@@ -12,10 +12,21 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+4 vertices, 2 edges 
+0: 2 1 
+1: 
+2: 
+3: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -32,10 +43,21 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+4 vertices, 1 edges 
+0: 1 
+1: 
+2: 
+3: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -52,10 +74,21 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+4 vertices, 1 edges 
+0: 1 
+1: 
+2: 
+3: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -80,10 +113,25 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+8 vertices, 3 edges 
+0: 3 2 1 
+1: 
+2: 
+3: 
+4: 
+5: 
+6: 
+7: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -104,10 +152,23 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+6 vertices, 3 edges 
+0: 3 2 1 
+1: 
+2: 
+3: 
+4: 
+5: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -132,10 +193,25 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+8 vertices, 3 edges 
+0: 3 2 1 
+1: 
+2: 
+3: 
+4: 
+5: 
+6: 
+7: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -152,10 +228,21 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+4 vertices, 1 edges 
+0: 1 
+1: 
+2: 
+3: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -176,10 +263,23 @@ Expected Output:
 5 - 0.12499999999999999
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+6 vertices, 1 edges 
+0: 1 
+1: 
+2: 
+3: 
+4: 
+5: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -196,10 +296,21 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+4 vertices, 3 edges 
+0: 3 2 1 
+1: 
+2: 
+3: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -220,10 +331,23 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+6 vertices, 3 edges 
+0: 3 2 1 
+1: 
+2: 
+3: 
+4: 
+5: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -236,10 +360,19 @@ Expected Output:
 1 - 0.5
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+2 vertices, 1 edges 
+0: 1 
+1: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -277,9 +410,28 @@ Expected Output:
 0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+12 vertices, 3 edges 
+0: 3 2 1 
+1: 
+2: 
+3: 
+4: 
+5: 
+6: 
+7: 
+8: 
+9: 
+10: 
+11: 
+
+
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 12 is not between 0 and 11
 	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:167)
-	at Solution.main(Solution.java:72)
+	at Digraph.indegree(Digraph.java:208)
+	at PageRank.getPR(Solution.java:19)
+	at PageRank.toString(Solution.java:35)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 

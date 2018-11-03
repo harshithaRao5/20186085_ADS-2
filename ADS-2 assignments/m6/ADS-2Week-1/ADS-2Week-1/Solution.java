@@ -1,23 +1,23 @@
 import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.Arrays;
 class PageRank {
-    private String[] adjArray;
+    //private String[] adjArray;
 	private Digraph digraph;
+    private Bag<Integer>[] adj;
 	//private int pageR;
-	PageRank(Digraph digraph1, String[] adjArray1) {
+	PageRank(Digraph digraph1) {
 		this.digraph = digraph1;
-		this.adjArray = adjArray1;
-
-
+		adj = (Bag<Integer>[]) new Bag[digraph.V()];
+        for (int v = 0; v < digraph.V(); v++) {
+            adj[v] = new Bag<Integer>();
+        }
+		//this.adjArray = adjArray1;
 	}
 	public double getPR(int v) {
-		//BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(digraph, v);
-		// ArrayList<Integer> adjarr = new ArrayList<Integer>();
-		// adjarr.addAll(digraph.adj(v).next());
 		int pageR = 1/digraph.V();
 		for(int i = 0; i<1000; i++) {
 			if(digraph.indegree(v)>0) {
-				for(int j=0; j<adjArray.length;j++) {
+				for(int j=0; j<adj.length;j++) {
 				pageR += getPR(j)/digraph.outdegree(v);
 			}
 			}
@@ -63,17 +63,16 @@ public final class Solution {
 		Scanner sc = new Scanner(System.in);
 		// iterate count of vertices times
 		int n = Integer.parseInt(sc.nextLine());
-		while (n > 0) {
+		Digraph dobj = new Digraph(n);
+		while (sc.hasNext()) {
 			String[] tokens = sc.nextLine().split(" ");
-			int vertex = Integer.parseInt(tokens[0]);
-			String[] adjVertex = tokens[1].split(" ");
-			Digraph dobj = new Digraph(vertex);
-			for (int i = 0; i < adjVertex.length; i++) {
-				dobj.addEdge(vertex, Integer.parseInt(adjVertex[i]));
-			}
-			PageRank pagerank = new PageRank(dobj,adjVertex);
-			n--;
+            for (int i = 1; i < tokens.length; i++) {
+                dobj.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+            }
+			PageRank pagerank = new PageRank(dobj);
+			System.out.println(pagerank);
 		}
+
 
 		// to read the adjacency list from std input
 		// and build the graph
