@@ -1,37 +1,37 @@
 import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
-	//private String[] adjArray;
+    //private String[] adjArray;
 	private Digraph digraph;
-	private Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
 	//private int pageR;
 	PageRank(Digraph digraph1) {
 		this.digraph = digraph1;
 		adj = (Bag<Integer>[]) new Bag[digraph.V()];
-		for (int v = 0; v < digraph.V(); v++) {
-			adj[v] = new Bag<Integer>();
-		}
+        for (int v = 0; v < digraph.V(); v++) {
+            adj[v] = new Bag<Integer>();
+        }
 		//this.adjArray = adjArray1;
 	}
 	public double getPR(int v) {
-		int pageR = 1 / digraph.V();
-		for (int i = 0; i < 1000; i++) {
-			if(adj.length>0) {
-			for (int j = 0; j < adj.length; j++) {
-				pageR += getPR(j) / digraph.outdegree(v);
-				}
+		int pageR = 1/digraph.V();
+		for(int i = 0; i<1000; i++) {
+			if(digraph.indegree(v)>0) {
+				for(int j=0; j<adj.length;j++) {
+				pageR += getPR(j)/digraph.outdegree(v);
+			}
 			}
 		}
-		// if(digraph.indegree(v) == 0) {
-		// 	digraph.addEdge(v, digraph.V()-1);
-		// }
+		if(digraph.indegree(v) == 0) {
+			digraph.addEdge(v, digraph.V());
+		}
 		return pageR;
 	}
 	public String toString() {
 		System.out.println(digraph);
 		System.out.println();
 		String s = "";
-		for (int i = 0; i < digraph.V(); i++) {
+		for(int i = 0; i < digraph.V();i++) {
 			s += digraph.V() + " - " + getPR(digraph.V());
 		}
 		return s;
@@ -66,9 +66,9 @@ public final class Solution {
 		Digraph dobj = new Digraph(n);
 		while (sc.hasNext()) {
 			String[] tokens = sc.nextLine().split(" ");
-			for (int i = 1; i < tokens.length; i++) {
-				dobj.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
-			}
+            for (int i = 1; i < tokens.length; i++) {
+                dobj.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+            }
 			PageRank pagerank = new PageRank(dobj);
 			System.out.println(pagerank);
 		}
