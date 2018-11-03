@@ -17,7 +17,7 @@ class PageRank {
 		int pageR = 1/digraph.V();
 		for(int i = 0; i<1000; i++) {
 			if(digraph.indegree(v)>0) {
-				for(int j=0; j<adj.length;j++) {
+				for(int j=0; j < adj.length; j++) {
 				pageR += getPR(j)/digraph.outdegree(v);
 			}
 			}
@@ -71,6 +71,7 @@ public final class Solution {
             }
 			PageRank pagerank = new PageRank(dobj);
 			System.out.println(pagerank);
+			n--;
 		}
 
 

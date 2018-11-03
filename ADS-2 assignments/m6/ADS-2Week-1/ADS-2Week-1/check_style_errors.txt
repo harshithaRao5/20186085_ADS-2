@@ -331,9 +331,6 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:20:36: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:20:42: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:20:43: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:20:47: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:20:48: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:20:59: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:21:50: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:21:51: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:25:19: 'if' is not followed by whitespace. [WhitespaceAfter]
@@ -343,10 +340,10 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:62: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:70: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:81: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:91: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:82: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:92: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 36 errors.
+Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
