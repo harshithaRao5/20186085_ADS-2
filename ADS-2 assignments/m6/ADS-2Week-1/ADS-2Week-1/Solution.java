@@ -1,6 +1,26 @@
 import java.util.Scanner;
 class PageRank {
-
+	private Digraph digraph;
+	PageRank(Digraph digraph1) {
+		this.digraph = digraph1;
+	}
+	public double getPR(int v) {
+		double pageR = 1 / digraph.V();
+		Digraph reverse = digraph.reverse();
+		for (int i = 0; i < 1000; i++) {
+			for (int j : reverse.adj(v)) {
+				pageR += getPR(j) / digraph.outdegree(v);
+			}
+		}
+		return pageR;
+	}
+	public String toString() {
+		String s ="";
+		for(int i = 0; i < digraph.V(); i++) {
+			s += i +" - "+ getPR(i);
+		}
+		return s;
+	}
 }
 
 class WebSearch {
@@ -25,11 +45,10 @@ public class Solution {
 					}
 				}
 			}
-
-			// PageRank pagerank = new PageRank(dobj);
-			// System.out.println(pagerank);
 		}
 		System.out.println(dobj);
+		PageRank pagerank = new PageRank(dobj);
+		System.out.println(pagerank);
 
 
 
