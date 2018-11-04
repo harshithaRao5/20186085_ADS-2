@@ -1,7 +1,5 @@
 import java.util.Scanner;
 import java.util.Arrays;
-//import java.math.BigDecimal;
-//import java.text.DecimalFormat;
 class PageRank {
 	private Digraph digraph;
 	PageRank(Digraph graph) {
@@ -13,29 +11,12 @@ class PageRank {
 		for (int i = 0; i < digraph.V(); i++) {
 			pageRank[i] = 1.0 / digraph.V();
 		}
-		//array that stores the intermediate pr values of each vertex
-		//by storing the temporary page rank values and updating those
-		//values to initial array.
-		//for (int k = 0; k < 1000; k++) {
-		Double[] intermediatePr = getPrVal(pageRank);
-		//if (Arrays.equals(pageRank, intermediatePr)) {
-		//break;
-		//} else {
-		//pageRank = intermediatePr;
-		//}
-		//}
-		return intermediatePr[v];
+		pageRank = getPrVal(pageRank);
+		return pageRank[v];
 	}
 	public Double[] getPrVal(Double[] pageR) {
-		//Digraph reverse = digraph.reverse();
-		//taking an temporary array and it is used to store the
-		//pr of each vertex for each iteration.
-
-		//System.out.println("GEtPRvAl: ");
-		for (int l = 0; l < 1000; l++) {
-			Double[] tempArray = new Double[digraph.V()];
-			//System.out.println("first for loop");
-
+		for (int l = 1; l <= 1000; l++) {
+		Double[] tempArray = new Double[digraph.V()];
 			for (int i = 0; i < digraph.V(); i++) {
 				if (digraph.outdegree(i) == 0) {
 					for (int j = 0; j < digraph.V(); j++) {
@@ -45,16 +26,8 @@ class PageRank {
 					}
 				}
 				Double rank = 0.0;
-				//for (int j = 0; j < digraph.V(); j++) {
-				//System.out.println("second for loop");
-
 				for (int k : digraph.reverse().adj(i)) {
-					//if (k == i) {
-					//if (digraph.outdegree(j) > 0) {
 					rank += pageR[k] / digraph.outdegree(k);
-					//	}
-					//}
-					//}
 				}
 				tempArray[i] = rank;
 			}
@@ -65,9 +38,7 @@ class PageRank {
 
 	public String toString() {
 		String s = "";
-		//DecimalFormat numberFormat = new DecimalFormat("0.0000000");
 		for (int i = 0; i < digraph.V(); i++) {
-			//BigDecimal bigdecimal = new BigDecimal(getPR(i));
 			s += i + " - " + (getPR(i)) + "\n";
 		}
 		return s;
