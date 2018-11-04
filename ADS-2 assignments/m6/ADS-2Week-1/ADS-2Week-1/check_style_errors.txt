@@ -295,7 +295,7 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:29:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:29:34: Parameter pageR should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:35:37: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:51: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:51: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:53: '!=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:55: '!=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:57: '{' is not preceded with whitespace. [WhitespaceAround]
