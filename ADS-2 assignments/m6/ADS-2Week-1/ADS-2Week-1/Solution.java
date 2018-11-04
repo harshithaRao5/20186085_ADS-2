@@ -6,7 +6,7 @@ class PageRank {
 		this.digraph = digraph1;
 	}
 	public double getPR(int v) {
-		double pageR = 1 / digraph.V();
+		double pageR = 0.25;
 		Digraph reverse = digraph.reverse();
 		ArrayList<Double> initialRank = new ArrayList<Double>();
 		for (int i = 0; i < digraph.V(); i++) {
