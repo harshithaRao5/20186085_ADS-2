@@ -1,42 +1,58 @@
 import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.Arrays;
+//import java.math.BigDecimal;
+//import java.text.DecimalFormat;
 class PageRank {
 	private Digraph digraph;
-	PageRank(Digraph digraph1) {
-		this.digraph = digraph1;
+	PageRank(Digraph graph) {
+		this.digraph = graph;
 	}
-	public double getPR(int v) {
-		double pageR = 0.25;
-		Digraph reverse = digraph.reverse();
-		ArrayList<Double> initialRank = new ArrayList<Double>();
+	public Double getPR(int v) {
+		//array to store the initial pr values of each vertex.
+		Double[] pageRank = new Double[digraph.V()];
 		for (int i = 0; i < digraph.V(); i++) {
-			initialRank.add(pageR);
+			pageRank[i] = 1.0 / digraph.V();
 		}
-		//System.out.println(initialRank);
-		ArrayList<Double> pageRank = new ArrayList<Double>();
-		for (int i = 0; i < initialRank.size(); i++) {
-			pageRank.add(initialRank.get(i));
-		}
-		//System.out.println(pageRank);
-		for (int i = 0; i < 1000; i++) {
-			for(int t = 0; t <initialRank.size(); t++) {
-				initialRank.add(pageRank.get(t));
-			}
-			for (int j = 0; j < digraph.V(); j++) {
-				double tempR = 0.0;
-				for (int k : reverse.adj(v)) {
-					//System.out.println(k);
-					tempR +=  initialRank.get(k) / digraph.outdegree(v);
-				}
-				pageRank.add(tempR);
+		//array that stores the intermediate pr values of each vertex
+		//by storing the temporary page rank values and updating those
+		//values to initial array.
+		for (int k = 0; k < 1000; k++) {
+			Double[] intermediatePr = getPrVal(pageRank);
+			if (Arrays.equals(pageRank, intermediatePr)) {
+				break;
+			} else {
+				pageRank = intermediatePr;
 			}
 		}
-		return pageRank.get(v);
+		return pageRank[v];
 	}
+	public Double[] getPrVal(Double[] list) {
+		Digraph reverse = digraph.reverse();
+		//taking an temporary array and it is used to store the
+		//pr of each vertex for each iteration.
+		Double[] tempArray = new Double[digraph.V()];
+		for (int i = 0; i < digraph.V(); i++) {
+			Double rank = 0.0;
+			for (int j = 0; j < digraph.V(); j++) {
+				for (int k : reverse.adj(j)) {
+					if (k == i) {
+						if (digraph.outdegree(j) > 0) {
+							rank += list[j] / (double)digraph.outdegree(j);
+						}
+					}
+				}
+			}
+			tempArray[i] = rank;
+		}
+		return tempArray;
+	}
+
 	public String toString() {
 		String s = "";
+		//DecimalFormat numberFormat = new DecimalFormat("0.0000000");
 		for (int i = 0; i < digraph.V(); i++) {
-			s += i + " - " + getPR(i) + "\n";
+			//BigDecimal bigdecimal = new BigDecimal(getPR(i));
+			s += i + " - " + (getPR(i)) + "\n";
 		}
 		return s;
 	}
@@ -48,25 +64,29 @@ class WebSearch {
 
 
 public class Solution {
+
 	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		Scanner sc = new Scanner(System.in);
 		// iterate count of vertices times
 		int n = Integer.parseInt(sc.nextLine());
 		Digraph dobj = new Digraph(n);
+		Digraph diobj = new Digraph(n);
 		while (sc.hasNext()) {
 			String[] tokens = sc.nextLine().split(" ");
 			for (int i = 1; i < tokens.length; i++) {
-				dobj.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
-				if (tokens.length == 1) {
+				int vertex = Integer.parseInt(tokens[0]);
+				dobj.addEdge(vertex, Integer.parseInt(tokens[i]));
+				diobj.addEdge(vertex, Integer.parseInt(tokens[i]));
+				if (diobj.outdegree(vertex) == 0) {
 					for (int j = 0; j < tokens.length; j++) {
-						dobj.addEdge(j, i);
+						diobj.addEdge(j, i);
 					}
 				}
 			}
 		}
 		System.out.println(dobj);
-		PageRank pagerank = new PageRank(dobj);
+		PageRank pagerank = new PageRank(diobj);
 		System.out.println(pagerank);
 
 

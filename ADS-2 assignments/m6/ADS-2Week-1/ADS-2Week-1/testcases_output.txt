@@ -18,17 +18,10 @@ Your Output:
 2: 0 
 3: 2 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out-of-bounds for length 4
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.4
+1 - 0.2
+2 - 0.2
+3 - 0.2
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -51,17 +44,10 @@ Your Output:
 2: 3 0 
 3: 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out-of-bounds for length 4
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.18181818181818182
+1 - 0.36363636363636365
+2 - 0.36363636363636365
+3 - 0.18181818181818182
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -84,17 +70,10 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out-of-bounds for length 4
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.1538461538461538
+1 - 0.3076923076923075
+2 - 0.46153846153846134
+3 - 0.3076923076923075
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -129,17 +108,14 @@ Your Output:
 6: 0 
 7: 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 8 out-of-bounds for length 8
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.22058823529411759
+1 - 0.07352941176470588
+2 - 0.07352941176470588
+3 - 0.36764705882352927
+4 - 0.07352941176470588
+5 - 0.07352941176470588
+6 - 0.07352941176470588
+7 - 0.07352941176470588
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -168,17 +144,12 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out-of-bounds for length 6
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 4.2778517095088544E-41
+1 - 4.2778517095088513E-41
+2 - 4.2778517095088513E-41
+3 - 4.2778517095088513E-41
+4 - 4.2778517095088513E-41
+5 - 0.0
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -213,20 +184,17 @@ Your Output:
 6: 
 7: 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 8 out-of-bounds for length 8
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 5.592719837707673E-69
+1 - 5.592719837707647E-69
+2 - 5.592719837707647E-69
+3 - 5.592719837707647E-69
+4 - 0.0
+5 - 0.0
+6 - 0.0
+7 - 0.0
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 4 vertices, 4 edges 
 0: 1 
@@ -246,17 +214,10 @@ Your Output:
 2: 3 
 3: 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out-of-bounds for length 4
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.25
+1 - 0.25
+2 - 0.25
+3 - 0.25
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -285,20 +246,15 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out-of-bounds for length 6
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 9.211913125434074E-77
+1 - 9.211913125434074E-77
+2 - 9.211913125434074E-77
+3 - 9.211913125434074E-77
+4 - 9.211913125434074E-77
+5 - 0.0
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 4 vertices, 12 edges 
 0: 3 2 1 
@@ -318,17 +274,10 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out-of-bounds for length 4
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.25
+1 - 0.25
+2 - 0.25
+3 - 0.25
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -357,20 +306,15 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out-of-bounds for length 6
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 4.814198599586993E-31
+1 - 4.814198599586993E-31
+2 - 5.152961801269232E-31
+3 - 4.814198599586994E-31
+4 - 1.7176539337564107E-31
+5 - 0.0
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 2 vertices, 2 edges 
 0: 1 
@@ -384,17 +328,8 @@ Your Output:
 0: 1 
 1: 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out-of-bounds for length 2
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.5
+1 - 0.5
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -446,16 +381,17 @@ Your Output:
 10: 0 
 11: 0 
 
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 12 out-of-bounds for length 12
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
-	at java.base/java.util.Objects.checkIndex(Unknown Source)
-	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.getPR(Solution.java:23)
-	at PageRank.toString(Solution.java:39)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:70)
+0 - 0.14516129032258068
+1 - 0.04838709677419356
+2 - 0.04838709677419356
+3 - 0.43548387096774205
+4 - 0.04838709677419356
+5 - 0.04838709677419356
+6 - 0.04838709677419356
+7 - 0.04838709677419356
+8 - 0.04838709677419356
+9 - 0.04838709677419356
+10 - 0.04838709677419356
+11 - 0.04838709677419356
 ----------------------------------------
 
