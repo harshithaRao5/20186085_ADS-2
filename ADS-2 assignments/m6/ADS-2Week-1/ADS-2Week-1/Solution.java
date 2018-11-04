@@ -24,7 +24,7 @@ class PageRank {
 		//pageRank = intermediatePr;
 		//}
 		//}
-		return pageRank[v];
+		return intermediatePr[v];
 	}
 	public Double[] getPrVal(Double[] pageR) {
 		//Digraph reverse = digraph.reverse();
