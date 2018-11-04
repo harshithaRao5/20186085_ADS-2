@@ -32,7 +32,7 @@ class PageRank {
 		//pr of each vertex for each iteration.
 
 		//System.out.println("GEtPRvAl: ");
-		for (int l = 1; l < 1000; l++) {
+		for (int l = 0; l < 1000; l++) {
 			Double[] tempArray = new Double[digraph.V()];
 			//System.out.println("first for loop");
 
