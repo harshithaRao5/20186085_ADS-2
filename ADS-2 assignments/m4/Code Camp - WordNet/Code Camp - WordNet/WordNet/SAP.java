@@ -38,8 +38,8 @@ public class SAP {
      * @return ancestor
      */
 
-    public int ancestor(final Iterable<Integer> v,
-        final Iterable<Integer> w) {
+    public int ancestor(
+        final Iterable<Integer> v, final Iterable<Integer> w) {
         BreadthFirstDirectedPaths bfsV =
         new BreadthFirstDirectedPaths(graph, v);
         BreadthFirstDirectedPaths bfsW =
