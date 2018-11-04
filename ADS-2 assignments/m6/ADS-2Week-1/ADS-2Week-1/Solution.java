@@ -27,20 +27,20 @@ class PageRank {
 		return pageRank[v];
 	}
 	public Double[] getPrVal(Double[] list) {
-		Digraph reverse = digraph.reverse();
+		//Digraph reverse = digraph.reverse();
 		//taking an temporary array and it is used to store the
 		//pr of each vertex for each iteration.
 		Double[] tempArray = new Double[digraph.V()];
 		for (int i = 0; i < digraph.V(); i++) {
 			Double rank = 0.0;
-			for (int j = 0; j < digraph.V(); j++) {
-				for (int k : reverse.adj(j)) {
-					if (k == i) {
-						if (digraph.outdegree(j) > 0) {
-							rank += list[j] / (double)digraph.outdegree(j);
-						}
-					}
-				}
+			//for (int j = 0; j < digraph.V(); j++) {
+				for (int k : digraph.reverse().adj(i)) {
+					//if (k == i) {
+						//if (digraph.outdegree(j) > 0) {
+							rank += list[k] / (double)digraph.outdegree(k);
+					//	}
+					//}
+				//}
 			}
 			tempArray[i] = rank;
 		}
