@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 class PageRank {
 	private Digraph digraph;
 	PageRank(Digraph digraph1) {
@@ -7,17 +8,32 @@ class PageRank {
 	public double getPR(int v) {
 		double pageR = 1 / digraph.V();
 		Digraph reverse = digraph.reverse();
+		ArrayList<Double> initialRank = new ArrayList<Double>();
+		for (int i = 0; i < digraph.V(); i++) {
+			initialRank.add(pageR);
+		}
+		//System.out.println(initialRank);
+		ArrayList<Double> tempRank = new ArrayList<Double>();
+		for (int i = 0; i < initialRank.size(); i++) {
+			tempRank.add(initialRank.get(i));
+		}
+		//System.out.println(tempRank);
 		for (int i = 0; i < 1000; i++) {
-			for (int j : reverse.adj(v)) {
-				pageR += getPR(j) / digraph.outdegree(v);
+			for (int j = 0; j < digraph.V(); j++) {
+				double tempR = 0.0;
+				for (int k : reverse.adj(v)) {
+					//System.out.println(k);
+					tempR +=  initialRank.get(k) / digraph.outdegree(v);
+				}
+				tempRank.add(tempR);
 			}
 		}
-		return pageR;
+		return tempRank.get(v);
 	}
 	public String toString() {
-		String s ="";
-		for(int i = 0; i < digraph.V(); i++) {
-			s += i +" - "+ getPR(i);
+		String s = "";
+		for (int i = 0; i < digraph.V(); i++) {
+			s += i + " - " + getPR(i) + "\n";
 		}
 		return s;
 	}
