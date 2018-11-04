@@ -13,22 +13,25 @@ class PageRank {
 			initialRank.add(pageR);
 		}
 		//System.out.println(initialRank);
-		ArrayList<Double> tempRank = new ArrayList<Double>();
+		ArrayList<Double> pageRank = new ArrayList<Double>();
 		for (int i = 0; i < initialRank.size(); i++) {
-			tempRank.add(initialRank.get(i));
+			pageRank.add(initialRank.get(i));
 		}
-		//System.out.println(tempRank);
+		//System.out.println(pageRank);
 		for (int i = 0; i < 1000; i++) {
+			for(int t = 0; t <initialRank.size(); t++) {
+				initialRank.add(pageRank.get(t));
+			}
 			for (int j = 0; j < digraph.V(); j++) {
 				double tempR = 0.0;
 				for (int k : reverse.adj(v)) {
 					//System.out.println(k);
 					tempR +=  initialRank.get(k) / digraph.outdegree(v);
 				}
-				tempRank.add(tempR);
+				pageRank.add(tempR);
 			}
 		}
-		return tempRank.get(v);
+		return pageRank.get(v);
 	}
 	public String toString() {
 		String s = "";
