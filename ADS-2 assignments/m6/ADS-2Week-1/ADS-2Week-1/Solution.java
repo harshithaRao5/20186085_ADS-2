@@ -31,9 +31,10 @@ class PageRank {
 		//taking an temporary array and it is used to store the
 		//pr of each vertex for each iteration.
 
-
+		//System.out.println("GEtPRvAl: ");
 		for (int l = 1; l < 1000; l++) {
 			Double[] tempArray = new Double[digraph.V()];
+			//System.out.println("first for loop");
 
 			for (int i = 0; i < digraph.V(); i++) {
 				if (digraph.outdegree(i) == 0) {
@@ -45,6 +46,8 @@ class PageRank {
 				}
 				Double rank = 0.0;
 				//for (int j = 0; j < digraph.V(); j++) {
+				//System.out.println("second for loop");
+
 				for (int k : digraph.reverse().adj(i)) {
 					//if (k == i) {
 					//if (digraph.outdegree(j) > 0) {
