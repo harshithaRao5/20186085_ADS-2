@@ -6,7 +6,7 @@ public class SAP {
     /**
      *variable description;
      */
-    int distanceGlobal;
+    private int distanceGlobal;
     /**
      * Constructs the object.
      *
@@ -24,7 +24,8 @@ public class SAP {
      *
      * @return  distance
      */
-    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
+    public int length(final Iterable<Integer> v,
+        final Iterable<Integer> w) {
         ancestor(v, w);
         return distanceGlobal;
     }
@@ -37,9 +38,12 @@ public class SAP {
      * @return ancestor
      */
 
-    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
-        BreadthFirstDirectedPaths bfsV = new BreadthFirstDirectedPaths(graph, v);
-        BreadthFirstDirectedPaths bfsW = new BreadthFirstDirectedPaths(graph, w);
+    public int ancestor(final Iterable<Integer> v,
+        final Iterable<Integer> w) {
+        BreadthFirstDirectedPaths bfsV =
+        new BreadthFirstDirectedPaths(graph, v);
+        BreadthFirstDirectedPaths bfsW =
+         new BreadthFirstDirectedPaths(graph, w);
         distanceGlobal = Integer.MAX_VALUE;
         int ancestors = -1;
         for (int i = 0; i < graph.V(); i++) {

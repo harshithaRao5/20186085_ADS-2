@@ -1,4 +1,4 @@
-import java.util.List;
+//import java.util.List;
 import java.util.ArrayList;
 /**
  * Class for word net.
@@ -7,7 +7,8 @@ public class WordNet {
     /**
      * symbol table initializing.
      */
-    private final LinearProbingHashST<String, ArrayList<Integer>> linearprobing;
+    private final LinearProbingHashST
+    <String, ArrayList<Integer>> linearprobing;
     /**
      * variable description.
      */
@@ -32,7 +33,8 @@ public class WordNet {
      */
     public WordNet(final String synsets, final String hypernyms) {
         synsetsId = new ArrayList<String>();
-        linearprobing = new LinearProbingHashST<String, ArrayList<Integer>>();
+        linearprobing = new
+        LinearProbingHashST<String, ArrayList<Integer>>();
         vertices = readSynset(synsets);
         graph = new Digraph(vertices);
         readHypernym(hypernyms);
@@ -80,7 +82,8 @@ public class WordNet {
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
             for (int i = 1; i < tokens.length; i++) {
-                graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+                graph.addEdge(Integer.parseInt(tokens[0]),
+                    Integer.parseInt(tokens[i]));
             }
         }
 
@@ -122,7 +125,8 @@ public class WordNet {
 
     }
 
-//a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
+//a synset (second field of synsets.txt) that
+// is the common ancestor of nounA and nounB
 //in a shortest ancestral path (defined below)
     public String sap(final String nounA, final String nounB) {
         ArrayList<Integer> noun1 = linearprobing.get(nounA);

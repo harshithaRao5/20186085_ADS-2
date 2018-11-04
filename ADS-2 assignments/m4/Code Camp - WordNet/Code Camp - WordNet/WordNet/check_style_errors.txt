@@ -316,18 +316,16 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:2: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:6: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:9:9: Variable 'distanceGlobal' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:15:30: 'graph' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:41: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\SAP.java:42: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:40: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:41: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:40:54: '+' should be on a new line. [OperatorWrap]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:42:58: '+' should be on a new line. [OperatorWrap]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Solution.java:43:53: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
@@ -466,16 +464,13 @@ Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:1:8: Unused import - java.util.List. [UnusedImports]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:47: Expected @return tag. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:48:13: 'vertices' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:83: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:115:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:115:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:125: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:127:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:127:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:136:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'display' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'display' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:136:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:49: Expected @return tag. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:50:13: 'vertices' hides a field. [HiddenField]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:118:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:118:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:131:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:131:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:140:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'display' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'display' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:140:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 9 errors.
