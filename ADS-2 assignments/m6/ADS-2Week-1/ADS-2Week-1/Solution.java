@@ -16,35 +16,45 @@ class PageRank {
 		//array that stores the intermediate pr values of each vertex
 		//by storing the temporary page rank values and updating those
 		//values to initial array.
-		for (int k = 0; k < 1000; k++) {
-			Double[] intermediatePr = getPrVal(pageRank);
-			if (Arrays.equals(pageRank, intermediatePr)) {
-				break;
-			} else {
-				pageRank = intermediatePr;
-			}
-		}
+		//for (int k = 0; k < 1000; k++) {
+		Double[] intermediatePr = getPrVal(pageRank);
+		//if (Arrays.equals(pageRank, intermediatePr)) {
+		//break;
+		//} else {
+		//pageRank = intermediatePr;
+		//}
+		//}
 		return pageRank[v];
 	}
-	public Double[] getPrVal(Double[] list) {
+	public Double[] getPrVal(Double[] pageR) {
 		//Digraph reverse = digraph.reverse();
 		//taking an temporary array and it is used to store the
 		//pr of each vertex for each iteration.
+
 		Double[] tempArray = new Double[digraph.V()];
-		for (int i = 0; i < digraph.V(); i++) {
-			Double rank = 0.0;
-			//for (int j = 0; j < digraph.V(); j++) {
+		for (int l = 1; l < 1000; l++) {
+
+			for (int i = 0; i < digraph.V(); i++) {
+				if (digraph.outdegree(i) == 0) {
+					for (int j = 0; j < pageR.length; j++) {
+						digraph.addEdge(i, j);
+					}
+				}
+				Double rank = 0.0;
+				//for (int j = 0; j < digraph.V(); j++) {
 				for (int k : digraph.reverse().adj(i)) {
 					//if (k == i) {
-						//if (digraph.outdegree(j) > 0) {
-							rank += list[k] / (double)digraph.outdegree(k);
+					//if (digraph.outdegree(j) > 0) {
+					rank += pageR[k] / (double)digraph.outdegree(k);
 					//	}
 					//}
-				//}
+					//}
+				}
+				tempArray[i] = rank;
 			}
-			tempArray[i] = rank;
+			pageR = tempArray;
 		}
-		return tempArray;
+		return pageR;
 	}
 
 	public String toString() {
@@ -71,22 +81,18 @@ public class Solution {
 		// iterate count of vertices times
 		int n = Integer.parseInt(sc.nextLine());
 		Digraph dobj = new Digraph(n);
-		Digraph diobj = new Digraph(n);
+		//Digraph diobj = new Digraph(n);
 		while (sc.hasNext()) {
 			String[] tokens = sc.nextLine().split(" ");
 			for (int i = 1; i < tokens.length; i++) {
 				int vertex = Integer.parseInt(tokens[0]);
 				dobj.addEdge(vertex, Integer.parseInt(tokens[i]));
-				diobj.addEdge(vertex, Integer.parseInt(tokens[i]));
-				if (diobj.outdegree(vertex) == 0) {
-					for (int j = 0; j < tokens.length; j++) {
-						diobj.addEdge(j, i);
-					}
-				}
+				//diobj.addEdge(vertex, Integer.parseInt(tokens[i]));
+
 			}
 		}
 		System.out.println(dobj);
-		PageRank pagerank = new PageRank(diobj);
+		PageRank pagerank = new PageRank(dobj);
 		System.out.println(pagerank);
 
 
