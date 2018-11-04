@@ -31,13 +31,16 @@ class PageRank {
 		//taking an temporary array and it is used to store the
 		//pr of each vertex for each iteration.
 
-		Double[] tempArray = new Double[digraph.V()];
+
 		for (int l = 1; l < 1000; l++) {
+			Double[] tempArray = new Double[digraph.V()];
 
 			for (int i = 0; i < digraph.V(); i++) {
 				if (digraph.outdegree(i) == 0) {
 					for (int j = 0; j < pageR.length; j++) {
+						if(i!=j){
 						digraph.addEdge(i, j);
+						}
 					}
 				}
 				Double rank = 0.0;
