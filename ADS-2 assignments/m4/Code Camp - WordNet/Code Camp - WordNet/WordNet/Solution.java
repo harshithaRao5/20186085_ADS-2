@@ -40,7 +40,7 @@ public final class Solution {
                     System.out.println("distance = "
                         + wordnet1.distance(queryArray[0],
                         queryArray[1]) + ", ancestor = "
-                        + wordnet1.sap(queryArray[0],queryArray[1]));
+                        + wordnet1.sap(queryArray[0], queryArray[1]));
                 }
             } catch (Exception e) {
                 //e.printStackTrace();
