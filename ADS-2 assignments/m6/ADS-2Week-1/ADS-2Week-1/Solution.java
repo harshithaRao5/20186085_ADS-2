@@ -51,7 +51,7 @@ class PageRank {
 				for (int k : digraph.reverse().adj(i)) {
 					//if (k == i) {
 					//if (digraph.outdegree(j) > 0) {
-					rank += pageR[k] / (double)digraph.outdegree(k);
+					rank += pageR[k] / digraph.outdegree(k);
 					//	}
 					//}
 					//}

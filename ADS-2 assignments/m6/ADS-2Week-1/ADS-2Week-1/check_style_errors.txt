@@ -295,12 +295,10 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:29:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:29:34: Parameter pageR should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:35:37: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:51: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:51: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:53: '!=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:55: '!=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:42:57: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:54: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:54:68: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:66:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:77: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:82: Missing a Javadoc comment. [JavadocType]
@@ -313,7 +311,7 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:107: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Solution.java:117: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m6\ADS-2Week-1\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
