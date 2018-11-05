@@ -3,7 +3,15 @@ Expected Output:
 614708.00000
 
 Your Output: 
-614708.000000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.5f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.io.PrintStream.format(Unknown Source)
+	at java.base/java.io.PrintStream.printf(Unknown Source)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +19,15 @@ Expected Output:
 1.81000
 
 Your Output: 
-1.810000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.5f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.io.PrintStream.format(Unknown Source)
+	at java.base/java.io.PrintStream.printf(Unknown Source)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,7 +35,15 @@ Expected Output:
 10.46351
 
 Your Output: 
-10.463510
+Exception in thread "main" java.util.MissingFormatWidthException: %0.5f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.io.PrintStream.format(Unknown Source)
+	at java.base/java.io.PrintStream.printf(Unknown Source)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -27,7 +51,15 @@ Expected Output:
 37.00000
 
 Your Output: 
-37.000000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.5f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.io.PrintStream.format(Unknown Source)
+	at java.base/java.io.PrintStream.printf(Unknown Source)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,7 +67,15 @@ Expected Output:
 19.00000
 
 Your Output: 
-19.000000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.5f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.io.PrintStream.format(Unknown Source)
+	at java.base/java.io.PrintStream.printf(Unknown Source)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -43,6 +83,14 @@ Expected Output:
 2.00000
 
 Your Output: 
-2.000000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.5f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.io.PrintStream.format(Unknown Source)
+	at java.base/java.io.PrintStream.printf(Unknown Source)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
