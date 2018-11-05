@@ -16,16 +16,16 @@ class PageRank {
 	}
 	public Double[] getPrVal(Double[] pageR) {
 		for (int i = 0; i < digraph.V(); i++) {
-				if (digraph.outdegree(i) == 0) {
-					for (int j = 0; j < digraph.V(); j++) {
-						if(i!=j){
+			if (digraph.outdegree(i) == 0) {
+				for (int j = 0; j < digraph.V(); j++) {
+					if (i != j) {
 						digraph.addEdge(i, j);
-						}
 					}
 				}
 			}
-		for (int l = 1; l < 1000; l++) {
-		Double[] tempArray = new Double[digraph.V()];
+		}
+		for (int l = 0; l < 1000; l++) {
+			Double[] tempArray = new Double[digraph.V()];
 			for (int i = 0; i < digraph.V(); i++) {
 				// if (digraph.outdegree(i) == 0) {
 				// 	for (int j = 0; j < digraph.V(); j++) {
