@@ -24,7 +24,7 @@ class PageRank {
 					}
 				}
 			}
-		for (int l = 0; l <= 1000; l++) {
+		for (int l = 1; l <= 1000; l++) {
 		Double[] tempArray = new Double[digraph.V()];
 			for (int i = 0; i < digraph.V(); i++) {
 				// if (digraph.outdegree(i) == 0) {
