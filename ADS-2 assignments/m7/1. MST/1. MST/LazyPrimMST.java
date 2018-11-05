@@ -23,15 +23,15 @@ public class LazyPrimMST {
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * @param g the edge-weighted graph
      */
-    public LazyPrimMST(final EdgeWeightedGraph G) {
+    LazyPrimMST(final EdgeWeightedGraph g) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
-        marked = new boolean[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+        marked = new boolean[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++) {
             if (!marked[v]) {
-                prim(G, v);
+                prim(g, v);
             }
         }
         // check optimality conditions
@@ -40,14 +40,15 @@ public class LazyPrimMST {
     /**
      * weight method.
      *
-     * @param      G     graph
+     * @param      g     graph
      * @param      s     integer
      */
-    private void prim(final EdgeWeightedGraph G, final int s) {
-        scan(G, s);
+    private void prim(final EdgeWeightedGraph g, final int s) {
+        scan(g, s);
         while (!pq.isEmpty()) {
             Edge e = pq.delMin();
-            int v = e.either(), w = e.other(v);
+            int v = e.either();
+            int w = e.other(v);
 
             assert marked[v] || marked[w];
             if (marked[v] && marked[w]) {
@@ -56,24 +57,26 @@ public class LazyPrimMST {
             mst.enqueue(e);
             weight += e.weight();
             if (!marked[v]) {
-                scan(G, v);
+                scan(g, v);
             }
             if (!marked[w]) {
-                scan(G, w);
+                scan(g, w);
             }
         }
     }
     /**
      * scan method
      *
-     * @param      G  graph.
+     * @param      g  graph.
      * @param      v  int
      */
-    private void scan(final EdgeWeightedGraph G, final int v) {
+    private void scan(final EdgeWeightedGraph g, final int v) {
         assert !marked[v];
         marked[v] = true;
-        for (Edge e : G.adj(v))
-            if (!marked[e.other(v)]) pq.insert(e);
+        for (Edge e : g.adj(v))
+            if (!marked[e.other(v)]) {
+                pq.insert(e);
+            }
     }
     /**
      *Iterable edges.

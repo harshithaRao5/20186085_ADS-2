@@ -28,6 +28,5 @@ public final class Solution {
         }
         LazyPrimMST mstobj = new LazyPrimMST(edgeweightobj);
         System.out.printf("%.5f\n", mstobj.weight());
-
     }
 }

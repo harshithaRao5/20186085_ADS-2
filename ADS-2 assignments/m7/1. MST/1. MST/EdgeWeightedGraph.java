@@ -5,11 +5,11 @@ public class EdgeWeightedGraph {
     /**
      * variable vertex.
      */
-    private final int V;
+    private int vert;
     /**
      * variable edge.
      */
-    private int E;
+    private int edges;
     /**
      * bag of adjacent vertices list.
      */
@@ -17,17 +17,14 @@ public class EdgeWeightedGraph {
     /**
      * Constructs the object.
      *
-     * @param      V integer vertex.
+     * @param  v1 integer vertex.
      */
-    public EdgeWeightedGraph(final int V) {
-        if (V < 0) {
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        }
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Edge>();
+    public EdgeWeightedGraph(final int v1) {
+        this.vert = v1;
+        this.edges = 0;
+        adj = (Bag<Edge>[]) new Bag[v1];
+        for (int i = 0; i < v1; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
 
@@ -36,16 +33,16 @@ public class EdgeWeightedGraph {
      *
      * @return vertex count
      */
-    public int V() {
-        return V;
+    public int vertices() {
+        return this.vert;
     }
     /**
      * return edges.
      *
      * @return edge count
      */
-    public int E() {
-        return E;
+    public int edges() {
+        return this.edges;
     }
     /**
      * Adds an edge.
@@ -57,7 +54,7 @@ public class EdgeWeightedGraph {
         int w = e.other(v);
         adj[v].add(e);
         adj[w].add(e);
-        E++;
+        edges++;
     }
     /**
      * returns adjacent vertex.
@@ -86,9 +83,9 @@ public class EdgeWeightedGraph {
      *
      * @return iterable list.
      */
-    public Iterable<Edge> edges() {
+    public Iterable<Edge> edge() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
+        for (int v = 0; v < vert; v++) {
             int selfLoops = 0;
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {

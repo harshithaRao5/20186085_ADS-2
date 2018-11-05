@@ -1,34 +1,19 @@
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Edge.java:23:27: 'v' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Edge.java:23:40: 'w' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Edge.java:23:56: 'weight' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Edge.java:42: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:12:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:22:40: 'V' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:22:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:24: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:39:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:47:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:96:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:93:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:28:48: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:46:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:66: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:72:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:75: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:76: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:67: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:76: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
