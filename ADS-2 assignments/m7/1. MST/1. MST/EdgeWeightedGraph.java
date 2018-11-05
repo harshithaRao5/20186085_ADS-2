@@ -94,9 +94,10 @@ public class EdgeWeightedGraph {
                 if (e.other(v) > v) {
                     list.add(e);
                 }
-                // add only one copy of each self loop (self loops will be consecutive)
                 else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                    if (selfLoops % 2 == 0) {
+                     list.add(e);
+                    }
                     selfLoops++;
                 }
             }

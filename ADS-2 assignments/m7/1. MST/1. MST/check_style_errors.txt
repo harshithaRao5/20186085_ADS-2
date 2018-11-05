@@ -47,26 +47,19 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:39:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:47:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:96:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:97: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:99: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:28:48: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:46:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:48: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:52: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:52: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:55: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:56: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:59: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:65:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:68: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:69: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:66: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:72:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:75: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:76: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\MinPQ.java:8: Missing a Javadoc comment. [JavadocType]
@@ -190,10 +183,8 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Solution.java:20: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]

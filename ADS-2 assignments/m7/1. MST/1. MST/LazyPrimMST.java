@@ -45,15 +45,22 @@ public class LazyPrimMST {
      */
     private void prim(final EdgeWeightedGraph G, final int s) {
         scan(G, s);
-        while (!pq.isEmpty()) {                        // better to stop when mst has V-1 edges
-            Edge e = pq.delMin();                      // smallest edge on pq
-            int v = e.either(), w = e.other(v);        // two endpoints
+        while (!pq.isEmpty()) {
+            Edge e = pq.delMin();
+            int v = e.either(), w = e.other(v);
+
             assert marked[v] || marked[w];
-            if (marked[v] && marked[w]) continue;      // lazy, both v and w already scanned
-            mst.enqueue(e);                            // add e to MST
+            if (marked[v] && marked[w]) {
+                continue;
+            }
+            mst.enqueue(e);
             weight += e.weight();
-            if (!marked[v]) scan(G, v);               // v becomes part of tree
-            if (!marked[w]) scan(G, w);               // w becomes part of tree
+            if (!marked[v]) {
+                scan(G, v);
+            }
+            if (!marked[w]) {
+                scan(G, w);
+            }
         }
     }
     /**
