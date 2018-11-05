@@ -1,17 +1,31 @@
 
 public class LazyPrimMST {
+    /**
+     * double value.
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
-
-    private double weight;       // total weight of MST
-    private Queue<Edge> mst;     // edges in the MST
-    private boolean[] marked;    // marked[v] = true iff v on tree
-    private MinPQ<Edge> pq;      // edges with one endpoint in tree
+    /**
+     * variable declaration.
+     */
+    private double weight;
+    /**
+     * variable declaration.
+     */
+    private Queue<Edge> mst;
+    /**
+     * variable declaration.
+     */
+    private boolean[] marked;
+    /**
+     * variable declaration.
+     */
+    private MinPQ<Edge> pq;
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
-    public LazyPrimMST(EdgeWeightedGraph G) {
+    public LazyPrimMST(final EdgeWeightedGraph G) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
         marked = new boolean[G.V()];
@@ -23,7 +37,13 @@ public class LazyPrimMST {
         // check optimality conditions
 
     }
-    private void prim(EdgeWeightedGraph G, int s) {
+    /**
+     * weight method.
+     *
+     * @param      G     graph
+     * @param      s     integer
+     */
+    private void prim(final EdgeWeightedGraph G, final int s) {
         scan(G, s);
         while (!pq.isEmpty()) {                        // better to stop when mst has V-1 edges
             Edge e = pq.delMin();                      // smallest edge on pq
@@ -36,22 +56,31 @@ public class LazyPrimMST {
             if (!marked[w]) scan(G, w);               // w becomes part of tree
         }
     }
-
-    // add all edges e incident to v onto pq if the other endpoint has not yet been scanned
-    private void scan(EdgeWeightedGraph G, int v) {
+    /**
+     * scan method
+     *
+     * @param      G  graph.
+     * @param      v  int
+     */
+    private void scan(final EdgeWeightedGraph G, final int v) {
         assert !marked[v];
         marked[v] = true;
         for (Edge e : G.adj(v))
             if (!marked[e.other(v)]) pq.insert(e);
     }
-
+    /**
+     *Iterable edges.
+     * @return   iterable edge.
+     */
     public Iterable<Edge> edges() {
         return mst;
     }
-
+    /**
+     * weight method.
+     *
+     * @return weight.
+     */
     public double weight() {
         return weight;
     }
-
-
 }
