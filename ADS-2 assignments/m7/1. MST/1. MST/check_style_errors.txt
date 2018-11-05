@@ -1,20 +1,8 @@
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\EdgeWeightedGraph.java:93:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:67: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\LazyPrimMST.java:76: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m7\1. MST\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.

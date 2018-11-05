@@ -1,4 +1,6 @@
-
+/**
+ * Class for lazy primitive mst.
+ */
 public class LazyPrimMST {
     /**
      * double value.
@@ -65,7 +67,7 @@ public class LazyPrimMST {
         }
     }
     /**
-     * scan method
+     * scan method.
      *
      * @param      g  graph.
      * @param      v  int
@@ -73,10 +75,11 @@ public class LazyPrimMST {
     private void scan(final EdgeWeightedGraph g, final int v) {
         assert !marked[v];
         marked[v] = true;
-        for (Edge e : g.adj(v))
+        for (Edge e : g.adj(v)) {
             if (!marked[e.other(v)]) {
                 pq.insert(e);
             }
+        }
     }
     /**
      *Iterable edges.
