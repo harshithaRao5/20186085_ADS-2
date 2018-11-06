@@ -28,7 +28,7 @@ public final class Solution {
 			int source = hashobj.get(srcDest[0]);
 			DijkstraUndirectedSP dijkstra = new DijkstraUndirectedSP(ewgobj, source);
 			if(dijkstra.hasPathTo(hashobj.get(srcDest[1]))) {
-				System.out.println(dijkstra.distTo(hashobj.get(srcDest[1])));
+				System.out.println((int)dijkstra.distTo(hashobj.get(srcDest[1])));
 			}
 			queries--;
 		}

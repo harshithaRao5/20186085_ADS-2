@@ -121,7 +121,8 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:14: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:21: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:29: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:30:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:31: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:30:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:31: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:31:57: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 11 errors.
