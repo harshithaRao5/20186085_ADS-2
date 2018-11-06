@@ -5,6 +5,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m8\1. Shortest Paths\1. Shortest Paths\Solution.java:44:26: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 1 errors.
