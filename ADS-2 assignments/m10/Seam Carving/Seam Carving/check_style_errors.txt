@@ -256,12 +256,12 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:43:53: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:48:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:48:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:53:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:53:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:58:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:58:42: Parameter seam should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:63:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:63:40: Parameter seam should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:54:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:54:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:60:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:60:42: Parameter seam should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:65:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:65:40: Parameter seam should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 40 errors.
 Starting audit...

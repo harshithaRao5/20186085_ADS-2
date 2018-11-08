@@ -11,7 +11,7 @@ public class SeamCarver {
 	}
 	// current picture
 	public Picture picture() {
-		return null;
+		return picture;
 	}
 	// width of current picture
 	public int width() {
@@ -28,17 +28,17 @@ public class SeamCarver {
 		if (x == 0 || y == 0 || picture.width() - 1 == x || picture.height() - 1 == y) {
 			return 1000;
 		}
-		Color top = picture.get(x, y - 1);
-		Color bottom = picture.get(x, y + 1);
-		Color left = picture.get(x - 1, y);
-		Color right = picture.get(x + 1, y);
-		int red = right.getRed() - left.getRed();
-		int blue = right.getBlue() - left.getBlue();
-		int green = right.getGreen() - left.getGreen();
+		Color left = picture.get(x, y - 1);
+		Color right = picture.get(x, y + 1);
+		Color top = picture.get(x - 1, y);
+		Color bottom = picture.get(x + 1, y);
+		int red = bottom.getRed() - top.getRed();
+		int blue = bottom.getBlue() - top.getBlue();
+		int green = bottom.getGreen() - top.getGreen();
 		int horizontal = red*red + blue*blue + green*green;
-		int redv = top.getRed() - bottom.getRed();
-		int bluev = top.getBlue() - bottom.getBlue();
-		int greenv = top.getGreen() - bottom.getGreen();
+		int redv = left.getRed() - right.getRed();
+		int bluev = left.getBlue() - right.getBlue();
+		int greenv = left.getGreen() - right.getGreen();
 		int vertical = redv*redv + bluev*bluev + greenv*greenv;
 		double enrgy = Math.sqrt(horizontal+vertical);
 		return enrgy;
@@ -46,11 +46,13 @@ public class SeamCarver {
 
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
+
 		return new int[0];
 	}
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
+
 		return new int[0];
 	}
 
