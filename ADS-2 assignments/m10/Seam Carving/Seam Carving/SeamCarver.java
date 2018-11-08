@@ -1,4 +1,5 @@
 import java.awt.Color;
+
 public class SeamCarver {
 	// create a seam carver object based on the given picture
 	private Picture picture;
@@ -27,7 +28,20 @@ public class SeamCarver {
 		if (x == 0 || y == 0 || picture.width() - 1 == x || picture.height() - 1 == y) {
 			return 1000;
 		}
-		return 0;
+		Color top = picture.get(x, y - 1);
+		Color bottom = picture.get(x, y + 1);
+		Color left = picture.get(x - 1, y);
+		Color right = picture.get(x + 1, y);
+		int red = right.getRed() - left.getRed();
+		int blue = right.getBlue() - left.getBlue();
+		int green = right.getGreen() - left.getGreen();
+		int horizontal = red*red + blue*blue + green*green;
+		int redv = top.getRed() - bottom.getRed();
+		int bluev = top.getBlue() - bottom.getBlue();
+		int greenv = top.getGreen() - bottom.getGreen();
+		int vertical = redv*redv + bluev*bluev + greenv*greenv;
+		double enrgy = Math.sqrt(horizontal+vertical);
+		return enrgy;
 	}
 
 	// sequence of indices for horizontal seam
