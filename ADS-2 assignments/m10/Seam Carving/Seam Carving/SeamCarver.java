@@ -49,7 +49,7 @@ public class SeamCarver {
 
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-
+		findVerticalSeam();
 		return new int[0];
 	}
 	public double[][] getEnergies() {
@@ -67,7 +67,7 @@ public class SeamCarver {
 	}
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		int[] result = new int[width()];
+		int[] result = new int[height()];
 		double[][] energyCopy = getEnergies();
 		for (int i = 1; i < height(); i++) {
 			for (int j = 0; j < width(); j++) {
@@ -83,15 +83,20 @@ public class SeamCarver {
 				energyCopy[i][j] += minEnergy;
 			}
 		}
-		for (int i = 1; i < height(); i++) {
+		//System.out.println(Arrays.deepToString(energyCopy));
+		int i = 0;
+		for (i = 1; i < height(); i++) {
+			double minimum = Integer.MAX_VALUE;
 			for (int j = 0; j < width(); j++) {
-				double minimum = Integer.MAX_VALUE;
 				if (energyCopy[i][j] < minimum) {
 					minimum = energyCopy[i][j];
+					result[i] = j;
 				}
 			}
+			//System.out.println(minimum);
 		}
-		return new int[0];
+		result[0] = result[1];
+		return result;
 	}
 
 	// remove horizontal seam from current picture

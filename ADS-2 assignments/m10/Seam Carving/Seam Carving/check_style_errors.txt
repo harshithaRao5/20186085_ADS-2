@@ -255,10 +255,10 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:78: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:80: Line is longer than 80 characters (found 118). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:81: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:98:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:98:42: Parameter seam should be final. [FinalParameters]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:103:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:103:40: Parameter seam should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:103:42: Parameter seam should be final. [FinalParameters]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:108:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:108:40: Parameter seam should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 37 errors.
 Starting audit...
