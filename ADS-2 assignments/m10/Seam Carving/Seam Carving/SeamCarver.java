@@ -1,8 +1,11 @@
 import java.awt.Color;
-
+import java.util.Arrays;
 public class SeamCarver {
 	// create a seam carver object based on the given picture
 	private Picture picture;
+	private double energyTo[][];
+
+
 	public SeamCarver(Picture picture1) {
 		if (picture1 == null) {
 			throw new IllegalArgumentException("picture is null");
@@ -35,12 +38,12 @@ public class SeamCarver {
 		int red = bottom.getRed() - top.getRed();
 		int blue = bottom.getBlue() - top.getBlue();
 		int green = bottom.getGreen() - top.getGreen();
-		int horizontal = red*red + blue*blue + green*green;
+		int vertical = red * red + blue * blue + green * green;
 		int redv = left.getRed() - right.getRed();
 		int bluev = left.getBlue() - right.getBlue();
 		int greenv = left.getGreen() - right.getGreen();
-		int vertical = redv*redv + bluev*bluev + greenv*greenv;
-		double enrgy = Math.sqrt(horizontal+vertical);
+		int horizontal = redv * redv + bluev * bluev + greenv * greenv;
+		double enrgy = Math.sqrt(vertical + horizontal);
 		return enrgy;
 	}
 
@@ -49,10 +52,45 @@ public class SeamCarver {
 
 		return new int[0];
 	}
-
+	public double[][] getEnergies() {
+		energyTo = new double[height()][width()];
+		for (int i = 0; i < height(); i++) {
+			for (int j = 0; j < width(); j++) {
+				if (i == 0 || j == 0 || height() - 1 == i || width() - 1 == j) {
+					energyTo[i][j] = 1000;
+				} else {
+					energyTo[i][j] = energy(i, j);
+				}
+			}
+		}
+		return energyTo;
+	}
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-
+		int[] result = new int[width()];
+		double[][] energyCopy = getEnergies();
+		for (int i = 1; i < height(); i++) {
+			for (int j = 0; j < width(); j++) {
+				double minEnergy = -1;
+				if (j == 0) {
+					minEnergy = Math.min(energyCopy[i - 1][j + 1], energyCopy[i - 1][j]);
+				} else if (j == width() - 1) {
+					minEnergy = Math.min(energyCopy[i - 1][j - 1], energyCopy[i - 1][j]);
+				} else {
+					minEnergy = Math.min(Math.min(energyCopy[i - 1][j - 1], energyCopy[i - 1][j]),
+					                     energyCopy[i - 1][j + 1]);
+				}
+				energyCopy[i][j] += minEnergy;
+			}
+		}
+		for (int i = 1; i < height(); i++) {
+			for (int j = 0; j < width(); j++) {
+				double minimum = Integer.MAX_VALUE;
+				if (energyCopy[i][j] < minimum) {
+					minimum = energyCopy[i][j];
+				}
+			}
+		}
 		return new int[0];
 	}
 
