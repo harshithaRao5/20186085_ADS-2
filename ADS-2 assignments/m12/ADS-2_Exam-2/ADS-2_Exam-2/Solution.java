@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class Solution {
+public final class Solution {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
@@ -54,7 +54,8 @@ public class Solution {
 			int dest = Integer.parseInt(viapath[2]);
 			DijkstraUndirectedSP dijjobj = new DijkstraUndirectedSP(ewgobj, src);
 			if(dijjobj.hasPathTo(dest)) {
-				System.out.println(dijjobj.distTo(via));
+
+				System.out.println(dijjobj.distTo(dest));
 			} else {
 				System.out.println("No Path Found.");
 			}
