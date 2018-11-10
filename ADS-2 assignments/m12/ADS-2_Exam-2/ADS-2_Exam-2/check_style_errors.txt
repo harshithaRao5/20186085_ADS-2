@@ -4,8 +4,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:107: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:112:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:112:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:112:56: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:112:57: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
