@@ -1,53 +1,10 @@
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\DijkstraUndirectedSP.java:83: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\DijkstraUndirectedSP.java:86: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\DijkstraUndirectedSP.java:90:37: Parameter v should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\DijkstraUndirectedSP.java:92: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:107: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:112:56: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\EdgeWeightedGraph.java:112:57: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:25:14: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:52:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:71: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:74:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:75:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:76:32: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:78:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:79:32: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
-Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:7: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:12: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:13:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:14:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:48:22: Parameter item should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:63: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:85: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:98: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:100: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:107: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:108:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:110:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:110:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:110:29: Parameter first should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:110:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:114:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:118:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:122:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Stack.java:123: 'if' construct must use '{}'s. [NeedBraces]
-Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 1 errors.

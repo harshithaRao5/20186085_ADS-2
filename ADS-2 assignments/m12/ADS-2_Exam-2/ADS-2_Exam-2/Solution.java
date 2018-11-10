@@ -22,7 +22,7 @@ public final class Solution {
         int vertices = Integer.parseInt(sc.nextLine());
         int edges = Integer.parseInt(sc.nextLine());
         EdgeWeightedGraph ewgobj = new EdgeWeightedGraph(vertices);
-        while(edges > 0) {
+        while (edges > 0) {
             String[] input = sc.nextLine().split(" ");
             int v = Integer.parseInt(input[0]);
             int w = Integer.parseInt(input[1]);
@@ -49,7 +49,7 @@ public final class Solution {
             int destination = Integer.parseInt(srcdest[1]);
             DijkstraUndirectedSP dijobj = new
             DijkstraUndirectedSP(ewgobj, source);
-            if(dijobj.hasPathTo(destination)) {
+            if (dijobj.hasPathTo(destination)) {
                 System.out.println(dijobj.distTo(destination));
             } else {
                 System.out.println("No Path Found.");
@@ -68,15 +68,17 @@ public final class Solution {
             int src = Integer.parseInt(viapath[0]);
             int via = Integer.parseInt(viapath[1]);
             int dest = Integer.parseInt(viapath[2]);
-            DijkstraUndirectedSP dijjobj = new DijkstraUndirectedSP(ewgobj, src);
-            DijkstraUndirectedSP dobj = new DijkstraUndirectedSP(ewgobj, via);
+            DijkstraUndirectedSP dijjobj = new
+            DijkstraUndirectedSP(ewgobj, src);
+            DijkstraUndirectedSP dobj = new
+            DijkstraUndirectedSP(ewgobj, via);
             String path = "";
-            if(dijjobj.hasPathTo(via) && dobj.hasPathTo(dest)) {
-                for(int i: dijjobj.pathTo(via)) {
-                    path += i +" ";
+            if (dijjobj.hasPathTo(via) && dobj.hasPathTo(dest)) {
+                for (int i : dijjobj.pathTo(via)) {
+                    path += i + " ";
                 }
-                for(int j:dobj.pathTo(dest)) {
-                    path += j +" ";
+                for (int j : dobj.pathTo(dest)) {
+                    path += j + " ";
                 }
                 path = path + viapath[2];
                 double distance = dijjobj.distTo(via) + dobj.distTo(dest);

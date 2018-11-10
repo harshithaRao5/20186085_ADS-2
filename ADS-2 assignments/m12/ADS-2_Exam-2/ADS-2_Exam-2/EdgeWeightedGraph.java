@@ -92,7 +92,7 @@ public class EdgeWeightedGraph {
                     list.add(e);
                 } else if (e.other(v) == v) {
                     if (selfLoops % 2 == 0) {
-                     list.add(e);
+                        list.add(e);
                     }
                     selfLoops++;
                 }
@@ -104,12 +104,13 @@ public class EdgeWeightedGraph {
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists of edges
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vert + " vertices " + edges + " edges"+"\n");
+        s.append(vert + " vertices " + edges + " edges" + "\n");
         for (int v = 0; v < vert; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {

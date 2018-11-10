@@ -80,16 +80,20 @@ public class DijkstraUndirectedSP {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
     /**
-     * Returns a shortest path between the source vertex {@code s} and vertex {@code v}.
+     * Returns a shortest path between the source vertex
+     *  {@code s} and vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return a shortest path between the source vertex {@code s} and vertex {@code v};
+     * @return a shortest path between the source vertex
+     *  {@code s} and vertex {@code v};
      *         {@code null} if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> pathTo(int v) {
+    public Iterable<Integer> pathTo(final int v) {
 
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Integer> path = new Stack<Integer>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
