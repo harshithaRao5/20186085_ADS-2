@@ -18,6 +18,7 @@ public class Solution {
 			ewgobj.addEdge(edge);
 			edges--;
 		}
+
 		String caseToGo = sc.nextLine();
 		switch (caseToGo) {
 		case "Graph":
@@ -30,6 +31,15 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] srcdest = sc.nextLine().split(" ");
+			int source = Integer.parseInt(srcdest[0]);
+			int destination = Integer.parseInt(srcdest[1]);
+			DijkstraUndirectedSP dijobj = new DijkstraUndirectedSP(ewgobj, source);
+			if(dijobj.hasPathTo(destination)) {
+				System.out.println(dijobj.distTo(destination));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		case "ViaPaths":
