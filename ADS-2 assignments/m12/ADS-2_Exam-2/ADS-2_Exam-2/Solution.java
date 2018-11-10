@@ -80,8 +80,9 @@ public final class Solution {
                 }
                 path = path + viapath[2];
                 double distance = dijjobj.distTo(via) + dobj.distTo(dest);
-                System.out.println(path);
                 System.out.println(distance);
+                System.out.println(path);
+
             } else {
                 System.out.println("No Path Found.");
             }
