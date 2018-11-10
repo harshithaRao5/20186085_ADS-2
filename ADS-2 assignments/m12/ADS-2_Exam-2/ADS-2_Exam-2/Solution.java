@@ -48,6 +48,16 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] viapath = sc.nextLine().split(" ");
+			int src = Integer.parseInt(viapath[0]);
+			int via = Integer.parseInt(viapath[1]);
+			int dest = Integer.parseInt(viapath[2]);
+			DijkstraUndirectedSP dijjobj = new DijkstraUndirectedSP(ewgobj, src);
+			if(dijjobj.hasPathTo(via)) {
+				System.out.println(dijjobj.distTo(via));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		default:
