@@ -53,7 +53,7 @@ public class Solution {
 			int via = Integer.parseInt(viapath[1]);
 			int dest = Integer.parseInt(viapath[2]);
 			DijkstraUndirectedSP dijjobj = new DijkstraUndirectedSP(ewgobj, src);
-			if(dijjobj.hasPathTo(via)) {
+			if(dijjobj.hasPathTo(dest)) {
 				System.out.println(dijjobj.distTo(via));
 			} else {
 				System.out.println("No Path Found.");
