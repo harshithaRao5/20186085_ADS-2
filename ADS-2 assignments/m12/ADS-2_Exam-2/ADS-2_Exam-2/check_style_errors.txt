@@ -15,7 +15,7 @@ Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:12:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:12:22: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:29: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m12\ADS-2_Exam-2\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 110). [LineLength]
