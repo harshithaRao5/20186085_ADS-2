@@ -9,7 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
-EdgeWeightedGraph@58ceff1
+6 6
+0: Edge@62043840  Edge@5315b42e  
+1: Edge@2ef9b8bc  Edge@5d624da6  Edge@5315b42e  
+2: Edge@1e67b872  Edge@60addb54  Edge@2ef9b8bc  
+3: Edge@60addb54  Edge@62043840  
+4: Edge@1e67b872  Edge@5d624da6  
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
