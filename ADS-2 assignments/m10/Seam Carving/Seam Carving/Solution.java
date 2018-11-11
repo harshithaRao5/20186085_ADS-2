@@ -18,7 +18,7 @@ public final class Solution {
     public static void printEnergies(final String fileName) {
         Picture picture = new Picture(fileName);
         StdOut.printf("image is %d pixels wide by %d pixels high.\n",
-                      picture.width(), picture.height());
+            picture.width(), picture.height());
 
         SeamCarver sc = new SeamCarver(picture);
 
@@ -39,18 +39,15 @@ public final class Solution {
      * @param      direction  The direction
      */
     public static void printSeam(final SeamCarver carver,
-                    final int[] seam, final boolean direction) {
+        final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
 
         for (int row = 0; row < carver.height(); row++) {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == true && row == seam[col])) {
-                    marker = "*";
-                    totalSeamEnergy += energy;
-                }
-                if ((direction == false   && col == seam[row])) {
+                if ((direction && row == seam[col])
+                    || (!direction && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -102,7 +99,7 @@ public final class Solution {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     System.out.println(Arrays.toString(
-                         seamCarver.findVerticalSeam()));
+                        seamCarver.findVerticalSeam()));
                 }
                 break;
 
@@ -111,7 +108,7 @@ public final class Solution {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     System.out.println(Arrays.toString(
-                             seamCarver.findHorizontalSeam()));
+                        seamCarver.findHorizontalSeam()));
                 }
                 break;
 
