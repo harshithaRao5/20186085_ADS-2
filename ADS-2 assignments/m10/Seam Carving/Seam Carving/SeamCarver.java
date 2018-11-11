@@ -4,9 +4,9 @@ import java.awt.Color;
  * Class for seam carver.
  */
 public class SeamCarver {
-	/**
-	 * varaiable declaration.
-	 */
+    /**
+     * varaiable declaration.
+     */
     private static final double BORDER = 1000;
     /**
      * varaiable declaration.
@@ -137,7 +137,7 @@ public class SeamCarver {
                 if (col != (w - 1)) {
                     min = Math.min(min, energies[row - 1][col + 1]);
                 } else {
-                	min = min;
+                    min = min;
                 }
                 energies[row][col] += min;
             }
@@ -191,7 +191,7 @@ public class SeamCarver {
                 path[row] = col - 1;
             }
             if (col < (w - 2) && energies[row][col + 1]
-            	< energies[row][path[row]]) {
+                < energies[row][path[row]]) {
                 path[row] = col + 1;
             }
         }
@@ -274,7 +274,7 @@ public class SeamCarver {
         }
         for (int i = 1; i < len; i++) {
             if (a[i] < Math.max(0, a[i - 1] - 1) ||
-            	a[i] > Math.min(range, a[i - 1] + 1))
+                a[i] > Math.min(range, a[i - 1] + 1))
                 return false;
         }
         return true;

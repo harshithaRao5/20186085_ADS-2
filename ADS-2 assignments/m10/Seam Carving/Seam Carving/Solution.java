@@ -123,7 +123,7 @@ public class Solution {
                 break;
             }
         } catch (Exception ex) {
-        	ex.printStackTrace();
+        	//ex.printStackTrace();
             System.out.println(ex.getMessage());
         }
     }
