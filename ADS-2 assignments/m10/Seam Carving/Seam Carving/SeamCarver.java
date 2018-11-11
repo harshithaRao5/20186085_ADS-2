@@ -265,7 +265,7 @@ public class SeamCarver {
     }
 
     // return false if two consecutive entries differ by more than 1
-    private boolean isValid(int[] a, int len, int range) {
+    private boolean isValid(final int[] a, final int len, final int range) {
         if (a == null) {
             return false;
         }
