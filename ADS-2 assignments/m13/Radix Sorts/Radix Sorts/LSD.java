@@ -22,9 +22,9 @@ public class LSD {
       * @param w the number of characters per string
       */
     public static void sort(final String[] a, final int w) {
-        final int VALUE = 256;
+        final int value = 256;
         int n = a.length;
-        int radix = VALUE;   // extend ASCII alphabet size
+        int radix = value;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
         for (int d = w - 1; d >= 0; d--) {

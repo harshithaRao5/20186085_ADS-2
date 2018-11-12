@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:25:19: Name 'VALUE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
