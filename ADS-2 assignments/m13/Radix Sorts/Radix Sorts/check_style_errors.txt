@@ -1,11 +1,8 @@
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15:30: Name 'TwoFiftySix' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:18:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.

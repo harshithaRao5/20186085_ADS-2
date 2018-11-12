@@ -12,7 +12,10 @@ public class LSD {
     protected LSD() {
         //empty constructor.
     }
-    private final static int TwoFiftySix = 256;
+    /**
+     * { item_description }
+     */
+    private final static int VALUE = 256;
     /**
       * Rearranges the array of W-character strings in ascending order.
       *
@@ -21,7 +24,7 @@ public class LSD {
       */
     public static void sort(final String[] a, final int w) {
         int n = a.length;
-        int radix = TwoFiftySix;   // extend ASCII alphabet size
+        int radix = VALUE;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
         for (int d = w - 1; d >= 0; d--) {
