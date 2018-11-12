@@ -1,16 +1,10 @@
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:24:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:24:17: '256' is a magic number. [MagicNumber]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:32: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:36: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:40: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:44: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:56:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:57:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:58:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15:11: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15:22: Name 'twofiftysix' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
