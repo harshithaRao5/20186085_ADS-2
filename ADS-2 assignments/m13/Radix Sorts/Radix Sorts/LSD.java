@@ -6,10 +6,7 @@ public class LSD {
      * { var_description }.
      */
     private static final int BITS_PER_BYTE = 8;
-    /**
-     * { item_description }.
-     */
-    private final static int VALUE = 256;
+
     /**
      * Constructs the object.
      */
@@ -25,6 +22,7 @@ public class LSD {
       * @param w the number of characters per string
       */
     public static void sort(final String[] a, final int w) {
+        final int VALUE = 256;
         int n = a.length;
         int radix = VALUE;   // extend ASCII alphabet size
         String[] aux = new String[n];
