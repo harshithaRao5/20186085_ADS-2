@@ -7,15 +7,17 @@ public class LSD {
      */
     private static final int BITS_PER_BYTE = 8;
     /**
+     * { item_description }.
+     */
+    private final static int VALUE = 256;
+    /**
      * Constructs the object.
      */
     protected LSD() {
         //empty constructor.
     }
-    /**
-     * { item_description }
-     */
-    private final static int VALUE = 256;
+
+
     /**
       * Rearranges the array of W-character strings in ascending order.
       *

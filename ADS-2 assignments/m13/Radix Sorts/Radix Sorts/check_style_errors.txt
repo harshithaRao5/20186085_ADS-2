@@ -1,8 +1,7 @@
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:15: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:18:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
+[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m13\Radix Sorts\Radix Sorts\LSD.java:12:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
