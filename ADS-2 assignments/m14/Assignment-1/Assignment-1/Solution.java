@@ -4,6 +4,12 @@ import java.util.Scanner;
  */
 public final class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //unused constructor.
+    }
+    /**
      * maim method.
      *
      * @param      args  The arguments
@@ -21,8 +27,9 @@ public final class Solution {
                 tst.put(sa.select(i), j++);
             }
         }
-        for(String word : tst.keysWithPrefix(prefix))
+        for (String word : tst.keysWithPrefix(prefix)) {
             System.out.println(word);
+        }
     }
     /**
      * Loads words.
