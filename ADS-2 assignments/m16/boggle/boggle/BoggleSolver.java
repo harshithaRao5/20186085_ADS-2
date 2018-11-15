@@ -1,5 +1,5 @@
 import java.util.Set;
-import java.util.HashSet;
+import java.util.TreeSet;
 public class BoggleSolver {
 	// Initializes the data structure using the given
 	// array of strings as the dictionary.
@@ -10,7 +10,7 @@ public class BoggleSolver {
 	private boolean[][] marked;
 	public BoggleSolver(String[] dictionary) {
 		dictionaryTrie = new TrieST<Integer>();
-		validWords = new HashSet<String>();
+		validWords = new TreeSet<String>();
 		int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
 		for (String word : dictionary) {
 			if (word.length() >= 8) {
@@ -22,6 +22,9 @@ public class BoggleSolver {
 	}
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		if (board == null) {
+			throw new IllegalArgumentException("board is null");
+		}
 		marked = new boolean[board.rows()][board.cols()];
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
@@ -35,7 +38,7 @@ public class BoggleSolver {
 		if (c == 'Q') {
 			return sb + "QU";
 		} else {
-			return sb + c + "";
+			return sb + c;
 		}
 	}
 	private boolean isValidWord(String word) {
@@ -57,8 +60,8 @@ public class BoggleSolver {
 		for (int i = rows - 1; i <= rows + 1; i++) {
 			for (int j = cols - 1; j <= cols + 1; j++) {
 				if (isValidRowColumn(i, j, board) && !marked[i][j]) {
-					dfs(board, marked, i, j, word);
-					word = appendCharacter(word, board.getLetter(i, j));
+					String sequence = appendCharacter(word, board.getLetter(i, j));
+					dfs(board, marked, i, j, sequence);
 				}
 			}
 		}

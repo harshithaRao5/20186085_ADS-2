@@ -55,10 +55,10 @@ public class TrieST<Value> {
     public boolean hasPrefix(String key) {
         Node node = get(root, key, 0);
         if (node == null) return false;
-        if (node.val == null) return false;
-        for (int i = 0; i < R; i++) {
+        //if (node.val == null) return false;
+/*        for (int i = 0; i < R; i++) {
             if(node.next[i] == null) return false;
-        }
+        }*/
         return true;
     }
 
