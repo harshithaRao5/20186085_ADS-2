@@ -47,20 +47,18 @@ public class BoggleSolver {
 
 	public void dfs(BoggleBoard board, boolean[][] marked,
 	                int rows, int cols, String word) {
-		if (dictionaryTrie.hasPrefix(word)) return;
+		//if (dictionaryTrie.hasPrefix(word)) return;
 
 		if (isValidWord(word)) {
-			System.out.println(word + "----");
+			//System.out.println(word + "----" + scoreOf(word));
 			validWords.add(word);
 		}
 		marked[rows][cols] = true;
 		for (int i = rows - 1; i <= rows + 1; i++) {
 			for (int j = cols - 1; j <= cols + 1; j++) {
-					//System.out.println(row + " " + col);
 				if (isValidRowColumn(i, j, board) && !marked[i][j]) {
-					word = appendCharacter(word, board.getLetter(i, j));
-					//System.out.println(word);
 					dfs(board, marked, i, j, word);
+					word = appendCharacter(word, board.getLetter(i, j));
 				}
 			}
 		}
@@ -76,10 +74,10 @@ public class BoggleSolver {
 	// (You can assume the word contains
 	// only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
+		if (word == null) return 0;
 		if (dictionaryTrie.contains(word)) {
 			return dictionaryTrie.get(word);
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 }
