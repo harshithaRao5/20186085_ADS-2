@@ -559,16 +559,8 @@ Checkstyle ends with 465 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:56: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:88:37: '3' is a magic number. [MagicNumber]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:97:12: Unused @param tag for 'marked'. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:102:68: Expected @param tag for 'marked1'. [JavadocMethod]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:115: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:135:46: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\BoggleSolver.java:142: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
@@ -751,13 +743,8 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\msit\20186085_ADS-2\ADS-2 assignments\m16\boggle\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
