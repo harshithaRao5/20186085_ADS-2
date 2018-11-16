@@ -5,8 +5,12 @@ public class BoggleSolver {
 	// array of strings as the dictionary.
 	// (You can assume each word in the dictionary
 	//  contains only the uppercase letters A through Z.)
+
 	private TrieST<Integer> dictionaryTrie;
 	private Set<String> validWords;
+	/**
+	 * visited character.
+	 */
 	private boolean[][] marked;
 	public BoggleSolver(String[] dictionary) {
 		dictionaryTrie = new TrieST<Integer>();
@@ -52,7 +56,9 @@ public class BoggleSolver {
 
 	public void dfs(BoggleBoard board, boolean[][] marked,
 	                int rows, int cols, String word) {
-		if (!dictionaryTrie.hasPrefix(word)) return;
+		if (!dictionaryTrie.hasPrefix(word)) {
+			return;
+		}
 
 		if (isValidWord(word)) {
 			//System.out.println(word + "----" + scoreOf(word));
