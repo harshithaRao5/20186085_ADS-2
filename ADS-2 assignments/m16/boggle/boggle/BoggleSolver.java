@@ -1,5 +1,8 @@
 import java.util.Set;
 import java.util.TreeSet;
+/**
+ * Class for boggle solver.
+ */
 public class BoggleSolver {
     // Initializes the data structure using the given
     // array of strings as the dictionary.
