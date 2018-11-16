@@ -25,10 +25,14 @@ public class BoggleSolver {
 	public BoggleSolver(final String[] dictionary) {
 		dictionaryTrie = new TrieST<Integer>();
 		validWords = new TreeSet<String>();
-		int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
+		final int three = 3;
+		final int five = 5;
+		final int eight = 8;
+		final int eleven = 11;
+		int[] points = {0, 0, 0, 1, 1, 2, three, five, eleven};
 		for (String word : dictionary) {
-			if (word.length() >= 8) {
-				dictionaryTrie.put(word, 11);
+			if (word.length() >= eight) {
+				dictionaryTrie.put(word, eleven);
 			} else {
 				dictionaryTrie.put(word, points[word.length()]);
 			}
@@ -63,13 +67,14 @@ public class BoggleSolver {
 	 *
 	 * @return  appended String.
 	 */
-	private String appendCharacter(String sb, final char c) {
+	private String appendCharacter(final String sb, final char c) {
+		String s = sb;
 		if (c == 'Q') {
-			sb += "QU";
-			return sb;
+			s += "QU";
+			return s;
 		} else {
-			sb += c;
-			return sb;
+			s += c;
+			return s;
 		}
 	}
 	/**
@@ -94,7 +99,7 @@ public class BoggleSolver {
 	 * @param      cols    The cols
 	 * @param      word    The word
 	 */
-	public void dfs(final BoggleBoard board, final boolean[][] marked,
+	public void dfs(final BoggleBoard board, final boolean[][] marked1,
 	    final int rows, final int cols, final String word) {
 		if (!dictionaryTrie.hasPrefix(word)) {
 			return;
@@ -104,13 +109,13 @@ public class BoggleSolver {
 			//System.out.println(word + "----" + scoreOf(word));
 			validWords.add(word);
 		}
-		marked[rows][cols] = true;
+		marked1[rows][cols] = true;
 		for (int i = rows - 1; i <= rows + 1; i++) {
 			for (int j = cols - 1; j <= cols + 1; j++) {
-				if (isValidRowColumn(i, j, board) && !marked[i][j]) {
+				if (isValidRowColumn(i, j, board) && !marked1[i][j]) {
 					String sequence = appendCharacter(word,
 						board.getLetter(i, j));
-					dfs(board, marked, i, j, sequence);
+					dfs(board, marked1, i, j, sequence);
 				}
 			}
 		}

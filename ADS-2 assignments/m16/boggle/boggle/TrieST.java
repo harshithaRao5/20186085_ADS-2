@@ -12,9 +12,9 @@ public class TrieST<Value> {
         private Node[] next = new Node[R];
     }
 
-   /**
-     * Initializes an empty string symbol table.
-     */
+    /**
+      * Initializes an empty string symbol table.
+      */
     public TrieST() {
     }
 
@@ -49,13 +49,18 @@ public class TrieST<Value> {
         if (x == null) return null;
         if (d == key.length()) return x;
         char c = key.charAt(d);
-        return get(x.next[c-65], key, d+1);
+        return get(x.next[c - 65], key, d + 1);
     }
-
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      key   The key
+     *
+     * @return     True if has prefix, False otherwise.
+     */
     public boolean hasPrefix(String key) {
         Node node = get(root, key, 0);
-        return node!=null;
-
+        return node != null;
     }
 
     /**
@@ -80,7 +85,7 @@ public class TrieST<Value> {
             return x;
         }
         char c = key.charAt(d);
-        x.next[c-65] = put(x.next[c-65], key, val, d+1);
+        x.next[c - 65] = put(x.next[c - 65], key, val, d + 1);
         return x;
     }
 
@@ -160,8 +165,7 @@ public class TrieST<Value> {
                 collect(x.next[ch], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
-        }
-        else {
+        } else {
             prefix.append(c);
             collect(x.next[c], prefix, pattern, results);
             prefix.deleteCharAt(prefix.length() - 1);
@@ -192,7 +196,7 @@ public class TrieST<Value> {
         if (x.val != null) length = d;
         if (d == query.length()) return length;
         char c = query.charAt(d);
-        return longestPrefixOf(x.next[c], query, d+1, length);
+        return longestPrefixOf(x.next[c], query, d + 1, length);
     }
 
     /**
@@ -210,10 +214,9 @@ public class TrieST<Value> {
         if (d == key.length()) {
             if (x.val != null) n--;
             x.val = null;
-        }
-        else {
+        } else {
             char c = key.charAt(d);
-            x.next[c] = delete(x.next[c], key, d+1);
+            x.next[c] = delete(x.next[c], key, d + 1);
         }
 
         // remove subtrie rooted at x if it is completely empty
