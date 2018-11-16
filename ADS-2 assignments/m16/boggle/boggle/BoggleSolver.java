@@ -36,9 +36,11 @@ public class BoggleSolver {
 	}
 	private String appendCharacter(String sb, char c) {
 		if (c == 'Q') {
-			return sb + "QU";
+			sb += "QU";
+			return sb;
 		} else {
-			return sb + c;
+			sb += c;
+			return sb;
 		}
 	}
 	private boolean isValidWord(String word) {
@@ -50,7 +52,7 @@ public class BoggleSolver {
 
 	public void dfs(BoggleBoard board, boolean[][] marked,
 	                int rows, int cols, String word) {
-		//if (dictionaryTrie.hasPrefix(word)) return;
+		if (!dictionaryTrie.hasPrefix(word)) return;
 
 		if (isValidWord(word)) {
 			//System.out.println(word + "----" + scoreOf(word));
