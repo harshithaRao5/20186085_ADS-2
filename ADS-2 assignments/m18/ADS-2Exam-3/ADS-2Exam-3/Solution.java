@@ -22,7 +22,7 @@ public class Solution {
         case "loadDictionary":
             // input000.txt and output000.txt
             BinarySearchST<String, Integer> hash
-            = loadDictionary("/Files/t9.csv");
+                = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -104,7 +104,7 @@ public class Solution {
      */
     public static BinarySearchST<String, Integer> loadDictionary(String file) {
         BinarySearchST<String, Integer>  st
-        = new BinarySearchST<String, Integer>();
+            = new BinarySearchST<String, Integer>();
         // your code goes here
         for (String word : toReadFile(file)) {
             word = word.toLowerCase();
@@ -164,34 +164,36 @@ class T9 {
         for (String word : tst.keys()) {
             String[] characterArray = word.split("");
             String num = "";
-            for(String c:characterArray) {
-                if(c.equals("a")||c.equals("b")||c.equals("c")) {
+            for (String c : characterArray) {
+                if (c.equals("a") || c.equals("b") || c.equals("c")) {
                     num = num + "2";
                 }
-                if(c.equals("d")||c.equals("e")||c.equals("f")) {
+                if (c.equals("d") || c.equals("e") || c.equals("f")) {
                     num = num + "3";
                 }
-                if(c.equals("g")||c.equals("h")||c.equals("i")) {
+                if (c.equals("g") || c.equals("h") || c.equals("i")) {
                     num = num + "4";
                 }
-                if(c.equals("j")||c.equals("k")||c.equals("l")) {
+                if (c.equals("j") || c.equals("k") || c.equals("l")) {
                     num = num + "5";
                 }
-                if(c.equals("m")||c.equals("n")||c.equals("o")) {
+                if (c.equals("m") || c.equals("n") || c.equals("o")) {
                     num = num + "6";
                 }
-                if(c.equals("p")||c.equals("q")||c.equals("r")||c.equals("s")) {
+                if (c.equals("p") || c.equals("q") || c.equals("r")
+                        || c.equals("s")) {
                     num = num + "7";
                 }
-                if(c.equals("t")||c.equals("u")||c.equals("v")) {
+                if (c.equals("t") || c.equals("u") || c.equals("v")) {
                     num = num + "8";
                 }
-                if(c.equals("w")||c.equals("x")||c.equals("y")||c.equals("z")) {
+                if (c.equals("w") || c.equals("x") || c.equals("y")
+                        || c.equals("z")) {
                     num = num + "9";
                 }
 
             }
-            if(num.equals(t9Signature)) {
+            if (num.equals(t9Signature)) {
                 arraylist.add(word);
             }
         }
@@ -206,7 +208,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+                                           final int k) {
         // your code goes here
         HashMap<Integer, String> wordsMap = new HashMap<Integer, String>();
         for (String word : words) {
