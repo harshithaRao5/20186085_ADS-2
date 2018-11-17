@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Collections;
 
 public class Solution {
 
@@ -91,8 +94,8 @@ public class Solution {
 		for (String word : toReadFile(file)) {
 			word = word.toLowerCase();
 			if (st.contains(word)) {
-				st.put(word, st.get(word)+1);
-			}else {
+				st.put(word, st.get(word) + 1);
+			} else {
 				st.put(word, 1);
 			}
 		}
@@ -105,9 +108,8 @@ class T9 {
 	private TST<Integer> tst;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-		//st = new BinarySearchST<String, Integer>();
 		tst = new TST<Integer>();
-		for(String word: st.keys()) {
+		for (String word : st.keys()) {
 			tst.put(word, st.get(word));
 		}
 
@@ -116,19 +118,81 @@ class T9 {
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-
 		return tst.keysWithPrefix(prefix);
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		ArrayList<String> arraylist = new ArrayList<String>();
+		//HashMap<String, ArrayList<String>> charMap =
+		     new HashMap<String, ArrayList<String>>();
+		for (String word : tst.keys()) {
+			String[] characterArray = word.split("");
+			String num = "";
+			for(String c:characterArray) {
+				if(c.equals("a")||c.equals("b")||c.equals("c")) {
+					num = num + "2";
+				}
+				if(c.equals("d")||c.equals("e")||c.equals("f")) {
+					num = num + "3";
+				}
+				if(c.equals("g")||c.equals("h")||c.equals("i")) {
+					num = num + "4";
+				}
+				if(c.equals("j")||c.equals("k")||c.equals("l")) {
+					num = num + "5";
+				}
+				if(c.equals("m")||c.equals("n")||c.equals("o")) {
+					num = num + "6";
+				}
+				if(c.equals("p")||c.equals("q")||c.equals("r")||c.equals("s")) {
+					num = num + "7";
+				}
+				if(c.equals("t")||c.equals("u")||c.equals("v")) {
+					num = num + "8";
+				}
+				if(c.equals("w")||c.equals("x")||c.equals("y")||c.equals("z")) {
+					num = num + "9";
+				}
+
+			}
+			if(num.equals(t9Signature)) {
+				arraylist.add(word);
+			}
+		}
+		// HashMap<String, ArrayList<String>> charMap =
+		//     new HashMap<String, ArrayList<String>>();
+		// for (String word : tst.keys()) {
+		// 	String[] characterArray = word.split("");
+		// 	for(String c:characterArray) {
+
+		// 	}
+		// }
+		return arraylist;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		HashMap<Integer, String> wordsMap = new HashMap<Integer, String>();
+		for (String word : words) {
+			for (String preWord : getAllWords(word)) {
+				int freqValue = tst.get(preWord);
+				if (wordsMap.containsKey(freqValue)) {
+					continue;
+				} else {
+					wordsMap.put(freqValue, preWord);
+				}
+			}
+		}
+		Object[] keys = wordsMap.keySet().toArray();
+		Arrays.sort(keys);
+		ArrayList<String> arraylist = new ArrayList<String>();
+		for (int i = keys.length - 1; i > keys.length - 1 - k; i--) {
+			arraylist.add(wordsMap.get(keys[i]));
+		}
+		Collections.sort(arraylist);
+		return arraylist;
 	}
 
 	// final output
