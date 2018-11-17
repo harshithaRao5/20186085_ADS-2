@@ -6,14 +6,19 @@ import java.util.Collections;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
 
     }
-    // Don't modify this method.
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
@@ -90,8 +95,14 @@ public class Solution {
         }
     }
 
-    // Don't modify this method.
-    public static String[] toReadFile(String file) {
+    /**
+     * { function_description }
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
@@ -102,7 +113,7 @@ public class Solution {
      *
      * @return symbolTable
      */
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st
             = new BinarySearchST<String, Integer>();
         // your code goes here
@@ -131,7 +142,7 @@ class T9 {
      *
      * @param      st object for BinarySearchST
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String word : st.keys()) {
