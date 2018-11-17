@@ -113,7 +113,8 @@ public final class Solution {
      *
      * @return symbolTable
      */
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
+    public static BinarySearchST<String, Integer> loadDictionary(
+        final String file) {
         BinarySearchST<String, Integer>  st
             = new BinarySearchST<String, Integer>();
         // your code goes here
